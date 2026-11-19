@@ -1,0 +1,10 @@
+# Keys never go into the repository
+.env
+*.env
+
+# Production working files and posts still under review
+production/build/
+posts/_review-*/
+
+__pycache__/
+*.pyc

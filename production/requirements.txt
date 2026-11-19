@@ -1,0 +1,6 @@
+requests==2.32.3
+python-dotenv==1.0.1
+Pillow>=10.4
+arabic-reshaper==3.0.0
+python-bidi==0.6.6
+fonttools>=4.53
