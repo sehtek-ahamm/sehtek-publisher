@@ -5,13 +5,23 @@
   "pillar": "أكل طفلي",
   "publish_at": null,
   "hook": "أسهل وجبة لطفلك بدقيقة… وبدون طبخ",
-  "voiceover": "أسهل وجبة لطفلك بدقيقة… وبدون طبخ. نص حبة أفوكادو ناضجة، ونص موزة. اهرسيهم بالشوكة لحد ما يصير القوام ناعم. إذا طفلك لسا بأول أيام الأكل، خففيه بشوي من حليبك أو حليبه المعتاد. الأفوكادو فيه دهون صحية مهمة لنمو طفلك، والموز سهل الهضم. قدّميه فوراً لأن الأفوكادو بيسودّ بسرعة. احفظي الوصفة لأول أسبوع أكل.",
+  "voiceover": "أسهل وجبة لطفلك بدقيقة… وبدون طبخ. نص حبة أفوكادو ناضجة، ونص موزة. اهرسيهم بالشوكة لحد ما يصير القوام ناعم. إذا طفلك لسا بأول أيام الأَكِل، خففيه بشوي من حليبك أو حليبه المعتاد. الأفوكادو فيه دهون صحية مهمة لنمو طفلك، والموز سهل الهضم. قدّميه فوراً، لأن لون الأفوكادو بيتغيّر بسرعة. احفظي الوصفة لأول أسبوع أَكِل.",
   "scenes": [
-    {"image_prompt": "Overhead shot of half a ripe avocado and half a peeled banana on a light wood cutting board next to a small dusty-pink baby bowl and a baby spoon"},
-    {"image_prompt": "Close-up of a woman's hands mashing avocado and banana with a fork in a small cream ceramic bowl"},
-    {"image_prompt": "A small glass jug of milk being poured slowly into a bowl of smooth green avocado banana puree, hands only"},
-    {"image_prompt": "Smooth creamy pale green baby puree in a dusty-pink silicone baby bowl with a soft baby spoon resting on it, cream linen napkin"},
-    {"image_prompt": "Top view of a baby high chair tray with a bowl of avocado banana puree and a baby spoon, soft morning light, no baby visible"}
+    {
+      "image_prompt": "Overhead shot of half a ripe avocado and half a peeled banana on a light wood cutting board next to a small dusty-pink baby bowl and a baby spoon"
+    },
+    {
+      "image_prompt": "Close-up of a woman's hands mashing avocado and banana with a fork in a small cream ceramic bowl"
+    },
+    {
+      "image_prompt": "A small glass jug of milk being poured slowly into a bowl of smooth green avocado banana puree, hands only"
+    },
+    {
+      "image_prompt": "Smooth creamy pale green baby puree in a dusty-pink silicone baby bowl with a soft baby spoon resting on it, cream linen napkin"
+    },
+    {
+      "image_prompt": "Top view of a baby high chair tray with a bowl of avocado banana puree and a baby spoon, soft morning light, no baby visible"
+    }
   ],
   "end_text": "احفظيها لأول أسبوع أكل",
   "caption": "أول وجبة بدون طبخ ولا تعب 🥑🍌\nمناسبة من عمر 6 شهور مع بداية الأكل الصلب.\nاحفظيها وابعتيها لأم جديدة 🤍\n\nمحتوى تثقيفي لا يغني عن استشارة الطبيب.\n#أكل_الرضيع #تغذية_الرضيع #وصفات_اطفال #صحتك_أهم",
