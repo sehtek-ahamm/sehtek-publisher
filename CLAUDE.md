@@ -2,6 +2,19 @@
 
 This repository is the publishing queue for the Arabic Instagram page «صحتك أهم».
 
+## Producing posts (on the user's Windows computer)
+
+Follow `production/README.md`. In short:
+
+1. Job files (approved scripts) live in `production/jobs/`. Never write medical content yourself
+   that isn't in an approved job or in the ideas bank sheet.
+2. First run any new job with `--offline` (free) to check the layout, then without it.
+   Real runs call paid APIs (ElevenLabs, OpenAI): run each job once; re-runs reuse the cache.
+3. Show the user the result and wait for their OK before setting `publish_at` and running
+   `python production/make_post.py --approve posts/<folder>`.
+4. Keys are in a `.env` file (usually `Documents\sehtek-production\.env`). Never print, copy,
+   or commit them.
+
 ## Adding finished posts
 
 1. Create one folder per post in `posts/`, named `YYYY-MM-DD-HHMM-short-english-slug`

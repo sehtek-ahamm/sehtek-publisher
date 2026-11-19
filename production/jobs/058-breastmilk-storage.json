@@ -1,0 +1,20 @@
+{
+  "bank_id": 58,
+  "type": "carousel",
+  "slug": "breastmilk-storage",
+  "pillar": "رضاعتي",
+  "publish_at": null,
+  "source_short": "CDC",
+  "slides": [
+    {"kind": "cover", "title": "كم يعيش حليبك؟", "subtitle": "دليلك السريع لتخزين حليب الأم"},
+    {"kind": "point", "number": 1, "title": "بحرارة الغرفة", "body": "حتى 4 ساعات من وقت الشفط"},
+    {"kind": "point", "number": 2, "title": "بالثلاجة", "body": "حتى 4 أيام، بالخلف مش بالباب"},
+    {"kind": "point", "number": 3, "title": "بالفريزر", "body": "الأفضل خلال 6 شهور، ومقبول حتى 12 شهر"},
+    {"kind": "point", "number": 4, "title": "بعد الإذابة", "body": "بالثلاجة: استعمليه خلال 24 ساعة، وما بيرجع ينجمّد"},
+    {"kind": "point", "number": 5, "title": "بقايا الرضعة", "body": "خلال ساعتين من نهايتها، وبعدها تنكب"},
+    {"kind": "point", "number": 6, "title": "نصيحة أخيرة", "body": "اكتبي التاريخ على كل كيس، ولا تسخنيه بالمايكروويف"},
+    {"kind": "final", "title": "احفظيها وابعتيها لأم مرضعة"}
+  ],
+  "caption": "دليلك السريع لتخزين حليب الأم 🍼❄️\nاحفظيه لوقت الحاجة، خصوصاً إذا راجعة عالدوام.\n\nالمصدر: CDC – Proper Storage and Preparation of Breast Milk\nمحتوى تثقيفي لا يغني عن استشارة الطبيب.\n#الرضاعة_الطبيعية #حليب_الأم #المرضع #صحتك_أهم",
+  "source": "CDC – Proper Storage and Preparation of Breast Milk"
+}
