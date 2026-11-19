@@ -2,16 +2,16 @@ name: Refresh Instagram token
 
 on:
   schedule:
-    # Every Monday 06:00 UTC (09:00 Riyadh). Tokens last 60 days.
-    - cron: "0 6 * * 1"
+    # Every Monday 06:17 UTC (09:17 Riyadh). Tokens last 60 days.
+    - cron: "17 6 * * 1"
   workflow_dispatch:
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - run: pip install -r publisher/requirements.txt
