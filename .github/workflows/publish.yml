@@ -1,11 +1,20 @@
 name: Publish to Instagram
 
+# The publisher keeps its own time instead of relying on GitHub's timer
+# (GitHub's scheduler can be late, skip runs, or never start at all on a new repository).
+#
+# One run stays awake while posts are waiting: it publishes whatever is due, then checks
+# the queue every few minutes (picking up newly added posts) and publishes each post at
+# its time. Before GitHub's 6-hour job limit it starts a fresh run of itself, so the chain
+# never breaks while posts are queued. When the queue is empty it stops; pushing new posts
+# to posts/ starts it again. The hourly schedule is only a backup in case the chain stops.
+
 on:
+  push:
+    branches: [main]
+    paths: ["posts/**"]
   schedule:
-    # Every 15 minutes on "quiet" minutes (GitHub delays or skips runs most at :00 and :30).
-    # A post goes out on the first run after its publish_at time, so a late or skipped
-    # run only delays a post, it never loses it.
-    - cron: "7,22,37,52 * * * *"
+    - cron: "47 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -15,7 +24,10 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
+# Never cancel a running publisher (it could be in the middle of posting).
+# Extra triggers wait in line and simply find nothing to do.
 concurrency:
   group: publish
   cancel-in-progress: false
@@ -23,7 +35,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v5
 
@@ -34,24 +46,55 @@ jobs:
       - name: Install
         run: pip install -r publisher/requirements.txt
 
-      - name: Publish the next due post
+      - name: Publish posts as their time comes
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_API_VERSION: ${{ vars.IG_API_VERSION }}
           DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '1' || '' }}
-        run: python publisher/publish.py ${DRY_RUN:+--dry-run}
-
-      - name: Save results (published.json / failed.json)
-        if: always()
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "sehtek-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add posts
-          if git diff --cached --quiet; then
-            echo "Nothing to save."
-          else
-            git commit -m "Record publishing result"
-            git pull --rebase
-            git push
-          fi
+
+          save_results() {
+            git add posts
+            if ! git diff --cached --quiet; then
+              git commit -q -m "Record publishing result"
+              git pull -q --rebase && git push -q || echo "Could not push results yet; will retry."
+            fi
+          }
+
+          START=$(date +%s)
+          BUDGET=$((5 * 3600 + 30 * 60))   # stay under GitHub's 6-hour job limit
+          MIN_GAP=600                      # at least 10 minutes between two overdue posts
+          CHECK_EVERY=300                  # look for new posts every 5 minutes
+
+          while true; do
+            git pull -q --rebase || true
+            python publisher/publish.py ${DRY_RUN:+--dry-run} || echo "Publish attempt failed; it will be retried."
+            [ -n "$DRY_RUN" ] && exit 0
+            save_results
+
+            NEXT=$(python publisher/publish.py --next-due)
+            if [ "$NEXT" -lt 0 ]; then
+              echo "Queue is empty. Stopping until new posts are added."
+              exit 0
+            fi
+
+            if [ $(( $(date +%s) - START )) -ge "$BUDGET" ]; then
+              echo "Handing over to a fresh run (next post in $((NEXT / 60)) min)."
+              gh workflow run publish.yml --ref main -f dry_run=false
+              exit 0
+            fi
+
+            if [ "$NEXT" -eq 0 ]; then
+              WAIT=$MIN_GAP
+            elif [ "$NEXT" -le "$CHECK_EVERY" ]; then
+              WAIT=$((NEXT + 15))
+            else
+              WAIT=$CHECK_EVERY
+            fi
+            echo "Next post in $((NEXT / 60)) min. Checking again in $((WAIT / 60)) min."
+            sleep "$WAIT"
+          done

@@ -172,6 +172,28 @@ def due_posts():
     return due
 
 
+def seconds_until_next() -> int:
+    """Seconds until the next post that still has to be published (0 if one is overdue, -1 if none)."""
+    soonest = None
+    for folder in all_post_folders():
+        if (folder / "published.json").exists():
+            continue
+        failed = folder / "failed.json"
+        if failed.exists() and load_json(failed).get("attempts", 0) >= MAX_ATTEMPTS:
+            continue
+        if validate_post(folder):
+            continue
+        post = load_json(folder / "post.json")
+        if post.get("draft"):
+            continue
+        when = parse_time(post["publish_at"])
+        if soonest is None or when < soonest:
+            soonest = when
+    if soonest is None:
+        return -1
+    return max(0, int((soonest - now_utc()).total_seconds()))
+
+
 def public_url(folder: Path, name: str) -> str:
     return f"{media_base_url()}/posts/{quote(folder.name)}/{quote(name)}"
 
@@ -241,10 +263,14 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--check", action="store_true", help="validate all posts, no network")
     parser.add_argument("--dry-run", action="store_true", help="show the next due post without publishing")
+    parser.add_argument("--next-due", action="store_true", help="print seconds until the next post (-1 if none)")
     args = parser.parse_args()
 
     if args.check:
         return run_check()
+    if args.next_due:
+        print(seconds_until_next())
+        return 0
 
     due = due_posts()
     if not due:
