@@ -1,0 +1,76 @@
+name: Produce a post
+
+# Started from chat by Claude (or by hand: Actions -> Produce a post -> Run workflow).
+# Makes the reel or carousel from a job file and saves it in posts/ for review.
+# Nothing is published until the post is approved (draft: false).
+
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Job file, e.g. production/jobs/004-avocado-banana.json"
+        required: true
+        type: string
+      offline:
+        description: "Free layout test (no ElevenLabs / OpenAI)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: produce
+  cancel-in-progress: false
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install ffmpeg and Python packages
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install -q -r production/requirements.txt
+
+      - name: Produce
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_IMAGE_MODEL: ${{ vars.OPENAI_IMAGE_MODEL }}
+          OPENAI_IMAGE_QUALITY: ${{ vars.OPENAI_IMAGE_QUALITY }}
+          JOB: ${{ inputs.job }}
+          OFFLINE: ${{ inputs.offline && '--offline' || '' }}
+        run: |
+          [ -n "$OPENAI_IMAGE_MODEL" ] || unset OPENAI_IMAGE_MODEL
+          [ -n "$OPENAI_IMAGE_QUALITY" ] || unset OPENAI_IMAGE_QUALITY
+          python production/make_post.py "$JOB" $OFFLINE
+
+      - name: Save the post and the paid assets
+        if: ${{ !inputs.offline }}
+        run: |
+          git config user.name "sehtek-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f posts production/cache
+          if git diff --cached --quiet; then
+            echo "Nothing new to save."
+          else
+            git commit -m "Produce $(basename "${{ inputs.job }}" .json) for review"
+            git pull --rebase
+            git push
+          fi
+
+      - name: Keep offline preview as a download
+        if: ${{ inputs.offline }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: offline-preview
+          path: production/build/offline-preview/
+          retention-days: 7

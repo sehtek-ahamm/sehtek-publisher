@@ -8,7 +8,20 @@ in the «صحتك أهم» visual style.
 | Reel | ElevenLabs voice + OpenAI images + ffmpeg | about $0.40–0.60 |
 | Carousel | brand slide templates drawn in code | free |
 
-## One-time setup on Windows
+## Cloud production (recommended)
+
+Production can run entirely on GitHub, so no computer is needed:
+
+1. Add repository secrets `ELEVENLABS_API_KEY` and `OPENAI_API_KEY`
+   (Settings → Secrets and variables → Actions → New repository secret).
+2. Start it from chat (Claude) or by hand: Actions → **Produce a post** → Run workflow,
+   with the job file path, e.g. `production/jobs/004-avocado-banana.json`.
+3. The finished post is saved in `posts/` with `draft: true` (never published as a draft),
+   and the voice and AI images are saved in `production/cache/<slug>/`, so re-renders are free.
+4. After review: `python production/make_post.py --approve posts/<folder> --at 2026-11-22T13:00:00+03:00`,
+   commit and push. GitHub publishes it at that time.
+
+## One-time setup on Windows (local production, optional)
 
 1. Install Python 3.12 from python.org (tick **Add python.exe to PATH**).
 2. Install ffmpeg: open PowerShell and run `winget install Gyan.FFmpeg`, then open a new PowerShell window.
@@ -32,15 +45,15 @@ python production/make_post.py production/jobs/004-avocado-banana.json --offline
 python production/make_post.py production/jobs/004-avocado-banana.json
 ```
 
-Voice and images are cached in `production/build/<slug>/`, so running again after a text fix
-doesn't pay for them twice. Delete that folder to regenerate them.
+Voice and images are cached in `production/cache/<slug>/` (committed to the repository), so running
+again after a text fix doesn't pay for them twice. Delete that folder to regenerate them.
 
 ## Review and approve
 
 1. Watch `video.mp4` (or look at the slides).
-2. Set `publish_at` in the job file (e.g. `"2026-11-22T13:00:00+03:00"`) and run the job again
-   (cached voice and images are reused, so it's free).
-3. Approve: `python production/make_post.py --approve posts/<folder>`
+2. Approve with a publish time:
+   `python production/make_post.py --approve posts/<folder> --at 2026-11-22T13:00:00+03:00`
+3. The folder is renamed to its date and time automatically.
 4. Commit and push. GitHub publishes it at its time.
 
 ## Job file

@@ -1,11 +1,13 @@
 """Paid services: ElevenLabs (voice) and OpenAI (images). Keys come from a .env file."""
 
 import base64
+import io
 import os
 from pathlib import Path
 
 import requests
 from dotenv import load_dotenv
+from PIL import Image
 
 import brand
 
@@ -86,7 +88,7 @@ def words_from_alignment(chars, starts, ends) -> list:
 
 
 def generate_image(prompt: str, out_path: Path, size: str = "1024x1536"):
-    """Generate one image in the brand style and save it as PNG."""
+    """Generate one image in the brand style and save it as JPEG."""
     resp = requests.post(
         "https://api.openai.com/v1/images/generations",
         headers={"Authorization": f"Bearer {_key('OPENAI_API_KEY')}"},
@@ -101,4 +103,5 @@ def generate_image(prompt: str, out_path: Path, size: str = "1024x1536"):
     )
     if resp.status_code >= 400:
         raise ServiceError(f"OpenAI image error {resp.status_code}: {resp.text[:500]}")
-    out_path.write_bytes(base64.b64decode(resp.json()["data"][0]["b64_json"]))
+    raw = base64.b64decode(resp.json()["data"][0]["b64_json"])
+    Image.open(io.BytesIO(raw)).convert("RGB").save(out_path, "JPEG", quality=92)
