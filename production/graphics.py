@@ -83,11 +83,14 @@ def end_card(text: str) -> Image.Image:
 
 def placeholder_scene(index: int, label: str) -> Image.Image:
     """Offline test image (no OpenAI call)."""
-    tones = [(222, 205, 186), (214, 196, 176), (230, 214, 196), (205, 188, 170), (226, 208, 190), (218, 200, 182)]
+    tones = [(214, 190, 160), (190, 205, 180), (225, 190, 190), (185, 200, 215), (220, 205, 165), (205, 185, 215)]
     img = Image.new("RGB", (1024, 1536), tones[index % len(tones)])
     d = ImageDraw.Draw(img)
-    d.ellipse((262, 518, 762, 1018), fill=(236, 226, 196), outline=brand.SUGAR, width=24)
-    d.text((40, 40), f"scene {index + 1} (placeholder): {label[:60]}", fill=(120, 100, 90))
+    d.ellipse((262, 418, 762, 918), fill=brand.SUGAR)
+    num = str(index + 1)
+    f = font(brand.FONT_BOLD, 300)
+    d.text((512 - text_width(num, f) // 2, 480), num, font=f, fill=brand.DEEP_ROSE)
+    draw_block(d, "صورة تجريبية", font(brand.FONT_BOLD, 70), (100, 1000, 924, 1120), brand.TEXT, align="center")
     return img
 
 

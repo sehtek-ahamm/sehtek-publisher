@@ -37,6 +37,7 @@ W, H = brand.REEL_SIZE
 FPS = brand.FPS
 HOOK_SECONDS = 3.0
 END_CARD_SECONDS = 1.4
+XFADE = 0.5  # seconds of cross-fade between scenes
 
 
 def run(cmd):
@@ -130,34 +131,51 @@ def make_reel(job: dict, out_dir: Path, offline: bool):
             services.generate_image(scene["image_prompt"], img_path)
         images.append(img_path)
 
-    # 3. Scene clips with slow zoom (alternating in / out)
+    # 3. Scene clips with a smooth slow zoom (alternating in / out).
+    # Clips overlap by XFADE seconds so each image melts into the next (no black flash).
     main_len = voice_len + 0.5
-    per_scene = main_len / len(images)
-    frames = max(int(per_scene * FPS), 1)
+    n = len(images)
+    clip_len = (main_len + (n - 1) * XFADE) / n
+    frames = max(int(round(clip_len * FPS)), 2)
     clips = []
     for i, img in enumerate(images):
         clip = work / f"clip{i + 1}.mp4"
-        zoom = ("min(zoom+0.0007,1.12)" if i % 2 == 0
-                else "if(eq(on,0),1.12,max(zoom-0.0007,1.0))")
+        # zoom computed from the frame number, so it moves evenly without jitter
+        zoom = (f"1+0.10*on/{frames}" if i % 2 == 0 else f"1.10-0.10*on/{frames}")
         vf = (f"crop='min(iw,ih*9/16)':'min(ih,iw*16/9)',scale=2160:3840,"
-              f"zoompan=z='{zoom}':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps={FPS},"
-              f"fade=t=in:st=0:d=0.25,format=yuv420p")
-        run(["ffmpeg", "-y", "-loop", "1", "-i", str(img), "-vf", vf, "-frames:v", str(frames),
-             "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS), str(clip)])
+              f"zoompan=z='{zoom}':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps={FPS},"
+              f"format=yuv420p")
+        run(["ffmpeg", "-y", "-loop", "1", "-framerate", str(FPS), "-i", str(img), "-vf", vf,
+             "-frames:v", str(frames), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+             "-r", str(FPS), str(clip)])
         clips.append(clip)
 
     # 4. End card clip
     end_png = work / "endcard.png"
     graphics.end_card(job.get("end_text", "احفظيها لوقت الحاجة")).save(end_png)
     end_clip = work / "endcard.mp4"
-    run(["ffmpeg", "-y", "-loop", "1", "-i", str(end_png), "-vf", f"fade=t=in:st=0:d=0.3,format=yuv420p",
-         "-t", f"{END_CARD_SECONDS}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS), str(end_clip)])
+    run(["ffmpeg", "-y", "-loop", "1", "-framerate", str(FPS), "-i", str(end_png), "-vf", "format=yuv420p",
+         "-t", f"{END_CARD_SECONDS + XFADE}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+         "-r", str(FPS), str(end_clip)])
 
-    # 5. Join clips
-    concat = work / "concat.txt"
-    concat.write_text("".join(f"file '{c.name}'\n" for c in clips + [end_clip]), encoding="utf-8")
+    # 5. Join clips with cross-fades
+    parts = clips + [end_clip]
+    inputs, chain = [], []
+    for p in parts:
+        inputs += ["-i", str(p)]
+    real_len = frames / FPS
+    offset, last = 0.0, "[0:v]"
+    for k in range(1, len(parts)):
+        offset += real_len - XFADE
+        if k == len(parts) - 1:
+            offset = (n * real_len - (n - 1) * XFADE) - XFADE
+        label = f"[x{k}]"
+        chain.append(f"{last}[{k}:v]xfade=transition=fade:duration={XFADE}:offset={offset:.3f}{label}")
+        last = label
     base = work / "base.mp4"
-    run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat), "-c", "copy", str(base)])
+    run(["ffmpeg", "-y", *inputs, "-filter_complex", ";".join(chain), "-map", last,
+         "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", "-r", str(FPS), str(base)])
+    main_len = n * real_len - (n - 1) * XFADE
     total = main_len + END_CARD_SECONDS
 
     # 6. Overlays: hook, subtitles, watermark
