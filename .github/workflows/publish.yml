@@ -1,0 +1,55 @@
+name: Publish to Instagram
+
+on:
+  schedule:
+    # Every 30 minutes. A post goes out on the first run after its publish_at time.
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run: only show what would be published"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -r publisher/requirements.txt
+
+      - name: Publish the next due post
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION }}
+          DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '1' || '' }}
+        run: python publisher/publish.py ${DRY_RUN:+--dry-run}
+
+      - name: Save results (published.json / failed.json)
+        if: always()
+        run: |
+          git config user.name "sehtek-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add posts
+          if git diff --cached --quiet; then
+            echo "Nothing to save."
+          else
+            git commit -m "Record publishing result"
+            git pull --rebase
+            git push
+          fi
