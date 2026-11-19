@@ -20,7 +20,7 @@ import requests
 from nacl import encoding, public
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from ig_api import InstagramError, refresh_long_lived_token  # noqa: E402
+from ig_api import InstagramError, is_unified_token, refresh_long_lived_token  # noqa: E402
 
 SECRET_NAME = "IG_ACCESS_TOKEN"
 
@@ -50,6 +50,9 @@ def save_secret(repo: str, gh_token: str, value: str):
 
 def main() -> int:
     token = os.environ.get("IG_ACCESS_TOKEN", "")
+    if is_unified_token(token):
+        print("Unified login system-user token (EAA): it never expires, nothing to refresh.")
+        return 0
     gh_token = os.environ.get("GH_PAT", "")
     repo = os.environ.get("GITHUB_REPOSITORY", "")
     if not token or not gh_token or not repo:
