@@ -2,8 +2,10 @@ name: Publish to Instagram
 
 on:
   schedule:
-    # Every 30 minutes. A post goes out on the first run after its publish_at time.
-    - cron: "*/30 * * * *"
+    # Every 15 minutes on "quiet" minutes (GitHub delays or skips runs most at :00 and :30).
+    # A post goes out on the first run after its publish_at time, so a late or skipped
+    # run only delays a post, it never loses it.
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -23,9 +25,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 

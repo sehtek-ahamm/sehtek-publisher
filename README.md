@@ -7,7 +7,7 @@ twice a day, using GitHub Actions. Your computer does not need to be on.
 
 1. Finished posts are added to `posts/` (one folder per post, see `posts/README.md`).
 2. GitHub Pages serves the videos and images at a public link so Instagram can fetch them.
-3. Every 30 minutes, the **Publish to Instagram** workflow checks for a post whose
+3. Every 15 minutes (at :07, :22, :37, :52), the **Publish to Instagram** workflow checks for a post whose
    time has come and publishes it (one post per run).
 4. The result is saved in the post folder (`published.json` with the Instagram link,
    or `failed.json` with the error).
