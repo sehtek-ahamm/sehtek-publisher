@@ -1,0 +1,28 @@
+{
+  "bank_id": 19,
+  "type": "reel",
+  "slug": "banana-pancakes",
+  "pillar": "أكل طفلي",
+  "hook": "بانكيك لطفلك بدون سكر ولا طحين أبيض",
+  "voiceover": "بانكيك لطفلك بدون سكر، وبدون طحين أبيض. موزة ناضجة مهروسة، بيضة وحدة، وتلات ملاعق شوفان مطحون. اخلطيهم، واطبخي دواير صغيرة على نار هادية بشوي زبدة، دقيقة لكل وجه، لحد ما تستوي من جوا تماماً. قطّعيهم أصابع ليمسكهم بإيده. مناسبة من عمر تمن شهور، إذا طفلك جرب البيض قبل بدون حساسية. احفظيها لفطور بكرا.",
+  "scenes": [
+    {
+      "image_prompt": "A ripe banana, one egg and a small bowl of rolled oats on a light wood cutting board, top view"
+    },
+    {
+      "image_prompt": "A woman's hands whisking banana egg and ground oat batter in a cream ceramic bowl, hands only"
+    },
+    {
+      "image_prompt": "Small round mini pancakes cooking in a pan with a little butter, golden edges, close-up"
+    },
+    {
+      "image_prompt": "A stack of mini banana pancakes cut into finger-sized strips on a dusty-pink baby plate"
+    },
+    {
+      "image_prompt": "Top view of a baby high chair tray with banana pancake fingers and a few banana slices, no baby visible"
+    }
+  ],
+  "end_text": "احفظيها لفطور بكرا",
+  "caption": "فطور بيحبه الصغير والكبير 🥞🍌\n3 مكونات وبدون ملعقة سكر.\nمناسبة من عمر 8 شهور إذا طفلك جرب البيض قبل بدون حساسية.\n\nالمصدر: NHS Start for Life\nمحتوى تثقيفي لا يغني عن استشارة الطبيب.\n#وصفات_اطفال #فطور_الطفل #أكل_الرضيع #صحتك_أهم",
+  "publish_at": null
+}

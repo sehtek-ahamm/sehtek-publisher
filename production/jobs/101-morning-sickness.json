@@ -1,0 +1,28 @@
+{
+  "bank_id": 101,
+  "type": "reel",
+  "slug": "morning-sickness",
+  "pillar": "حملي",
+  "hook": "غثيان الصبح؟ لا تقومي من السرير قبل هذا",
+  "voiceover": "غثيان الصبح بيبلّش قبل ما تقومي من السرير؟ جربي هالحركة. حطي جنب سريرك بسكويت سادة أو كراكر. أول ما تصحي، كلي حبتين وإنتي لسا بالسرير، وقومي ببطء. المعدة الفاضية بتزيد الغثيان. وخلي وجباتك صغيرة ومتقاربة طول اليوم. وإذا ما قدرتي تحتفظي بالسوائل، أو بلّش وزنك ينزل، راجعي طبيبتك بسرعة.",
+  "scenes": [
+    {
+      "image_prompt": "A bedside table in soft morning light with a small plate of plain crackers and a glass of water, cream bedding in the background"
+    },
+    {
+      "image_prompt": "A woman's hand reaching from cream bed sheets towards a plate of plain crackers on a bedside table, hands only"
+    },
+    {
+      "image_prompt": "A cup of ginger and lemon tea with fresh ginger slices and lemon wedges on a light wood tray"
+    },
+    {
+      "image_prompt": "Several small portioned snacks on dusty-pink small plates: crackers, apple slices, a few almonds, plain yogurt, top view"
+    },
+    {
+      "image_prompt": "A calm cozy bedroom corner with a cream throw blanket, a cup of tea and a small plate of crackers on a side table"
+    }
+  ],
+  "end_text": "احفظيها لأول 3 شهور",
+  "caption": "حركة بسيطة بتفرق مع غثيان أول الحمل 🤰🍪\nجربيها بكرة الصبح واحكيلنا شو بيساعدك إنتي.\n\nالمصدر: NHS · ACOG\nمحتوى تثقيفي لا يغني عن استشارة الطبيب.\n#غثيان_الحمل #الحمل #الشهور_الأولى #صحتك_أهم",
+  "publish_at": null
+}

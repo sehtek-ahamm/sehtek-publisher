@@ -1,0 +1,28 @@
+{
+  "bank_id": 145,
+  "type": "reel",
+  "slug": "date-balls",
+  "pillar": "رضاعتي",
+  "hook": "جوع الرضاعة؟ هالسناك بيسكّته بدون سكر",
+  "voiceover": "السناك اللي بيسكّت جوع الرضاعة… وبدون ملعقة سكر. كاسة تمر منزوع النوى، إذا ناشف انقعيه عشر دقايق بمي دافية. نص كاسة شوفان، وملعقتين طحينة أو زبدة فول سوداني، وملعقة بذور شيا. اطحنيهم بالمحضرة، وكوّريهم كرات صغيرة، ولفّيهم بجوز الهند. بينحفظوا بالتلاجة أسبوع. حبتين مع كاسة حليب بين الرضعات.",
+  "scenes": [
+    {
+      "image_prompt": "A bowl of soft pitted medjool dates on a light wood board with a few loose dates around"
+    },
+    {
+      "image_prompt": "Top view of a food processor bowl with dates, rolled oats, a spoon of tahini and chia seeds before blending"
+    },
+    {
+      "image_prompt": "A woman's hands rolling a small date and oat energy ball between palms over a cream plate, hands only"
+    },
+    {
+      "image_prompt": "Round date energy balls rolled in shredded coconut arranged on a dusty-pink ceramic plate, top view"
+    },
+    {
+      "image_prompt": "A glass of milk and three date coconut balls on a small plate on a bedside table, soft warm night lamp light"
+    }
+  ],
+  "end_text": "حضّريهم مرة بالأسبوع",
+  "caption": "كرات التمر — سناك المرضع المشبع بحلاوة طبيعية 🌴🤎\nحضّريهم مرة بالأسبوع وخليهم جاهزين بالتلاجة.\n#سناك_صحي #المرضع #كرات_التمر #صحتك_أهم",
+  "publish_at": null
+}

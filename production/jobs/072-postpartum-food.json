@@ -1,0 +1,28 @@
+{
+  "bank_id": 72,
+  "type": "reel",
+  "slug": "postpartum-food",
+  "pillar": "نفاسي",
+  "hook": "أكل النفاس اللي بتعمله أمك… شو بيقول العلم؟",
+  "voiceover": "أكل النفاس اللي بتعمله أمك… شو بيقول العلم؟ المرقة واللحمة: بروتين وحديد، وجسمك بيحتاجهم بعد الولادة. الشوربات والمشروبات الدافية: بتعوضك سوائل، خصوصاً إذا مرضع. المغلي: المكسرات فيه مفيدة، بس السكر الكتير لا، خففيه. الحلبة: الدليل على إنها بتدر الحليب ضعيف، واسألي طبيبتك قبل أي أعشاب. القاعدة: أكل متنوع فيه بروتين وخضار وفواكه وسوائل، ومش لازم كله دسم.",
+  "scenes": [
+    {
+      "image_prompt": "A warm bowl of clear chicken broth with tender meat and vegetables on a light wood table, steam rising"
+    },
+    {
+      "image_prompt": "Two ceramic mugs of warm soup and herbal drink on a cream linen tablecloth, cozy soft light"
+    },
+    {
+      "image_prompt": "Small bowls of traditional Levantine meghli rice pudding topped with crushed walnuts, pistachios and coconut, top view"
+    },
+    {
+      "image_prompt": "A small ceramic bowl of fenugreek seeds next to a cup of yellow fenugreek tea on a light wood surface"
+    },
+    {
+      "image_prompt": "A balanced plate with grilled chicken, colorful vegetables, rice and a side of fresh fruit, top view, dusty-pink napkin"
+    }
+  ],
+  "end_text": "شاركيها مع كل نفساء",
+  "caption": "العادات بتنحترم، والعلم بيرتبها 🥣🌸\nشو أكتر أكلة نفاس بتتذكريها؟ اكتبيها بالتعليقات 👇\n\nالمصدر: WHO postnatal care recommendations (2022) · NIH LactMed\nمحتوى تثقيفي لا يغني عن استشارة الطبيب.\n#النفاس #أكل_النفاس #بعد_الولادة #صحتك_أهم",
+  "publish_at": null
+}

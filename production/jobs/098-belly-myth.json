@@ -1,0 +1,28 @@
+{
+  "bank_id": 98,
+  "type": "reel",
+  "slug": "belly-myth",
+  "pillar": "صح أم خطأ",
+  "hook": "شكل بطنك بيحدد بنت ولا ولد؟",
+  "voiceover": "شكل بطنك بيحدد إذا بنت ولا ولد؟ لا. شكل البطن بيعتمد على عضلات بطنك، وطولك، ووضعية الجنين، وإذا هاد أول حمل أو لا. الطريقة الأكيدة هي السونار أو الفحوصات عند طبيبتك. بس بصراحة… احكيلنا بالتعليقات: شو كان توقع الجدات عندك، وطلع صح ولا لا؟",
+  "scenes": [
+    {
+      "image_prompt": "Side view of a pregnant belly in a cream knit dress with both hands resting gently on it, face out of frame, soft window light"
+    },
+    {
+      "image_prompt": "A pair of dusty-pink baby booties and a pair of light blue baby booties on cream linen, top view"
+    },
+    {
+      "image_prompt": "Hands holding a black and white ultrasound print photo over a cream blanket, no readable text, no face"
+    },
+    {
+      "image_prompt": "Elderly woman's hands holding a small glass of tea on a traditional embroidered tablecloth, warm light, hands only"
+    },
+    {
+      "image_prompt": "Neatly folded cream and beige newborn baby clothes with a small knitted toy on a light wood surface"
+    }
+  ],
+  "end_text": "احكيلنا توقع الجدات بالتعليقات",
+  "caption": "بطن مدوّر بنت، وبطن لقدام ولد؟ 🤔🤰\nاكتبيلنا توقع الجدات عندك، وشو طلع بالآخر 👇\n#صح_أم_خطأ #الحمل #حامل #صحتك_أهم",
+  "publish_at": null
+}
