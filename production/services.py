@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 from PIL import Image
 
 import brand
+import pronunciation
 
 HERE = Path(__file__).resolve().parent
 
@@ -48,6 +49,7 @@ def _key(name: str) -> str:
 
 def text_to_speech(text: str, out_mp3: Path) -> list:
     """Generate the voice-over. Returns word timings: [(word, start, end), ...]."""
+    text = pronunciation.prepare(text)
     resp = requests.post(
         f"https://api.elevenlabs.io/v1/text-to-speech/{brand.VOICE_ID}/with-timestamps",
         headers={"xi-api-key": _key("ELEVENLABS_API_KEY"), "Content-Type": "application/json"},
