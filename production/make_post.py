@@ -33,6 +33,8 @@ import services  # noqa: E402
 ROOT = HERE.parent
 POSTS = ROOT / "posts"
 BUILD = HERE / "build"
+# Paid assets (voice, AI images) are kept here and committed, so re-renders never pay twice.
+CACHE = HERE / "cache"
 W, H = brand.REEL_SIZE
 FPS = brand.FPS
 HOOK_SECONDS = 3.0
@@ -99,10 +101,12 @@ def fake_words(text: str):
 def make_reel(job: dict, out_dir: Path, offline: bool):
     work = BUILD / job["slug"]
     work.mkdir(parents=True, exist_ok=True)
+    paid = work if offline else CACHE / job["slug"]
+    paid.mkdir(parents=True, exist_ok=True)
 
     # 1. Voice
-    voice = work / "voice.mp3"
-    words_file = work / "words.json"
+    voice = paid / "voice.mp3"
+    words_file = paid / "words.json"
     if offline:
         words = fake_words(job["voiceover"])
         length = words[-1][2] + 0.4
@@ -121,7 +125,7 @@ def make_reel(job: dict, out_dir: Path, offline: bool):
     scenes = job["scenes"]
     images = []
     for i, scene in enumerate(scenes):
-        img_path = work / f"scene{i + 1}.png"
+        img_path = paid / f"scene{i + 1}.jpg"
         if offline:
             graphics.placeholder_scene(i, scene["image_prompt"]).save(img_path)
         elif img_path.exists():
@@ -261,14 +265,21 @@ def make_carousel(job: dict, out_dir: Path):
 
 # --- main --------------------------------------------------------------------------------
 
-def approve(folder: Path):
+def approve(folder: Path, at: str = None):
     post_file = folder / "post.json"
     post = json.loads(post_file.read_text(encoding="utf-8"))
+    if at:
+        dt.datetime.fromisoformat(at)  # validates the format
+        post["publish_at"] = at
     if not post.get("publish_at"):
-        sys.exit("This post has no publish_at yet. Add it to the job file and produce it again.")
+        sys.exit("This post has no publish time. Use --at 2026-11-22T13:00:00+03:00")
     post["draft"] = False
     post_file.write_text(json.dumps(post, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Approved: {folder.name} will publish at {post['publish_at']}")
+    slug = folder.name.split("-", 4)[-1] if not folder.name.startswith("_review-") else folder.name[len("_review-"):]
+    target = POSTS / f"{dt.datetime.fromisoformat(post['publish_at']):%Y-%m-%d-%H%M}-{slug}"
+    if target != folder:
+        folder.rename(target)
+    print(f"Approved: {target.name} will publish at {post['publish_at']}")
 
 
 def main():
@@ -276,10 +287,11 @@ def main():
     parser.add_argument("job", nargs="?", help="job JSON file")
     parser.add_argument("--offline", action="store_true", help="free layout test: no ElevenLabs/OpenAI calls")
     parser.add_argument("--approve", metavar="POST_FOLDER", help="mark a reviewed post ready to publish")
+    parser.add_argument("--at", help="publish time for --approve, e.g. 2026-11-22T13:00:00+03:00")
     args = parser.parse_args()
 
     if args.approve:
-        return approve(Path(args.approve))
+        return approve(Path(args.approve), args.at)
     if not args.job:
         parser.error("give a job file or --approve")
 

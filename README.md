@@ -13,6 +13,8 @@ twice a day, using GitHub Actions. Your computer does not need to be on.
    or `failed.json` with the error).
 5. Every Monday, **Refresh Instagram token** extends `IGAA…` tokens (`EAA…` tokens never expire, so it does nothing).
 
+Posts are produced by the **Produce a post** workflow (see `production/README.md`).
+
 ## One-time setup
 
 ### 1. Turn on GitHub Pages
@@ -27,6 +29,8 @@ Settings → Secrets and variables → Actions → **New repository secret**:
 | `IG_ACCESS_TOKEN` | token from the Meta developer app | always |
 | `IG_USER_ID` | Instagram account ID (the **Check Instagram connection** workflow prints it) | optional, found automatically |
 | `GH_PAT` | fine-grained GitHub token, this repo only, **Secrets: Read and write** | only for `IGAA…` tokens |
+| `ELEVENLABS_API_KEY` | ElevenLabs API key | for cloud production |
+| `OPENAI_API_KEY` | OpenAI API key | for cloud production |
 
 Two token types work, detected by their first letters:
 
