@@ -11,7 +11,7 @@ twice a day, using GitHub Actions. Your computer does not need to be on.
    time has come and publishes it (one post per run).
 4. The result is saved in the post folder (`published.json` with the Instagram link,
    or `failed.json` with the error).
-5. Every Monday, **Refresh Instagram token** extends the Instagram token so it never expires.
+5. Every Monday, **Refresh Instagram token** extends `IGAA…` tokens (`EAA…` tokens never expire, so it does nothing).
 
 ## One-time setup
 
@@ -22,17 +22,22 @@ After a minute the site is live at `https://sehtek-ahamm.github.io/sehtek-publis
 ### 2. Add the secrets
 Settings → Secrets and variables → Actions → **New repository secret**:
 
-| Name | Value |
-| --- | --- |
-| `IG_ACCESS_TOKEN` | long-lived Instagram token from the Meta developer app |
-| `IG_USER_ID` | your Instagram user ID (the **Check Instagram connection** workflow prints it) |
-| `GH_PAT` | fine-grained GitHub token, repository access: this repo only, permission **Secrets: Read and write** |
+| Name | Value | Needed? |
+| --- | --- | --- |
+| `IG_ACCESS_TOKEN` | token from the Meta developer app | always |
+| `IG_USER_ID` | Instagram account ID (the **Check Instagram connection** workflow prints it) | optional, found automatically |
+| `GH_PAT` | fine-grained GitHub token, this repo only, **Secrets: Read and write** | only for `IGAA…` tokens |
+
+Two token types work, detected by their first letters:
+
+- **`EAA…`** — Unified login system-user token (new Meta apps). Never expires; no refresh, no `GH_PAT`.
+- **`IGAA…`** — Instagram login token (older apps). Expires after 60 days; refreshed weekly using `GH_PAT`.
 
 Secrets are encrypted. Nobody can read them, even though the repository is public.
 
 ### 3. Test the connection
 Actions → **Check Instagram connection** → **Run workflow**.
-It prints the account name and user ID. Copy the user ID into the `IG_USER_ID` secret, then run it again.
+It prints the token type, the account name and the Instagram account ID.
 
 ### 4. Test a publish without posting
 Actions → **Publish to Instagram** → **Run workflow** with **Dry run** ticked.
