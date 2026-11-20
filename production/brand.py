@@ -33,3 +33,15 @@ IMAGE_STYLE = (
     "minimal, warm editorial food photography. No faces, no people except hands, "
     "no text, no letters, no logos, no watermarks."
 )
+
+# Cartoon posts: we give GPT the joke and a few limits only, and let it invent the scene.
+COMIC_CHARACTER = (
+    "Main character: a Levantine Arab mother in her early 30s, warm olive skin, dark brown hair. "
+    "She is at home, so no hijab (hair loose or in a messy bun)."
+)
+COMIC_LIMITS = (
+    "Limits: warm 2D cartoon illustration for an Instagram page for mothers; colours led by dusty pink "
+    "(#D4A5A5), deep rose (#A8777B) and cream (#FAF6F0); kind humour that any mother relates to, never "
+    "mocking her body or weight; modest everyday clothes; leave the top quarter of the image calm for a "
+    "caption that we add later; no text, letters, numbers, speech bubbles, logos or watermarks anywhere."
+)

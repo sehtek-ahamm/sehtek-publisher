@@ -263,6 +263,35 @@ def make_carousel(job: dict, out_dir: Path):
     return files, None
 
 
+# --- comic (funny mention posts) --------------------------------------------------------
+
+def make_comic(job: dict, out_dir: Path, offline: bool):
+    """One cartoon per panel: 1 panel = image post, 2-10 panels = carousel."""
+    paid = BUILD / job["slug"] if offline else CACHE / job["slug"]
+    paid.mkdir(parents=True, exist_ok=True)
+    style = f"{brand.COMIC_CHARACTER} {brand.COMIC_LIMITS}"
+    files = []
+    for i, panel in enumerate(job["panels"]):
+        pic_path = paid / f"panel{i + 1}.jpg"
+        if offline:
+            graphics.placeholder_scene(i, "").save(pic_path, quality=90)
+        elif not pic_path.exists():
+            print(f"  image {i + 1}: generating")
+            brief = (f"Create a funny, original cartoon that makes mothers laugh and tag a friend. "
+                     f"The joke (written above the picture by us): «{panel['text']}». "
+                     f"Situation: {panel['idea']}. "
+                     "You choose the scene, composition, expressions and the funny details.")
+            services.generate_image(brief, pic_path, style=style)
+        else:
+            print(f"  image {i + 1}: cached")
+        name = f"{i + 1:02d}.jpg"
+        graphics.comic_panel(Image.open(pic_path), panel["text"]).save(out_dir / name, quality=92)
+        files.append(name)
+    if not 1 <= len(files) <= 10:
+        raise ValueError("A comic post needs 1 to 10 panels.")
+    return files, None
+
+
 # --- main --------------------------------------------------------------------------------
 
 def approve(folder: Path, at: str = None):
@@ -296,7 +325,7 @@ def main():
         parser.error("give a job file or --approve")
 
     job = json.loads(Path(args.job).read_text(encoding="utf-8"))
-    if not args.offline and job["type"] == "reel":
+    if not args.offline and job["type"] in ("reel", "comic"):
         env = services.load_keys()
         print(f"Keys loaded from: {env}" if env else "No .env file found; using environment variables.")
     check_ffmpeg()
@@ -311,12 +340,14 @@ def main():
         media, cover = make_reel(job, out_dir, args.offline)
     elif job["type"] == "carousel":
         media, cover = make_carousel(job, out_dir)
+    elif job["type"] == "comic":
+        media, cover = make_comic(job, out_dir, args.offline)
     else:
-        sys.exit("type must be reel or carousel")
+        sys.exit("type must be reel, carousel or comic")
 
     post = {
         "bank_id": job.get("bank_id"),
-        "type": job["type"],
+        "type": ("image" if len(media) == 1 else "carousel") if job["type"] == "comic" else job["type"],
         "publish_at": job.get("publish_at"),
         "media": media,
         "share_to_feed": True,
