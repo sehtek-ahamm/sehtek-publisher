@@ -1,0 +1,28 @@
+{
+  "bank_id": 93,
+  "type": "reel",
+  "slug": "honey-myth",
+  "pillar": "صح أم خطأ",
+  "hook": "عسل للرضيع عشان الكحة؟ خطأ… وخطير",
+  "voiceover": "عسل للرضيع عشان الكحة؟ خطأ… وخطير. العسل ممنوع قبل عمر السنة، حتى لو كمية صغيرة، أو مخلوط بالأكل، أو مدهون على اللهاية. السبب إن العسل ممكن يحتوي بكتيريا أمعاء الرضيع لسا ما بتقدر تتعامل معها، وبتسبب تسمم اسمه التسمم الوشيقي. بعد السنة بيصير آمن. وإذا طفلك عنده كحة، اسألي الطبيب قبل أي علاج شعبي. ابعتيها لكل أم جديدة.",
+  "scenes": [
+    {
+      "image_prompt": "A glass jar of golden honey with a wooden honey dipper on a light wood surface, cream linen cloth"
+    },
+    {
+      "image_prompt": "Honey slowly dripping from a wooden dipper back into a glass jar, close-up, warm soft light"
+    },
+    {
+      "image_prompt": "A baby pacifier resting on a cream knitted baby blanket next to a closed honey jar, no baby visible"
+    },
+    {
+      "image_prompt": "A small cream frosted cake with a single candle shaped like the number one on a dusty-pink plate, first birthday mood, no people"
+    },
+    {
+      "image_prompt": "A pediatric stethoscope resting on a folded soft cream baby blanket with a small dusty-pink baby sock"
+    }
+  ],
+  "end_text": "ابعتيها لكل أم جديدة",
+  "caption": "نصيحة بتنقلها الجدات بحب… بس ممكن تؤذي الرضيع 🍯❌\nالعسل ممنوع قبل عمر السنة بأي شكل.\nابعتيها لأي أم جديدة 🤍\n\nالمصدر: CDC – Infant Botulism · NHS\nمحتوى تثقيفي لا يغني عن استشارة الطبيب.\n#صح_أم_خطأ #صحة_الطفل #الرضيع #صحتك_أهم",
+  "publish_at": null
+}
