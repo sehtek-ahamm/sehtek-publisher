@@ -34,15 +34,14 @@ IMAGE_STYLE = (
     "no text, no letters, no logos, no watermarks."
 )
 
-# Cartoon style for the funny / mention posts. The same mother appears in every one.
+# Cartoon posts: we give GPT the joke and a few limits only, and let it invent the scene.
 COMIC_CHARACTER = (
-    "the same recurring character: a Levantine Arab mother in her early 30s, warm olive skin, "
-    "kind tired eyes, wearing a loose cream hijab and a dusty-pink loose top"
+    "Main character: a Levantine Arab mother in her early 30s, warm olive skin, dark brown hair. "
+    "She is at home, so no hijab (hair loose or in a messy bun)."
 )
-COMIC_STYLE = (
-    "Warm, friendly 2D cartoon illustration, clean soft outlines, flat pastel colours with gentle "
-    "shading, palette of dusty pink (#D4A5A5), deep rose (#A8777B), cream (#FAF6F0) and warm browns, "
-    "expressive funny faces, cosy home setting, Instagram meme-comic look. Keep the top quarter of the "
-    "image calm and simple (plain wall or sky) for a caption. Absolutely no text, no letters, no numbers, "
-    "no speech bubbles, no logos, no watermarks."
+COMIC_LIMITS = (
+    "Limits: warm 2D cartoon illustration for an Instagram page for mothers; colours led by dusty pink "
+    "(#D4A5A5), deep rose (#A8777B) and cream (#FAF6F0); kind humour that any mother relates to, never "
+    "mocking her body or weight; modest everyday clothes; leave the top quarter of the image calm for a "
+    "caption that we add later; no text, letters, numbers, speech bubbles, logos or watermarks anywhere."
 )

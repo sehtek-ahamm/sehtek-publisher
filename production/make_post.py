@@ -269,7 +269,7 @@ def make_comic(job: dict, out_dir: Path, offline: bool):
     """One cartoon per panel: 1 panel = image post, 2-10 panels = carousel."""
     paid = BUILD / job["slug"] if offline else CACHE / job["slug"]
     paid.mkdir(parents=True, exist_ok=True)
-    style = f"{brand.COMIC_CHARACTER}. {brand.COMIC_STYLE}"
+    style = f"{brand.COMIC_CHARACTER} {brand.COMIC_LIMITS}"
     files = []
     for i, panel in enumerate(job["panels"]):
         pic_path = paid / f"panel{i + 1}.jpg"
@@ -277,7 +277,11 @@ def make_comic(job: dict, out_dir: Path, offline: bool):
             graphics.placeholder_scene(i, "").save(pic_path, quality=90)
         elif not pic_path.exists():
             print(f"  image {i + 1}: generating")
-            services.generate_image(panel["image"], pic_path, style=style)
+            brief = (f"Create a funny, original cartoon that makes mothers laugh and tag a friend. "
+                     f"The joke (written above the picture by us): «{panel['text']}». "
+                     f"Situation: {panel['idea']}. "
+                     "You choose the scene, composition, expressions and the funny details.")
+            services.generate_image(brief, pic_path, style=style)
         else:
             print(f"  image {i + 1}: cached")
         name = f"{i + 1:02d}.jpg"
