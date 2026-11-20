@@ -33,3 +33,16 @@ IMAGE_STYLE = (
     "minimal, warm editorial food photography. No faces, no people except hands, "
     "no text, no letters, no logos, no watermarks."
 )
+
+# Cartoon style for the funny / mention posts. The same mother appears in every one.
+COMIC_CHARACTER = (
+    "the same recurring character: a Levantine Arab mother in her early 30s, warm olive skin, "
+    "kind tired eyes, wearing a loose cream hijab and a dusty-pink loose top"
+)
+COMIC_STYLE = (
+    "Warm, friendly 2D cartoon illustration, clean soft outlines, flat pastel colours with gentle "
+    "shading, palette of dusty pink (#D4A5A5), deep rose (#A8777B), cream (#FAF6F0) and warm browns, "
+    "expressive funny faces, cosy home setting, Instagram meme-comic look. Keep the top quarter of the "
+    "image calm and simple (plain wall or sky) for a caption. Absolutely no text, no letters, no numbers, "
+    "no speech bubbles, no logos, no watermarks."
+)

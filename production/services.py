@@ -89,14 +89,14 @@ def words_from_alignment(chars, starts, ends) -> list:
     return words
 
 
-def generate_image(prompt: str, out_path: Path, size: str = "1024x1536"):
-    """Generate one image in the brand style and save it as JPEG."""
+def generate_image(prompt: str, out_path: Path, size: str = "1024x1536", style: str = None):
+    """Generate one image in the brand style (or the given style) and save it as JPEG."""
     resp = requests.post(
         "https://api.openai.com/v1/images/generations",
         headers={"Authorization": f"Bearer {_key('OPENAI_API_KEY')}"},
         json={
             "model": os.environ.get("OPENAI_IMAGE_MODEL", "gpt-image-2"),
-            "prompt": f"{prompt}. {brand.IMAGE_STYLE}",
+            "prompt": f"{prompt}. {style or brand.IMAGE_STYLE}",
             "size": size,
             "quality": os.environ.get("OPENAI_IMAGE_QUALITY", "medium"),
             "n": 1,

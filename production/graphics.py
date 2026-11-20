@@ -153,3 +153,33 @@ def slide_final(title: str) -> Image.Image:
     draw_block(d, "محتوى تثقيفي لا يغني عن استشارة الطبيب", font(brand.FONT_REGULAR, 36),
                (MARGIN, SH - 150, SW - MARGIN, SH - 80), brand.SUGAR, align="center")
     return img
+
+
+# --- comic posts (1080x1350 JPEG): cartoon picture + caption box -----------------------
+
+def comic_panel(picture: Image.Image, text: str) -> Image.Image:
+    """Cartoon picture filling a 4:5 post, the joke in a cream box at the top, brand pill at the bottom."""
+    # The brand font has no emoji: drop them from the picture text (they stay in the caption).
+    text = "".join(ch for ch in text if ord(ch) < 0x2190 or 0x0600 <= ord(ch) <= 0x06FF or 0xFB50 <= ord(ch) <= 0xFEFF)
+    text = "\n".join(line.rstrip() for line in text.split("\n"))
+    pic = picture.convert("RGB")
+    scale = max(SW / pic.width, SH / pic.height)
+    pic = pic.resize((round(pic.width * scale), round(pic.height * scale)), Image.LANCZOS)
+    left = (pic.width - SW) // 2
+    top = max(0, (pic.height - SH) // 3)          # keep more of the lower part (the scene)
+    img = pic.crop((left, top, left + SW, top + SH)).convert("RGBA")
+    layer = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    f = font(brand.FONT_BOLD, 64)
+    max_w = SW - 2 * 110
+    h = block_height(text, f, max_w, 1.3)
+    y0 = 60
+    _rounded(d, (60, y0, SW - 60, y0 + h + 70), 40, brand.SUGAR + (240,))
+    draw_block(d, text, f, (110, y0 + 35, SW - 110, y0 + 35 + h), brand.DEEP_ROSE, align="center", line_gap=1.3)
+    fb = font(brand.FONT_BOLD, 34)
+    label = brand.BRAND_NAME
+    tw = text_width(label, fb)
+    _rounded(d, (SW - tw - 110, SH - 100, SW - 50, SH - 45), 28, brand.SUGAR + (230,))
+    d.text((SW - tw - 80, SH - 97), visual(label, fb), font=fb, fill=brand.DEEP_ROSE)
+    img.alpha_composite(layer)
+    return img.convert("RGB")
