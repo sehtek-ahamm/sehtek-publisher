@@ -96,6 +96,39 @@ def fake_words(text: str):
     return [(w, i * per, i * per + per * 0.9) for i, w in enumerate(words)]
 
 
+def _plain(word: str) -> str:
+    """Arabic word without diacritics, tatweel or punctuation, for matching."""
+    import re
+    word = re.sub(r"[\u064B-\u0652\u0670\u0640]", "", word)
+    word = re.sub(r"[^\w]", "", word)
+    return word.replace("أ", "ا").replace("إ", "ا").replace("آ", "ا").replace("ة", "ه").replace("ى", "ي")
+
+
+def scene_starts(scenes, words, main_len):
+    """Start time of each scene: on its "at" phrase if given, else evenly spaced."""
+    n = len(scenes)
+    starts = [main_len * i / n for i in range(n)]
+    plain = [_plain(w) for w, _, _ in words]
+    pos = 0
+    for i, scene in enumerate(scenes):
+        phrase = [_plain(w) for w in scene.get("at", "").split() if _plain(w)]
+        if i == 0:
+            starts[0] = 0.0
+            continue
+        if not phrase:
+            continue
+        for k in range(pos, len(plain) - len(phrase) + 1):
+            if plain[k:k + len(phrase)] == phrase:
+                starts[i] = max(words[k][1] - 0.15, starts[i - 1] + 1.0)
+                pos = k + 1
+                break
+        else:
+            print(f"  warning: scene {i + 1} phrase not found: {scene['at']}")
+    for i in range(1, n):  # keep order and at least 1 s per scene
+        starts[i] = max(starts[i], starts[i - 1] + 1.0)
+    return starts
+
+
 # --- reel ----------------------------------------------------------------------------
 
 def make_reel(job: dict, out_dir: Path, offline: bool):
@@ -104,10 +137,33 @@ def make_reel(job: dict, out_dir: Path, offline: bool):
     paid = work if offline else CACHE / job["slug"]
     paid.mkdir(parents=True, exist_ok=True)
 
-    # 1. Voice
+    # 1. Voice: our own recording(s) if the job lists them, else ElevenLabs text-to-speech
     voice = paid / "voice.mp3"
     words_file = paid / "words.json"
-    if offline:
+    recorded = [ROOT / f for f in job.get("voice_files", [])]
+    if recorded:
+        gap = float(job.get("voice_gap", 0.6))
+        parts = []
+        for k, f in enumerate(recorded):
+            if k:
+                parts += ["-f", "lavfi", "-t", f"{gap}", "-i", "anullsrc=r=44100:cl=mono"]
+            parts += ["-i", str(f)]
+        n_in = len(recorded) * 2 - 1
+        mix = "".join(f"[{k}:a]aresample=44100,aformat=channel_layouts=mono[a{k}];" for k in range(n_in))
+        mix += "".join(f"[a{k}]" for k in range(n_in)) + f"concat=n={n_in}:v=0:a=1[out]"
+        run(["ffmpeg", "-y", *parts, "-filter_complex", mix, "-map", "[out]", "-c:a", "libmp3lame", "-q:a", "2", str(voice)])
+        if offline:
+            words = fake_words(job["voiceover"])
+            scale = duration(voice) / (words[-1][2] + 0.4)
+            words = [(w, a * scale, b * scale) for w, a, b in words]
+        elif words_file.exists():
+            words = json.loads(words_file.read_text(encoding="utf-8"))
+            print("  voice: recorded, reusing cached timings")
+        else:
+            print("  voice: recorded, aligning words (ElevenLabs)...")
+            words = services.align_words(voice, job["voiceover"])
+            words_file.write_text(json.dumps(words, ensure_ascii=False), encoding="utf-8")
+    elif offline:
         words = fake_words(job["voiceover"])
         length = words[-1][2] + 0.4
         run(["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{length:.2f}",
@@ -136,14 +192,17 @@ def make_reel(job: dict, out_dir: Path, offline: bool):
         images.append(img_path)
 
     # 3. Scene clips with a smooth slow zoom (alternating in / out).
+    # A scene can start on a phrase of the voice-over ("at"); otherwise scenes share the time equally.
     # Clips overlap by XFADE seconds so each image melts into the next (no black flash).
     main_len = voice_len + 0.5
     n = len(images)
-    clip_len = (main_len + (n - 1) * XFADE) / n
-    frames = max(int(round(clip_len * FPS)), 2)
-    clips = []
+    starts = scene_starts(scenes, words, main_len)
+    lengths = [((starts[i + 1] if i + 1 < n else main_len) - starts[i]) + (XFADE if i + 1 < n else 0)
+               for i in range(n)]
+    clips, clip_frames = [], []
     for i, img in enumerate(images):
         clip = work / f"clip{i + 1}.mp4"
+        frames = max(int(round(lengths[i] * FPS)), 2)
         # zoom computed from the frame number, so it moves evenly without jitter
         zoom = (f"1+0.10*on/{frames}" if i % 2 == 0 else f"1.10-0.10*on/{frames}")
         vf = (f"crop='min(iw,ih*9/16)':'min(ih,iw*16/9)',scale=2160:3840,"
@@ -153,6 +212,7 @@ def make_reel(job: dict, out_dir: Path, offline: bool):
              "-frames:v", str(frames), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
              "-r", str(FPS), str(clip)])
         clips.append(clip)
+        clip_frames.append(frames)
 
     # 4. End card clip
     end_png = work / "endcard.png"
@@ -167,19 +227,18 @@ def make_reel(job: dict, out_dir: Path, offline: bool):
     inputs, chain = [], []
     for p in parts:
         inputs += ["-i", str(p)]
-    real_len = frames / FPS
-    offset, last = 0.0, "[0:v]"
+    offset, last, acc = 0.0, "[0:v]", clip_frames[0] / FPS
     for k in range(1, len(parts)):
-        offset += real_len - XFADE
-        if k == len(parts) - 1:
-            offset = (n * real_len - (n - 1) * XFADE) - XFADE
+        offset = acc - XFADE
         label = f"[x{k}]"
         chain.append(f"{last}[{k}:v]xfade=transition=fade:duration={XFADE}:offset={offset:.3f}{label}")
         last = label
+        if k < n:
+            acc = offset + clip_frames[k] / FPS
     base = work / "base.mp4"
     run(["ffmpeg", "-y", *inputs, "-filter_complex", ";".join(chain), "-map", last,
          "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", "-r", str(FPS), str(base)])
-    main_len = n * real_len - (n - 1) * XFADE
+    main_len = acc
     total = main_len + END_CARD_SECONDS
 
     # 6. Overlays: hook, subtitles, watermark
