@@ -1,0 +1,27 @@
+name: Transcribe a recording
+
+on:
+  workflow_dispatch:
+    inputs:
+      files:
+        description: "Audio files (glob), e.g. production/voice/inbox/*.mp3"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  transcribe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r production/requirements.txt
+      - env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          FILES: ${{ inputs.files }}
+        run: python production/transcribe.py "$FILES"
