@@ -107,3 +107,35 @@ def generate_image(prompt: str, out_path: Path, size: str = "1024x1536", style: 
         raise ServiceError(f"OpenAI image error {resp.status_code}: {resp.text[:500]}")
     raw = base64.b64decode(resp.json()["data"][0]["b64_json"])
     Image.open(io.BytesIO(raw)).convert("RGB").save(out_path, "JPEG", quality=92)
+
+
+# --- recorded voice (the user's own recording instead of text-to-speech) -------------------
+
+def align_words(audio: Path, text: str) -> list:
+    """Word timings for a recorded voice-over, matched to its script (ElevenLabs forced alignment)."""
+    with open(audio, "rb") as fh:
+        resp = requests.post(
+            "https://api.elevenlabs.io/v1/forced-alignment",
+            headers={"xi-api-key": _key("ELEVENLABS_API_KEY")},
+            files={"file": (audio.name, fh, "audio/mpeg")},
+            data={"text": text},
+            timeout=300,
+        )
+    if resp.status_code >= 400:
+        raise ServiceError(f"ElevenLabs alignment error {resp.status_code}: {resp.text[:500]}")
+    return [(w["text"].strip(), w["start"], w["end"]) for w in resp.json()["words"] if w["text"].strip()]
+
+
+def transcribe(audio: Path) -> str:
+    """Plain transcript of a recording (ElevenLabs speech-to-text)."""
+    with open(audio, "rb") as fh:
+        resp = requests.post(
+            "https://api.elevenlabs.io/v1/speech-to-text",
+            headers={"xi-api-key": _key("ELEVENLABS_API_KEY")},
+            files={"file": (audio.name, fh, "audio/mpeg")},
+            data={"model_id": "scribe_v1", "language_code": "ara"},
+            timeout=300,
+        )
+    if resp.status_code >= 400:
+        raise ServiceError(f"ElevenLabs speech-to-text error {resp.status_code}: {resp.text[:500]}")
+    return resp.json().get("text", "")
