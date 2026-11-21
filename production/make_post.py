@@ -306,7 +306,7 @@ def make_carousel(job: dict, out_dir: Path):
     for i, s in enumerate(slides):
         kind = s["kind"]
         if kind == "cover":
-            img = graphics.slide_cover(s["title"], s.get("subtitle", ""), job.get("pillar", ""))
+            img = graphics.slide_cover(s["title"], s.get("subtitle", ""), job.get("series") or job.get("pillar", ""))
         elif kind == "final":
             img = graphics.slide_final(s["title"])
         else:
