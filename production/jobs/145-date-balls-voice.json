@@ -1,0 +1,55 @@
+{
+  "bank_id": 145,
+  "type": "reel",
+  "slug": "date-balls-voice",
+  "pillar": "رضاعتي",
+  "hook": "بترضعي وبتجوعي كل شوي؟",
+  "voice_files": [
+    "production/voice/date-balls/1.mp3"
+  ],
+  "voiceover": "بترضعي وبتجوعي كل شوي؟ إنتِ مش لحالك! الرضاعة صحيح بتجوّع كتير… بس في سناك بيعطيكِ طاقة وإحساس بالشبع، بدون سكر مضاف، وبدون ما تكسبي وزن زيادة. بتحتاجي: كاسة تمر منزوع النوى، نص كاسة شوفان، ملعقتين طحينة، وملعقة بذور شيا. بتفرمي التمر، بتضيفي الشوفان والطحينة والشيا، وبتخلطيهم منيح. بتعملي كرات صغار، وإذا بدك بتغمسيهم بجوز الهند. بتحطيهم بعلبة بالبراد، وبيضلّوا معك أسبوع كامل. كرتين أو تلاتة بين الرضعات… وخلص، شبعتِ. جرّبتيها قبل؟ اكتبيلي بالتعليقات، ومنشني صاحبتك المرضعة اللي دايماً جوعانة!",
+  "scenes": [
+    {
+      "image_prompt": "A cosy nursing corner at night: armchair with a soft cream nursing pillow and a knitted baby blanket, a small side table with a plate of round date energy balls rolled in coconut and a glass of milk, warm lamp light"
+    },
+    {
+      "at": "الرضاعة صحيح",
+      "image_prompt": "Close-up of round date and oat energy balls, some rolled in shredded coconut, stacked on a dusty-pink ceramic plate, one ball cut in half showing the inside"
+    },
+    {
+      "at": "بتحتاجي",
+      "image_prompt": "Overhead flat lay of the ingredients in small bowls: soft pitted medjool dates, rolled oats, a jar of tahini with a spoon, and chia seeds, neatly arranged on a light wood board"
+    },
+    {
+      "at": "بتفرمي التمر",
+      "image_prompt": "Pitted dates inside a food processor bowl, chopped into a sticky paste, top view, a woman's hand holding the lid"
+    },
+    {
+      "at": "بتضيفي الشوفان",
+      "image_prompt": "A woman's hand pouring rolled oats into a food processor with date paste, a spoon of tahini and chia seeds already added, top view"
+    },
+    {
+      "at": "بتعملي كرات",
+      "image_prompt": "A woman's hands rolling a small date and oat ball between her palms over a cream plate with more balls on it, hands only"
+    },
+    {
+      "at": "وإذا بدك",
+      "image_prompt": "A woman's fingers rolling a date ball in a small bowl of shredded coconut, close-up, hands only"
+    },
+    {
+      "at": "بتحطيهم بعلبة",
+      "image_prompt": "A clear glass meal-prep container full of neat rows of date coconut balls on a fridge shelf, soft fridge light"
+    },
+    {
+      "at": "كرتين أو",
+      "image_prompt": "Two date coconut balls on a small plate next to a glass of milk on a bedside table, soft warm night lamp, baby monitor in the background"
+    },
+    {
+      "at": "جرّبتيها قبل",
+      "image_prompt": "A woman's hand picking one date coconut ball from a full plate, close-up, inviting, soft daylight"
+    }
+  ],
+  "end_text": "منشني صاحبتك المرضعة",
+  "caption": "بترضعي وبتجوعي كل شوي؟ إنتِ مش لحالك 🤎\nكرات التمر والشوفان: طاقة وشبع بدون سكر مضاف.\n\nجرّبتيها قبل؟ اكتبيلنا بالتعليقات 👇\nومنشني صاحبتك المرضعة اللي دايماً جوعانة 😄\n\n#صحتك_أهم #رضاعة_طبيعية #سناك_صحي #كرات_التمر #أمهات",
+  "publish_at": null
+}

@@ -1,0 +1,69 @@
+{
+  "bank_id": 174,
+  "type": "reel",
+  "slug": "oat-box",
+  "pillar": "رضاعتي",
+  "hook": "مرضعة ومشتهية إشي حلو؟",
+  "voice_files": [
+    "production/voice/oat-box/1.mp3",
+    "production/voice/oat-box/2.mp3"
+  ],
+  "voice_gap": 0.5,
+  "voiceover": "مرضعة ومشتهية إشي حلو؟ وبدك طاقة؟ ما يروح عليكِ هاد السناك! الرضاعة صحيح بتجوّع كتير… بس هالعلبة بتشبّعك لساعات، وبتعطيكِ طاقة وفيتامينات، ومحلّاة بالتمر والموز بس… بدون ولا ملعقة سكر، وبدون ما تكسبي وزن زيادة. خمس حبات تمر، بننقعهم بحليب سخن، وبنهرسهم. بعلبة تانية بنهرس موزة، وبنضيف تلات ملاعق شوفان، ومعلقة بذور شيا. بنضيف التمر مع الحليب، وبنخلط منيح. بنسكّر العلبة وبنحطها بالبراد للصبح. وقبل ما تاكلي، زيّنيها بشرايح موز، وبذور يقطين، وسمسم. الشوفان والشيا فيهم ألياف بتطوّل الشبع، والتمر والموز بيعطوكِ طاقة وفيتامينات… والبذور فيها معادن. سناك سريع، ومحلّى طبيعياً… جربيه واحكيلي بالتعليقات، واحفظي الفيديو، ومنشنيلي صاحبتك المرضعة!",
+  "scenes": [
+    {
+      "image_prompt": "Top view of a clear rectangular glass container filled with a creamy brown date-oat mixture, topped with neat rows of banana slices, green pumpkin seeds and sesame seeds, held in a woman's hand, soft daylight"
+    },
+    {
+      "at": "الرضاعة صحيح",
+      "image_prompt": "A woman's hand dipping a spoon into the date oat box, a cup of tea and a knitted baby blanket beside it on a cosy sofa"
+    },
+    {
+      "at": "خمس حبات",
+      "image_prompt": "Five soft medjool dates in a small white ceramic bowl on a woven rattan placemat, top view"
+    },
+    {
+      "at": "بننقعهم",
+      "image_prompt": "Hot milk being poured over five dates in a small white bowl, gentle steam rising, close-up"
+    },
+    {
+      "at": "وبنهرسهم",
+      "image_prompt": "A fork mashing softened dates in warm milk in a small white bowl, creamy texture, close-up, hands only"
+    },
+    {
+      "at": "بعلبة تانية",
+      "image_prompt": "A fork mashing a ripe banana inside a clear rectangular glass container, top view, hands only"
+    },
+    {
+      "at": "تلات ملاعق",
+      "image_prompt": "A spoon adding rolled oats onto mashed banana in a clear glass container, top view"
+    },
+    {
+      "at": "ومعلقة بذور",
+      "image_prompt": "A spoon sprinkling black chia seeds over oats and banana in a clear glass container, top view, close-up"
+    },
+    {
+      "at": "بنضيف التمر",
+      "image_prompt": "Pouring the creamy date and milk mixture from a white bowl into the glass container with oats and banana, then stirring with a spoon"
+    },
+    {
+      "at": "بنسكّر العلبة",
+      "image_prompt": "A closed clear glass container with a snap lid placed on a fridge shelf, soft evening light"
+    },
+    {
+      "at": "وقبل ما",
+      "image_prompt": "A woman's hands arranging banana slices in a row on top of the set date-oat mixture, with small bowls of pumpkin seeds and sesame nearby, morning light"
+    },
+    {
+      "at": "الشوفان والشيا",
+      "image_prompt": "Extreme close-up of a spoonful of creamy date oats with chia seeds, a banana slice and pumpkin seeds on top"
+    },
+    {
+      "at": "سناك سريع",
+      "image_prompt": "The finished date oat box with banana, pumpkin seeds and sesame next to a cup of coffee on a light wood table, morning sunlight"
+    }
+  ],
+  "end_text": "احفظيها لبكرة الصبح",
+  "caption": "مرضعة ومشتهية إشي حلو؟ هاي علبة الشوفان بالتمر والموز 🍌🤎\nبتشبّعك لساعات، ومحلّاة بالتمر والموز بس… بدون ولا ملعقة سكر.\n\nاحفظي الفيديو 📌 وجرّبيها الليلة للصبح.\nمنشني صاحبتك المرضعة 👇\n\n#صحتك_أهم #رضاعة_طبيعية #سناك_صحي #شوفان #أمهات",
+  "publish_at": null
+}
