@@ -1,0 +1,54 @@
+{
+  "style": "Photorealistic high-end editorial lifestyle photography for a premium Instagram page, vertical 2:3 frame. The same modern luxury home of an upper-middle-class family in every image: honed Calacatta marble with soft grey veining, warm white-oak cabinetry, brushed brass taps and handles, tall windows with sheer linen curtains, soft diffused morning daylight, calm neutral palette (cream, warm white, oak, brass) with subtle dusty-pink accents (#D4A5A5) in linen, ceramics and fresh flowers. Handmade speckled ceramic bowls, ribbed glassware, linen napkins. Shallow depth of field, clean composition, natural rich colour grading, crisp detail, luxury lifestyle magazine look. No text, no logos, no watermarks, no brand labels.",
+  "character": "",
+  "frames": [
+    {
+      "name": "char-a-apron",
+      "prompt": "Character reference, front view at a marble kitchen island: a woman shown only from the neck down (never her face or head), light-olive skin, slender hands with natural manicured nails, a thin gold bracelet on her right wrist, wearing a dusty-pink linen apron tied at the waist over a cream fine-knit top with sleeves pushed up, hands resting lightly on the counter, framed from shoulders to hips."
+    },
+    {
+      "name": "char-b-pregnant",
+      "prompt": "Character reference, three-quarter view at the marble island: a woman shown only from the neck down (never her face or head), light-olive skin, slender hands with natural manicured nails, a thin gold bracelet on her right wrist, visibly pregnant (about seven months) with a rounded belly, wearing the same dusty-pink linen apron loosely tied above the bump over a cream fine-knit top, one hand gently on her belly, framed from shoulders to hips."
+    },
+    {
+      "name": "char-c-postpartum",
+      "prompt": "Character reference on a cream linen sofa: a woman shown only from the neck down (never her face or head), light-olive skin, slender hands with natural manicured nails, a thin gold bracelet on her right wrist, wearing soft oatmeal loungewear (relaxed knit cardigan and wide trousers), holding a mug of warm tea in both hands, a knitted baby blanket beside her, framed from shoulders to knees, calm and cosy."
+    },
+    {
+      "name": "char-d-hands",
+      "prompt": "Character reference, close-up of her hands only: a woman shown only from the neck down (never her face or head), light-olive skin, slender hands with natural manicured nails, with the thin gold bracelet, holding a speckled ceramic bowl above the marble counter, the dusty-pink linen apron softly blurred behind."
+    },
+    {
+      "name": "loc-1-island-front",
+      "prompt": "Empty location plate: front-on view at counter height of the large marble kitchen island, the oak kitchen and brass tap softly blurred behind, a small vase of pink and white flowers at one end, a linen tea towel folded on the counter, clear empty space in the centre for cooking."
+    },
+    {
+      "name": "loc-2-cooktop",
+      "prompt": "Empty location plate: a sleek induction cooktop set into the marble counter with a brass pot rail and a white-oak shelf above holding ceramic jars, an enamel cream saucepan and a wooden spoon resting beside it, soft window light."
+    },
+    {
+      "name": "loc-3-window-prep",
+      "prompt": "Empty location plate: marble prep counter beside a tall window with sheer linen curtains, an oak cutting board, a ribbed glass jar of oats and a small bowl of lemons, morning sun creating a gentle glow, space for chopping and mixing."
+    },
+    {
+      "name": "loc-4-overhead",
+      "prompt": "Empty location plate, top-down overhead view of the honed Calacatta marble surface with a folded dusty-pink linen napkin and a wooden spoon at one corner, large clean area for flat-lay ingredient shots."
+    },
+    {
+      "name": "loc-5-oven-wall",
+      "prompt": "Empty location plate: built-in black oven set into white-oak tall cabinets with brushed brass handles, a marble counter in front with a cooling rack and oven mitt in dusty pink linen, warm soft light."
+    },
+    {
+      "name": "loc-6-dining-table",
+      "prompt": "Empty location plate: a white-oak dining table by large windows set for a healthy family breakfast with speckled ceramic plates, ribbed glasses of water, a linen runner, a bowl of fruit and a small vase of flowers, airy morning light."
+    },
+    {
+      "name": "loc-7-sofa-corner",
+      "prompt": "Empty location plate: cosy reading corner with a cream boucle armchair, a dusty-pink knitted blanket, a nursing pillow, and a small round oak side table holding a glass of water and a little plate of dates and nuts, soft warm lamp and window light."
+    },
+    {
+      "name": "loc-8-highchair",
+      "prompt": "Empty location plate: a modern natural-wood baby high chair with a cream cushion pulled up to the white-oak dining table, a silicone baby plate in dusty pink, a small spoon and a sippy cup, bright clean morning light."
+    }
+  ]
+}
