@@ -1,0 +1,10 @@
+{
+  "style": "Photorealistic premium food video, vertical 9:16, close-up, soft diffused natural window light from the side, no harsh shadows, light cream marble countertop, small terracotta bowls and a white ceramic mixing bowl, warm clean minimal home kitchen, shallow depth of field, slow smooth camera movement, only a woman's hands with natural nails when hands appear (no face), no text, no logos, no watermark.",
+  "clips": [
+    {
+      "name": "05-tahini",
+      "model": "kling-pro",
+      "prompt": "Smooth creamy beige tahini is poured in a slow silky ribbon from a small glass jar onto the seeds in the white bowl, close-up."
+    }
+  ]
+}

@@ -3,47 +3,47 @@
   "clips": [
     {
       "name": "01-title",
-      "model": "seedance",
+      "model": "kling-pro",
       "prompt": "A small glass jar filled with a smooth, glossy, caramel-brown spread of tahini, date molasses and seeds, a spoon resting in it, next to a cup of tea and the three small terracotta bowls of green pumpkin seeds, white sesame and tiny matte black angular nigella seeds (black cumin, not chia). Slow push-in."
     },
     {
       "name": "02-pumpkin",
-      "model": "seedance",
+      "model": "kling-pro",
       "prompt": "A woman's hand pours green pumpkin seeds from a small terracotta bowl into an empty white ceramic bowl, seeds tumbling gently, close-up."
     },
     {
       "name": "03-sesame",
-      "model": "seedance",
+      "model": "kling-pro",
       "prompt": "Toasted golden sesame seeds are poured from a small terracotta bowl into the white bowl that already holds green pumpkin seeds, close-up."
     },
     {
       "name": "04-nigella",
-      "model": "seedance",
+      "model": "kling-pro",
       "prompt": "A small teaspoon sprinkles tiny matte black angular nigella seeds (black cumin, not chia) over the pumpkin seeds and sesame in the white bowl, macro close-up."
     },
     {
       "name": "05-tahini",
-      "model": "seedance",
+      "model": "kling-pro",
       "prompt": "Smooth creamy beige tahini is poured in a slow silky ribbon from a small glass jar onto the seeds in the white bowl, close-up."
     },
     {
       "name": "06-molasses",
-      "model": "seedance",
+      "model": "kling-pro",
       "prompt": "Glossy dark date molasses is drizzled slowly from a spoon in a thin shiny stream over the tahini and seeds in the white bowl, macro close-up."
     },
     {
       "name": "07-mix",
-      "model": "seedance",
+      "model": "kling-pro",
       "prompt": "A spoon stirs the seeds, tahini and date molasses together in the white bowl into one smooth, glossy, evenly mixed spread, close-up."
     },
     {
       "name": "08-bread",
-      "model": "seedance",
+      "model": "kling-pro",
       "prompt": "A woman's hand spreads two spoons of the smooth glossy seed and tahini spread on a slice of whole-grain brown bread on a small plate, with apple slices beside it, close-up."
     },
     {
       "name": "09-final",
-      "model": "seedance",
+      "model": "kling-pro",
       "prompt": "A spoon slowly lifts a smooth, glossy, appetising spoonful of the tahini, date molasses and seed spread from the white bowl toward the camera, macro, soft bokeh."
     }
   ]
