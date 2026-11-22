@@ -1,0 +1,43 @@
+name: Save a run's files to a branch
+
+# Copies the files an earlier run uploaded (e.g. AI clips) into a branch, so they can be reviewed.
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Run ID that uploaded the files"
+        required: true
+        type: string
+      artifact:
+        description: "Artifact name"
+        default: "ai-clips"
+        type: string
+      branch:
+        description: "Branch to save them in"
+        default: "review-files"
+        type: string
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.artifact }}
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+          path: review/${{ inputs.run_id }}
+      - env:
+          BRANCH: ${{ inputs.branch }}
+        run: |
+          git config user.name "sehtek-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add -f review
+          git commit -q -m "Files from run ${{ inputs.run_id }}"
+          git push -f origin "$BRANCH"
