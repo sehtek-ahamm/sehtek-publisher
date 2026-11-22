@@ -20,6 +20,7 @@ if ":" in sec and sec != kid:
 if kid and sec and kid != sec:
     candidates.append(("ID + ':' + SECRET", f"{kid}:{sec}"))
 
+candidates.append(("CONTROL: deliberately wrong key", "wrong-id:wrong-secret"))
 fake = "00000000-0000-0000-0000-000000000000"
 for label, cred in candidates:
     for host in ("https://platform.higgsfield.ai", "https://api.higgsfield.ai"):
