@@ -31,10 +31,14 @@ jobs:
           SPEC: ${{ inputs.spec }}
         run: |
           NAME=$(basename "$SPEC" .json)
+          set +e
           python production/keyframes.py "$SPEC" "review-keyframes/$NAME"
+          STATUS=$?
+          set -e
           git config user.name "sehtek-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B "review-keyframes"
           git add -f review-keyframes
           git commit -q -m "Keyframes: $NAME"
           git push -f origin review-keyframes
+          exit $STATUS
