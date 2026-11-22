@@ -1,0 +1,38 @@
+{
+  "style": "Photorealistic high-end editorial food and lifestyle photography for a premium Instagram page, vertical 2:3 frame. Modern luxury home kitchen for an upper-middle-class family: large honed Calacatta marble island with soft grey veining, warm white-oak cabinetry, brushed brass tap and handles, tall windows with sheer linen curtains, soft diffused morning daylight, calm neutral palette (cream, warm white, oak, brass) with subtle dusty-pink accents (#D4A5A5) in linen and ceramics. Styled props: handmade ceramic bowls, ribbed glass, linen napkins, a small vase of fresh flowers. Shallow depth of field, clean composition, rich but natural colour grading, crisp detail, luxury lifestyle magazine look. No text, no logos, no watermarks, no brand labels.",
+  "character": "When a person appears, show only a woman from the neck down (never her face or head): she wears a dusty-pink linen apron over a cream fine-knit top with sleeves pushed up, a thin gold bracelet, natural manicured nails; graceful, calm hand movements.",
+  "frames": [
+    {
+      "name": "01-hero-island",
+      "prompt": "Front-on view at counter height: the woman stands behind the marble island, framed from her shoulders down to the counter, with ripe bananas, a glass jar of rolled oats, eggs in a ceramic bowl and a small dish of cinnamon neatly arranged in front of her; morning light from the window behind."
+    },
+    {
+      "name": "02-ingredients-overhead",
+      "prompt": "Overhead flat lay on the marble: ripe bananas, rolled oats in a ribbed glass bowl, three brown eggs in a small ceramic dish, cinnamon sticks and ground cinnamon, a wooden spoon and a folded dusty-pink linen napkin, perfectly styled with negative space."
+    },
+    {
+      "name": "03-mash-bananas",
+      "prompt": "Close-up front-on: her hands mash ripe bananas with a fork in a clear glass mixing bowl on the marble island, soft focus kitchen behind."
+    },
+    {
+      "name": "04-crack-egg",
+      "prompt": "Macro close-up: her hand cracks a brown egg over the glass bowl of mashed banana, the yolk falling, crisp detail, soft window light."
+    },
+    {
+      "name": "05-pour-oats",
+      "prompt": "Three-quarter angle: her hand pours rolled oats from a glass jar into the mixing bowl, oats in mid-air, shallow depth of field."
+    },
+    {
+      "name": "06-fill-tin",
+      "prompt": "Three-quarter angle: her hands spoon thick banana-oat batter into a dark muffin tin lined with natural parchment cups on the marble."
+    },
+    {
+      "name": "07-oven",
+      "prompt": "Front view of a sleek built-in oven with the door slightly open, golden banana oat muffins inside, warm glow, brass oven handle, kitchen softly lit."
+    },
+    {
+      "name": "08-final-hero",
+      "prompt": "Final hero shot: golden banana oat muffins on a ceramic cake stand on the marble island, one muffin split open showing a soft crumb, a cup of coffee and a linen napkin beside it, soft morning light, inviting and premium."
+    }
+  ]
+}
