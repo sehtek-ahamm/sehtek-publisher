@@ -11,6 +11,10 @@ on:
         description: "Safety cap: most clips this run may order"
         default: "6"
         type: string
+      max_usd:
+        description: "Spending cap for this run in USD (list price)"
+        default: "5"
+        type: string
 
 permissions:
   contents: read
@@ -29,6 +33,7 @@ jobs:
           HF_API_KEY_ID: ${{ secrets.HF_API_KEY_ID }}
           HF_API_KEY_SECRET: ${{ secrets.HF_API_KEY_SECRET }}
           HF_MAX_CLIPS: ${{ inputs.max_clips }}
+          HF_MAX_USD: ${{ inputs.max_usd }}
           SPEC: ${{ inputs.spec }}
         run: python production/higgsfield.py "$SPEC" ai-clips
       - uses: actions/upload-artifact@v4
