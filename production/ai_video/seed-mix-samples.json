@@ -1,0 +1,25 @@
+{
+  "style": "Photorealistic vertical 9:16 food video, close-up, soft natural window light from the side, no harsh shadows, light cream marble countertop, warm and clean home kitchen, shallow depth of field, slow smooth camera, a woman's hands only (no face), no text, no logos, no watermark.",
+  "clips": [
+    {
+      "name": "seedance-pour",
+      "model": "seedance",
+      "prompt": "A white ceramic bowl filled with green pumpkin seeds, sesame seeds and black seeds (nigella). Creamy beige tahini is poured slowly in a thick ribbon from a small glass jar onto the seeds, then glossy dark date molasses is drizzled on top."
+    },
+    {
+      "name": "seedance-mix",
+      "model": "seedance",
+      "prompt": "Three small terracotta bowls with green pumpkin seeds, white sesame seeds and black seeds stand beside a white bowl of glossy seed, tahini and date molasses mix. A spoon stirs the mix and slowly lifts a sticky spoonful toward the camera."
+    },
+    {
+      "name": "kling-pour",
+      "model": "kling",
+      "prompt": "A white ceramic bowl filled with green pumpkin seeds, sesame seeds and black seeds (nigella). Creamy beige tahini is poured slowly in a thick ribbon from a small glass jar onto the seeds, then glossy dark date molasses is drizzled on top."
+    },
+    {
+      "name": "kling-mix",
+      "model": "kling",
+      "prompt": "Three small terracotta bowls with green pumpkin seeds, white sesame seeds and black seeds stand beside a white bowl of glossy seed, tahini and date molasses mix. A spoon stirs the mix and slowly lifts a sticky spoonful toward the camera."
+    }
+  ]
+}

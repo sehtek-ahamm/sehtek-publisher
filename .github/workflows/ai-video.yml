@@ -1,0 +1,39 @@
+name: AI video clips (Higgsfield)
+
+on:
+  workflow_dispatch:
+    inputs:
+      spec:
+        description: "Clip list, e.g. production/ai_video/seed-mix-samples.json"
+        required: true
+        type: string
+      max_clips:
+        description: "Safety cap: most clips this run may order"
+        default: "6"
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  clips:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests
+      - env:
+          HF_API_KEY_ID: ${{ secrets.HF_API_KEY_ID }}
+          HF_API_KEY_SECRET: ${{ secrets.HF_API_KEY_SECRET }}
+          HF_MAX_CLIPS: ${{ inputs.max_clips }}
+          SPEC: ${{ inputs.spec }}
+        run: python production/higgsfield.py "$SPEC" ai-clips
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ai-clips
+          path: ai-clips/
+          if-no-files-found: warn
