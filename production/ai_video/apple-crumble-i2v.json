@@ -1,0 +1,101 @@
+{
+  "style": "Photorealistic, smooth natural motion, stable camera, no face visible, keep everything as in the image.",
+  "clips": [
+    {
+      "name": "01-hook-spoon",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/01-hook-spoon.jpg",
+      "prompt": "Her hand slowly lifts a spoonful of warm apple crumble toward the camera, gentle steam rising, subtle push-in."
+    },
+    {
+      "name": "02-island-apples",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/02-island-apples.jpg",
+      "prompt": "She picks up an apple from the marble island and turns it gently in her hand, calm natural movement."
+    },
+    {
+      "name": "03-ingredients-overhead",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/03-ingredients-overhead.jpg",
+      "prompt": "Very slow overhead camera drift across the styled ingredients, soft morning light shifting slightly."
+    },
+    {
+      "name": "04-peel-apple",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/04-peel-apple.jpg",
+      "prompt": "Her hands peel the apple with the small knife, the peel curling and falling onto the board."
+    },
+    {
+      "name": "05-dice-apple",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/05-dice-apple.jpg",
+      "prompt": "Her hands dice the apple into small cubes with steady knife strokes on the oak board."
+    },
+    {
+      "name": "06-apples-in-pan",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/06-apples-in-pan.jpg",
+      "prompt": "She tips the apple cubes from the board into the pan, cubes tumbling in gently."
+    },
+    {
+      "name": "07-cinnamon",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/07-cinnamon.jpg",
+      "prompt": "Her fingers sprinkle cinnamon over the apples, fine dust drifting down in the light."
+    },
+    {
+      "name": "08-honey",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/08-honey.jpg",
+      "prompt": "Golden honey flows slowly from the wooden dipper in a glossy ribbon onto the apple cubes."
+    },
+    {
+      "name": "09-apples-golden",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/09-apples-golden.jpg",
+      "prompt": "The apple cubes gently simmer and glisten, steam rising slowly, subtle push-in."
+    },
+    {
+      "name": "10-toast-oats",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/10-toast-oats.jpg",
+      "prompt": "Her hand stirs the oats with the wooden spoon, butter melting, oats turning golden."
+    },
+    {
+      "name": "11-oats-plate",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/11-oats-plate.jpg",
+      "prompt": "Her hands set the plate of golden oat crunch down on the marble, gentle settle, soft light."
+    },
+    {
+      "name": "12-vanilla-sauce",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/12-vanilla-sauce.jpg",
+      "prompt": "She stirs the yogurt and vanilla in smooth slow circles until glossy."
+    },
+    {
+      "name": "13-bowls",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/13-bowls.jpg",
+      "prompt": "Her hands spoon the warm cinnamon apples into the bowls, a glossy spoonful landing softly."
+    },
+    {
+      "name": "14-sauce-on",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/14-sauce-on.jpg",
+      "prompt": "She spoons a soft swirl of white vanilla sauce over the warm apples."
+    },
+    {
+      "name": "15-crunch-on",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/15-crunch-on.jpg",
+      "prompt": "Her fingers sprinkle golden oat crunch over the bowl, oats falling in slow motion."
+    },
+    {
+      "name": "16-final-table",
+      "model": "kling-pro-i2v",
+      "image_url": "https://sehtek-ahamm.github.io/sehtek-publisher/ai-keyframes/apple-crumble/16-final-table.jpg",
+      "prompt": "She places the spoon beside the bowl; gentle steam, slow camera push-in on the finished breakfast."
+    }
+  ]
+}

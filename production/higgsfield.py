@@ -61,8 +61,11 @@ def wait(job: dict, timeout: int = 900) -> dict:
     raise TimeoutError(f"Timed out waiting for {job.get('request_id')}")
 
 
-def text_to_video(model: str, prompt: str, out: Path, extra: dict, usd_per_sec: float = 0.0) -> Path:
+def text_to_video(model: str, prompt: str, out: Path, extra: dict, usd_per_sec: float = 0.0,
+                  image_url: str = None) -> Path:
     body = {"prompt": prompt, **extra}
+    if image_url:
+        body["image_url"] = image_url
     job = submit(model, body, usd_per_sec)
     print(f"  {model}: queued {job.get('request_id')}")
     res = wait(job)
@@ -82,6 +85,8 @@ MODELS = {
               {"duration": 5, "aspect_ratio": "9:16", "sound": "off"}, 0.0714),
     "kling-pro": ("kling-video/v3.0/pro/text-to-video",
                   {"duration": 5, "aspect_ratio": "9:16", "sound": "off"}, 0.0962),
+    "kling-pro-i2v": ("kling-video/v3.0/pro/image-to-video",
+                      {"duration": 5, "sound": "off"}, 0.0962),
 }
 
 if __name__ == "__main__":
@@ -92,7 +97,8 @@ if __name__ == "__main__":
     for clip in spec["clips"]:
         model, extra, price = MODELS[clip["model"]]
         try:
-            text_to_video(model, clip["prompt"] + " " + spec.get("style", ""), out_dir / f"{clip['name']}.mp4", extra, price)
+            text_to_video(model, clip["prompt"] + " " + spec.get("style", ""), out_dir / f"{clip['name']}.mp4", extra, price,
+                          clip.get("image_url"))
         except Exception as e:  # noqa: BLE001
             errors += 1
             print(f"  FAILED {clip['name']}: {e}")
