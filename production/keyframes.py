@@ -23,7 +23,8 @@ for f in spec["frames"]:
         continue
     print(f"  {f['name']}: generating")
     try:
-        refs = [Path(__file__).resolve().parent / "brand-kit" / f"{r}.jpg" for r in f.get("refs", [])]
+        root = Path(__file__).resolve().parent
+        refs = [(root.parent / r) if "/" in r else (root / "brand-kit" / f"{r}.jpg") for r in f.get("refs", [])]
         if refs:
             services.generate_image_with_refs(f["prompt"], target, refs, style=style)
         else:

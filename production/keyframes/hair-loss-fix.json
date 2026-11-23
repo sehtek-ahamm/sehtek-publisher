@@ -1,0 +1,14 @@
+{
+ "style": "Soft natural window light, overhead or 45-degree angle, light wood or cream marble surface, cream linen and dusty-pink props, shallow depth of field, calm, clean, minimal, warm editorial food photography. No faces, no people except hands, no text, no letters, no logos, no watermarks.",
+ "character": "",
+ "frames": [
+  {
+   "name": "09-spoon-jar",
+   "refs": [
+    "production/keyframes/hair-loss-refs/10-jar-final.jpg",
+    "production/keyframes/hair-loss-refs/08-mix-jar.jpg"
+   ],
+   "prompt": "Close-up at a 45-degree angle: a woman's hand takes one heaped teaspoon of the seed mix straight out of the same glass jar shown in the reference image (the jar filled with the hair mix: whole pumpkin seeds, walnut pieces, black raisins, chopped dried figs, nigella and sesame, glossy with olive oil and honey). The spoon is lifted just above the open jar. Only the jar, the spoon and her hand; no bowl, no yogurt, no oats. Cream marble surface, cream linen and a small dusty-pink vase, soft window light. Absolutely no face visible; hand and wrist only."
+  }
+ ]
+}
