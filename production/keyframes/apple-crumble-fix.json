@@ -1,0 +1,33 @@
+{
+  "style": "Photorealistic high-end editorial lifestyle photography for a premium Instagram page, vertical 2:3 frame. The same modern luxury home of an upper-middle-class family in every image: honed Calacatta marble with soft grey veining, warm white-oak cabinetry, brushed brass taps and handles, tall windows with sheer linen curtains, soft diffused morning daylight, calm neutral palette (cream, warm white, oak, brass) with subtle dusty-pink accents (#D4A5A5) in linen, ceramics and fresh flowers. Handmade speckled ceramic bowls, ribbed glassware, linen napkins. Shallow depth of field, clean composition, natural rich colour grading, crisp detail, luxury lifestyle magazine look. No text, no logos, no watermarks, no brand labels.",
+  "character": "",
+  "frames": [
+    {
+      "name": "08-honey",
+      "refs": [
+        "char-d-hands",
+        "char-a-apron",
+        "loc-2-cooktop"
+      ],
+      "prompt": "Macro: natural golden honey drizzling from a wooden honey dipper in a thin glossy ribbon over small, even apple CUBES (diced, about 1.5 cm) with cinnamon in the cream enamel pan; the apples are cubes, not slices or wedges."
+    },
+    {
+      "name": "11-oats-plate",
+      "refs": [
+        "char-a-apron",
+        "char-d-hands",
+        "loc-1-island-front"
+      ],
+      "prompt": "Golden toasted oat crunch spread on a small speckled ceramic plate on the marble island; her hands in the dusty-pink apron set the plate down; camera at counter height cropped at her chest. Strictly frame from the shoulders down: absolutely no face, no chin, no hair visible. She wears the same dusty-pink linen apron over the cream knit top, exactly like the reference."
+    },
+    {
+      "name": "16-final-table",
+      "refs": [
+        "char-a-apron",
+        "char-d-hands",
+        "loc-6-dining-table"
+      ],
+      "prompt": "Final hero shot: two speckled blue-green bowls of cinnamon apple crumble (small apple cubes, white vanilla yogurt sauce, golden oat crunch) on the white-oak breakfast table with a cup of coffee, a small jar of honey and a linen napkin; her hands in the dusty-pink apron place a spoon beside a bowl, cropped at her chest, warm morning light. Strictly frame from the shoulders down: absolutely no face, no chin, no hair visible. She wears the same dusty-pink linen apron over the cream knit top, exactly like the reference."
+    }
+  ]
+}
