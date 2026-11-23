@@ -1,83 +1,56 @@
 {
-  "style": "Photorealistic high-end editorial lifestyle photography for a premium Instagram page, vertical 2:3 frame. The same modern luxury home of an upper-middle-class family in every image: honed Calacatta marble with soft grey veining, warm white-oak cabinetry, brushed brass taps and handles, tall windows with sheer linen curtains, soft diffused morning daylight, calm neutral palette (cream, warm white, oak, brass) with subtle dusty-pink accents (#D4A5A5) in linen, ceramics and fresh flowers. Handmade speckled ceramic bowls, ribbed glassware, linen napkins. Shallow depth of field, clean composition, natural rich colour grading, crisp detail, luxury lifestyle magazine look. No text, no logos, no watermarks, no brand labels.",
+  "style": "Soft natural window light, overhead or 45-degree angle, light wood or cream marble surface, cream linen and dusty-pink props, shallow depth of field, calm, clean, minimal, warm editorial food photography. No faces, no people except hands, no text, no letters, no logos, no watermarks.",
   "character": "",
   "frames": [
     {
       "name": "01-brush",
-      "refs": [
-        "char-d-hands",
-        "loc-3-window-prep"
-      ],
+      "refs": [],
       "prompt": "Close-up of her hands holding a wooden hairbrush with strands of shed dark hair caught in the bristles, soft window light, gentle and calm mood. Absolutely no face, chin or hair of the mother visible; frame from the shoulders down."
     },
     {
       "name": "02-sofa",
-      "refs": [
-        "char-c-postpartum",
-        "loc-7-sofa-corner"
-      ],
-      "prompt": "The mother in soft oatmeal loungewear sits in the cream boucle armchair holding a warm mug, a sleeping newborn wrapped in a dusty-pink knitted blanket beside her on the nursing pillow, calm and reassuring. Absolutely no face, chin or hair of the mother visible; frame from the shoulders down."
+      "refs": [],
+      "prompt": "A mother in soft loungewear sits in a cosy armchair holding a warm mug, a sleeping newborn wrapped in a dusty-pink knitted blanket beside her on the nursing pillow, calm and reassuring. Absolutely no face, chin or hair of the mother visible; frame from the shoulders down."
     },
     {
       "name": "03-calendar",
-      "refs": [
-        "loc-6-dining-table"
-      ],
-      "prompt": "A small linen-bound desk calendar on the white-oak table open to month four with a soft dusty-pink circle drawn on it, a cup of tea and a sprig of flowers beside it, no readable words or numbers."
+      "refs": [],
+      "prompt": "A small linen-bound desk calendar on a wooden table open to month four with a soft dusty-pink circle drawn on it, a cup of tea and a sprig of flowers beside it, no readable words or numbers."
     },
     {
       "name": "04-baby-hand",
-      "refs": [
-        "char-c-postpartum"
-      ],
-      "prompt": "Close-up of the mother's hand gently holding her newborn's tiny hand on a cream knitted blanket, warm soft light, tender moment. Absolutely no face, chin or hair of the mother visible; frame from the shoulders down."
+      "refs": [],
+      "prompt": "Close-up of a mother's hand gently holding her newborn's tiny hand on a cream knitted blanket, warm soft light, tender moment. Absolutely no face, chin or hair of the mother visible; frame from the shoulders down."
     },
     {
       "name": "05-lab-check",
-      "refs": [
-        "char-c-postpartum",
-        "loc-6-dining-table"
-      ],
-      "prompt": "On the white-oak table: a blank medical check-up form on a clipboard with a pen, a phone, and a cup of tea; her hand rests on the form, calm morning light, no readable text. Absolutely no face, chin or hair of the mother visible; frame from the shoulders down."
+      "refs": [],
+      "prompt": "On a wooden table: a blank medical check-up form on a clipboard with a pen, a phone, and a cup of tea; her hand rests on the form, calm morning light, no readable text. Absolutely no face, chin or hair of the mother visible; frame from the shoulders down."
     },
     {
       "name": "06-ingredients",
-      "refs": [
-        "loc-4-overhead"
-      ],
-      "prompt": "Overhead flat lay on marble of small speckled ceramic bowls: golden flaxseeds, black chia seeds, green pumpkin seeds, walnuts, black nigella seeds, sesame seeds, black raisins and dried figs, plus a small bottle of olive oil and a jar of honey, beautifully styled."
+      "refs": [],
+      "prompt": "Overhead flat lay on a light kitchen surface of small speckled ceramic bowls: golden flaxseeds, black chia seeds, green pumpkin seeds, walnuts, black nigella seeds, sesame seeds, black raisins and dried figs, plus a small bottle of olive oil and a jar of honey, beautifully styled."
     },
     {
       "name": "07-grind",
-      "refs": [
-        "char-d-hands",
-        "loc-3-window-prep"
-      ],
-      "prompt": "Her hands pour only golden flaxseeds and black chia seeds into a small spice grinder on the marble counter by the window; beside it small bowls of whole pumpkin seeds, walnuts, sesame, nigella seeds, black raisins and dried figs wait, close-up."
+      "refs": [],
+      "prompt": "Her hands pour only golden flaxseeds and black chia seeds into a small spice grinder on the kitchen counter by the window; beside it small bowls of whole pumpkin seeds, walnuts, sesame, nigella seeds, black raisins and dried figs wait, close-up."
     },
     {
       "name": "08-mix-jar",
-      "refs": [
-        "char-d-hands",
-        "loc-1-island-front"
-      ],
-      "prompt": "Her hand drizzles golden honey and a little olive oil into a glass bowl where ground flax and chia are mixed with WHOLE pumpkin seeds, walnut pieces, sesame, nigella seeds, black raisins and chopped dried figs on the marble island, a spoon beside it."
+      "refs": [],
+      "prompt": "Her hand drizzles golden honey and a little olive oil into a glass bowl where ground flax and chia are mixed with WHOLE pumpkin seeds, walnut pieces, sesame, nigella seeds, black raisins and chopped dried figs on the kitchen counter, a spoon beside it."
     },
     {
       "name": "09-spoon-yogurt",
-      "refs": [
-        "char-d-hands",
-        "loc-6-dining-table"
-      ],
-      "prompt": "Close-up: her hand adds one spoonful of the chunky mix of seeds, walnuts, raisins and figs onto a bowl of yogurt with oats on the breakfast table, morning light."
+      "refs": [],
+      "prompt": "Close-up: her hand adds one spoonful of the chunky mix of seeds, walnuts, raisins and figs onto a bowl of yogurt with oats on a breakfast table, morning light."
     },
     {
       "name": "10-jar-final",
-      "refs": [
-        "char-c-postpartum",
-        "loc-7-sofa-corner"
-      ],
-      "prompt": "The mother in oatmeal loungewear holds the glass jar of the chunky mix of seeds, walnuts, raisins and figs with a small spoon in it, sitting in the cosy armchair, warm evening lamp light, peaceful. Absolutely no face, chin or hair of the mother visible; frame from the shoulders down."
+      "refs": [],
+      "prompt": "A mother in soft loungewear holds the glass jar of the chunky mix of seeds, walnuts, raisins and figs with a small spoon in it, sitting in a cosy armchair, warm evening lamp light, peaceful. Absolutely no face, chin or hair of the mother visible; frame from the shoulders down."
     }
   ]
 }
