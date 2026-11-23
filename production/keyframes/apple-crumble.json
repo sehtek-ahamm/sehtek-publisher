@@ -1,0 +1,130 @@
+{
+  "style": "Photorealistic high-end editorial lifestyle photography for a premium Instagram page, vertical 2:3 frame. The same modern luxury home of an upper-middle-class family in every image: honed Calacatta marble with soft grey veining, warm white-oak cabinetry, brushed brass taps and handles, tall windows with sheer linen curtains, soft diffused morning daylight, calm neutral palette (cream, warm white, oak, brass) with subtle dusty-pink accents (#D4A5A5) in linen, ceramics and fresh flowers. Handmade speckled ceramic bowls, ribbed glassware, linen napkins. Shallow depth of field, clean composition, natural rich colour grading, crisp detail, luxury lifestyle magazine look. No text, no logos, no watermarks, no brand labels.",
+  "character": "",
+  "frames": [
+    {
+      "name": "01-hook-spoon",
+      "refs": [
+        "loc-6-dining-table",
+        "char-d-hands"
+      ],
+      "prompt": "Close-up of a speckled blue-green ceramic bowl of warm cinnamon apple crumble on the breakfast table: soft golden diced apples, a swirl of white vanilla Greek-yogurt sauce, golden toasted oats on top; her hand lifts a spoonful toward the camera, gentle steam, morning light."
+    },
+    {
+      "name": "02-island-apples",
+      "refs": [
+        "char-a-apron",
+        "loc-1-island-front"
+      ],
+      "prompt": "Front-on at counter height: the woman stands behind the marble island, framed shoulders to counter, two red-and-green apples, a small glass jar of golden honey and a ceramic bowl in front of her; she reaches for an apple."
+    },
+    {
+      "name": "03-ingredients-overhead",
+      "refs": [
+        "loc-4-overhead"
+      ],
+      "prompt": "Overhead flat lay on the marble: two whole apples, a small dish of ground cinnamon, a glass jar of natural golden honey with a wooden dipper, rolled oats in a ribbed glass bowl, a small knob of butter, a bowl of thick Greek yogurt, a tiny bottle of vanilla extract and half a lemon, styled with negative space and a dusty-pink linen napkin."
+    },
+    {
+      "name": "04-peel-apple",
+      "refs": [
+        "char-d-hands",
+        "loc-3-window-prep"
+      ],
+      "prompt": "Close-up of her hands peeling an apple with a small paring knife, a long curl of peel falling onto the oak cutting board, window light."
+    },
+    {
+      "name": "05-dice-apple",
+      "refs": [
+        "char-d-hands",
+        "loc-3-window-prep"
+      ],
+      "prompt": "Close-up of her hands dicing a peeled apple into small even cubes on the oak cutting board with a chef's knife, crisp detail."
+    },
+    {
+      "name": "06-apples-in-pan",
+      "refs": [
+        "char-d-hands",
+        "loc-2-cooktop"
+      ],
+      "prompt": "Her hands tip diced apple cubes from the oak board into a cream enamel frying pan on the induction cooktop, a splash of water and a squeeze of lemon already in the pan."
+    },
+    {
+      "name": "07-cinnamon",
+      "refs": [
+        "char-d-hands",
+        "loc-2-cooktop"
+      ],
+      "prompt": "Macro: her fingers sprinkle ground cinnamon over the diced apples in the cream enamel pan, cinnamon dust in the air, soft light."
+    },
+    {
+      "name": "08-honey",
+      "refs": [
+        "char-d-hands",
+        "loc-2-cooktop"
+      ],
+      "prompt": "Macro: natural golden honey drizzling from a wooden honey dipper in a thin glossy ribbon over the cinnamon apples in the pan."
+    },
+    {
+      "name": "09-apples-golden",
+      "refs": [
+        "loc-2-cooktop"
+      ],
+      "prompt": "Close-up of the apple cubes in the cream enamel pan, now soft, glossy and turning golden with cinnamon, gentle steam rising, lid resting beside the pan."
+    },
+    {
+      "name": "10-toast-oats",
+      "refs": [
+        "char-d-hands",
+        "loc-2-cooktop"
+      ],
+      "prompt": "Her hand stirs rolled oats with a small melting knob of butter in a second small pan with a wooden spoon, the oats turning golden."
+    },
+    {
+      "name": "11-oats-plate",
+      "refs": [
+        "loc-1-island-front"
+      ],
+      "prompt": "Golden toasted oat crunch spread on a small speckled ceramic plate on the marble island, crisp texture, soft window light."
+    },
+    {
+      "name": "12-vanilla-sauce",
+      "refs": [
+        "char-d-hands",
+        "loc-1-island-front"
+      ],
+      "prompt": "Her hand stirs thick white Greek yogurt with a few drops of vanilla into a smooth glossy sauce in a speckled ceramic bowl with a small spoon, on the marble island."
+    },
+    {
+      "name": "13-bowls",
+      "refs": [
+        "char-d-hands",
+        "loc-1-island-front"
+      ],
+      "prompt": "Her hands spoon the warm golden cinnamon apples into two speckled blue-green ceramic bowls on the marble island."
+    },
+    {
+      "name": "14-sauce-on",
+      "refs": [
+        "char-d-hands",
+        "loc-1-island-front"
+      ],
+      "prompt": "Her hand spoons a swirl of white vanilla yogurt sauce onto the warm cinnamon apples in the blue-green bowl, close-up."
+    },
+    {
+      "name": "15-crunch-on",
+      "refs": [
+        "char-d-hands",
+        "loc-1-island-front"
+      ],
+      "prompt": "Her fingers sprinkle golden toasted oat crunch over the vanilla sauce and apples in the bowl, oats falling mid-air, macro."
+    },
+    {
+      "name": "16-final-table",
+      "refs": [
+        "loc-6-dining-table"
+      ],
+      "prompt": "Final hero shot: two speckled blue-green bowls of cinnamon apple crumble with vanilla yogurt sauce and golden oat crunch on the white-oak breakfast table, a cup of coffee, a small jar of honey and a linen napkin beside them, warm inviting morning light."
+    }
+  ]
+}

@@ -109,6 +109,37 @@ def generate_image(prompt: str, out_path: Path, size: str = "1024x1536", style: 
     Image.open(io.BytesIO(raw)).convert("RGB").save(out_path, "JPEG", quality=92)
 
 
+def generate_image_with_refs(prompt: str, out_path: Path, refs: list, size: str = "1024x1536", style: str = None):
+    """Generate one image that matches reference images (same character, kitchen, props).
+
+    Uses OpenAI image edits with the references as input images.
+    """
+    files = [("image[]", (Path(r).name, open(r, "rb"), "image/jpeg")) for r in refs]
+    try:
+        resp = requests.post(
+            "https://api.openai.com/v1/images/edits",
+            headers={"Authorization": f"Bearer {_key('OPENAI_API_KEY')}"},
+            data={
+                "model": os.environ.get("OPENAI_IMAGE_MODEL", "gpt-image-2"),
+                "prompt": (f"{prompt}. Keep exactly the same woman (neck down, same apron, top, bracelet and hands), "
+                           f"the same kitchen, materials and props as in the reference images. "
+                           f"{style or brand.IMAGE_STYLE}"),
+                "size": size,
+                "quality": os.environ.get("OPENAI_IMAGE_QUALITY", "medium"),
+                "n": "1",
+            },
+            files=files,
+            timeout=400,
+        )
+    finally:
+        for _, (_, fh, _) in files:
+            fh.close()
+    if resp.status_code >= 400:
+        raise ServiceError(f"OpenAI image error {resp.status_code}: {resp.text[:500]}")
+    raw = base64.b64decode(resp.json()["data"][0]["b64_json"])
+    Image.open(io.BytesIO(raw)).convert("RGB").save(out_path, "JPEG", quality=92)
+
+
 # --- recorded voice (the user's own recording instead of text-to-speech) -------------------
 
 def align_words(audio: Path, text: str) -> list:
