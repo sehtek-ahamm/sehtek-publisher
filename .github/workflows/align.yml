@@ -1,0 +1,40 @@
+name: Align a voice recording
+
+on:
+  workflow_dispatch:
+    inputs:
+      audio:
+        description: "Audio file, e.g. production/voice/apple-crumble/1.mp3"
+        required: true
+        type: string
+      text:
+        description: "Script text file"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  align:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r production/requirements.txt
+      - env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          AUDIO: ${{ inputs.audio }}
+          TEXT: ${{ inputs.text }}
+        run: |
+          OUT="review-align/$(basename "$(dirname "$AUDIO")").json"
+          python production/align.py "$AUDIO" "$TEXT" "$OUT"
+          git config user.name "sehtek-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B review-align
+          git add -f review-align
+          git commit -q -m "Alignment: $OUT"
+          git push -f origin review-align
