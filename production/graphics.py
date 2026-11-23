@@ -1,6 +1,6 @@
 """Brand graphics: reel overlays, end card and carousel slides."""
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 
 import brand
 from text_render import block_height, draw_block, font, text_width, visual
@@ -51,9 +51,17 @@ def subtitle_overlay(text: str) -> Image.Image:
 def watermark_overlay() -> Image.Image:
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
-    logo = _logo_or_name(110)
+    logo = _logo_or_name(112)
     if logo:
-        img.alpha_composite(logo, (W - logo.width - 50, H - logo.height - 230))
+        # cream badge with a soft shadow so the logo reads on light and dark scenes
+        r = 78
+        cx, cy = W - 50 - r, H - 230 - r
+        shadow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        ImageDraw.Draw(shadow).ellipse((cx - r, cy - r + 6, cx + r, cy + r + 6), fill=(0, 0, 0, 70))
+        img.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(10)))
+        d = ImageDraw.Draw(img)
+        d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=brand.SUGAR + (235,))
+        img.alpha_composite(logo, (cx - logo.width // 2, cy - logo.height // 2))
     else:
         f = font(brand.FONT_BOLD, 38)
         label = brand.BRAND_NAME

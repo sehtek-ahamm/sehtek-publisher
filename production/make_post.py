@@ -255,7 +255,7 @@ def make_reel(job: dict, out_dir: Path, offline: bool):
         overlays.append((png, max(start, 0), min(end, main_len)))
     wm_png = work / "watermark.png"
     graphics.watermark_overlay().save(wm_png)
-    overlays.append((wm_png, HOOK_SECONDS, main_len))
+    overlays.append((wm_png, 0, total + 1))  # logo for the whole reel, end card included
 
     inputs = ["-i", str(base), "-i", str(voice)]
     for png, _, _ in overlays:
