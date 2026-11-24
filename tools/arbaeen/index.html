@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>رفيقة الأربعين | صحتك أهم</title>
+<meta name="description" content="رفيقتك بأيام النفاس: كل يوم أكلة دافية، شي صغير إلك، وكلمة حلوة… لحتى يصير قمرك بدر.">
+<meta name="theme-color" content="#2A1E29">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE: tender, quiet, the 3am feed — few hues, soft light, lots of air.
+   IDEA: the forty days as a moon waxing from crescent to full (بدر), lit one night at a time.
+   PICTURE: a large glowing moon ringed by forty stars; each day you show up, a star lights.
+   COLOUR+TYPE: plum night, moonlight cream, dusty rose, caraway gold; Tajawal for reading, Aref Ruqaa for the day and the word.
+   LAYOUT: one column for a phone in one hand; moon on top, today's three cards below, tabs at the thumb. */
+@font-face { font-family: "Tajawal"; src: url("Tajawal-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Tajawal"; src: url("Tajawal-Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+:root {
+  color-scheme: dark;
+  --night: #2A1E29;
+  --plum: #3A2A38;
+  --plum-2: #4A3647;
+  --moon: #F7EADB;
+  --moon-dim: #CDB8AA;
+  --rose: #D4A5A5;
+  --caraway: #D9AE7C;
+  --ink: #F7EADB;
+  --ink-soft: #C9B4B0;
+  --line: rgba(247, 234, 219, .12);
+  --font: "Tajawal", system-ui, sans-serif;
+  --script: "Aref Ruqaa", "Tajawal", serif;
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+}
+* { box-sizing: border-box; min-width: 0; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; background: var(--night); color: var(--ink); font-family: var(--font); overflow-x: clip; }
+body { min-height: 100dvh; font-size: 17px; line-height: 1.6;
+  background: radial-gradient(120% 60% at 50% 0%, #4A3044 0%, var(--night) 60%) fixed, var(--night); }
+button, input, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; border: 0; background: none; }
+:focus-visible { outline: 3px solid var(--caraway); outline-offset: 3px; border-radius: 12px; }
+[hidden] { display: none !important; }
+.emoji { font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; line-height: 1; }
+.app { max-width: 480px; margin: 0 auto; min-height: 100dvh; padding: calc(10px + var(--safe-t)) 0 calc(96px + var(--safe-b)); }
+
+/* sky */
+.sky { position: fixed; inset: 0; pointer-events: none; z-index: -1; }
+
+/* header */
+.top { display: flex; align-items: center; justify-content: space-between; padding: 8px 22px 0; font-size: 15px; color: var(--ink-soft); }
+.top .brand { display: flex; align-items: center; gap: 8px; }
+.top .brand img { width: 30px; height: 30px; border-radius: 50%; background: var(--moon); padding: 3px; }
+.top button { padding: 6px 4px; color: var(--ink-soft); font-size: 15px; }
+
+/* moon hero */
+.moon-stage { position: relative; width: min(84vw, 360px); aspect-ratio: 1; margin: 6px auto 0; }
+.moon-stage svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.day-title { text-align: center; margin-top: 4px; }
+.day-title .n { font-family: var(--script); font-size: 52px; line-height: 1.05; color: var(--moon); }
+.day-title .of { color: var(--ink-soft); font-size: 15px; }
+.star { transition: fill .6s, opacity .6s; }
+.star.lit { fill: var(--caraway); opacity: 1; }
+.star.today-ring { stroke: var(--moon); stroke-width: .5; }
+.glow { animation: breathe 6s ease-in-out infinite; transform-origin: 50% 50%; }
+@keyframes breathe { 50% { opacity: .75; transform: scale(1.04); } }
+
+/* mood */
+.block { margin: 26px 20px 0; }
+.block h2 { font-size: 18px; margin: 0 0 12px; font-weight: 700; }
+.moods { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.moods button { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 10px 2px; border-radius: 18px; background: var(--plum); font-size: 12px; color: var(--ink-soft); border: 1px solid transparent; min-height: 44px; }
+.moods .emoji { font-size: 28px; }
+.moods button[aria-pressed="true"] { background: var(--plum-2); border-color: var(--caraway); color: var(--ink); }
+.care-note { margin-top: 12px; padding: 14px 16px; border-radius: 18px; background: rgba(212,165,165,.14); border: 1px solid rgba(212,165,165,.35); font-size: 15px; }
+.care-note strong { display: block; margin-bottom: 2px; }
+
+/* the three cards of the day */
+.deck { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 -20px; padding: 2px 20px 8px; scrollbar-width: none; }
+.deck::-webkit-scrollbar { display: none; }
+.card { flex: 0 0 82%; scroll-snap-align: center; border-radius: 28px; padding: 20px 20px 16px; min-height: 230px; display: flex; flex-direction: column;
+  background: linear-gradient(160deg, var(--plum-2), var(--plum)); border: 1px solid var(--line); position: relative; overflow: hidden; }
+.card .kind { display: flex; align-items: center; gap: 8px; color: var(--ink-soft); font-size: 14px; }
+.card .kind .emoji { font-size: 22px; }
+.card p { margin: 14px 0 0; font-size: 21px; line-height: 1.5; flex: 1; text-wrap: pretty; }
+.card.word p { font-family: var(--script); font-size: 28px; line-height: 1.55; color: var(--moon); }
+.card .done { align-self: flex-start; margin-top: 14px; display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; background: rgba(247,234,219,.08); font-size: 15px; min-height: 44px; }
+.card .done i { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--ink-soft); display: grid; place-items: center; font-style: normal; font-size: 13px; }
+.card.is-done .done { background: var(--caraway); color: var(--night); font-weight: 700; }
+.card.is-done .done i { border-color: var(--night); background: var(--night); color: var(--caraway); }
+.dots { display: flex; justify-content: center; gap: 6px; margin-top: 8px; }
+.dots span { width: 6px; height: 6px; border-radius: 50%; background: var(--line); transition: width .3s, background .3s; }
+.dots span.on { width: 18px; border-radius: 6px; background: var(--moon-dim); }
+
+/* note */
+textarea { width: 100%; min-height: 84px; resize: vertical; padding: 14px 16px; border-radius: 18px; border: 1px solid var(--line); background: var(--plum); font-size: 16px; line-height: 1.6; }
+textarea::placeholder { color: var(--ink-soft); opacity: .8; }
+.saved { font-size: 13px; color: var(--ink-soft); min-height: 20px; margin-top: 4px; }
+
+/* forty nights */
+.nights { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px 8px; }
+.night { display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 13px; color: var(--ink-soft); padding: 6px 0; border-radius: 16px; }
+.night svg { width: 44px; height: 44px; }
+.night.today { background: var(--plum-2); color: var(--ink); }
+.night.locked { opacity: .35; }
+.night .m { width: 7px; height: 7px; border-radius: 50%; }
+
+/* lists */
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.list li { padding: 14px 16px; border-radius: 18px; background: var(--plum); border: 1px solid var(--line); }
+.list strong { display: block; }
+.list span { font-size: 15px; color: var(--ink-soft); }
+.list.urgent li { border-inline-start: 4px solid var(--rose); }
+.lead { color: var(--ink-soft); margin: -4px 0 14px; font-size: 15px; }
+.fine { font-size: 13px; color: var(--ink-soft); text-align: center; margin: 26px 26px 0; }
+
+.cta { display: block; width: 100%; margin-top: 16px; padding: 16px; border-radius: 20px; background: var(--moon); color: var(--night); font-weight: 700; font-size: 18px; min-height: 52px; }
+.ghost { display: block; width: 100%; margin-top: 10px; padding: 14px; border-radius: 20px; border: 1px solid var(--line); font-size: 16px; color: var(--ink-soft); min-height: 48px; }
+
+/* nav */
+.nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: min(480px, 100%); z-index: 30;
+  display: grid; grid-template-columns: repeat(4, 1fr); padding: 8px 10px calc(10px + var(--safe-b));
+  background: rgba(42,30,41,.88); backdrop-filter: blur(16px); border-top: 1px solid var(--line); }
+.nav button { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 6px 0; font-size: 13px; color: var(--ink-soft); min-height: 48px; }
+.nav svg { width: 26px; height: 26px; }
+.nav button[aria-current="page"] { color: var(--moon); font-weight: 700; }
+
+/* modal & toast */
+.modal { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 22px; }
+.modal .veil { position: absolute; inset: 0; background: rgba(20,12,19,.7); }
+.modal .box { position: relative; width: min(420px, 100%); max-height: 90dvh; overflow-y: auto; border-radius: 30px; padding: 24px 20px; background: var(--plum); text-align: center; animation: rise .45s cubic-bezier(.2,1.2,.4,1); }
+@keyframes rise { from { transform: translateY(18px) scale(.96); opacity: 0; } }
+.modal h3 { margin: 4px 0 6px; font-size: 24px; }
+.modal p { margin: 0; color: var(--ink-soft); }
+.modal img { width: 100%; border-radius: 18px; margin-top: 12px; }
+.modal .card { flex: none; min-height: 0; margin-top: 12px; text-align: start; }
+.letter { text-align: start; margin-top: 14px; display: grid; gap: 10px; }
+.letter div { padding: 10px 14px; border-radius: 14px; background: rgba(247,234,219,.06); font-size: 15px; }
+.letter b { color: var(--caraway); font-weight: 700; margin-inline-end: 6px; }
+.toast { position: fixed; z-index: 60; left: 50%; bottom: calc(104px + var(--safe-b)); transform: translateX(-50%); padding: 12px 20px; border-radius: 999px;
+  background: var(--moon); color: var(--night); font-size: 15px; font-weight: 700; white-space: nowrap; animation: rise .3s ease-out; }
+
+/* welcome */
+.welcome { max-width: 480px; margin: 0 auto; min-height: 100dvh; padding: calc(24px + var(--safe-t)) 24px calc(28px + var(--safe-b)); display: flex; flex-direction: column; }
+.welcome h1 { font-family: var(--script); font-weight: 700; font-size: 52px; line-height: 1.1; text-align: center; margin: 10px 0 6px; color: var(--moon); }
+.welcome .sub { text-align: center; color: var(--ink-soft); margin: 0 0 20px; }
+.welcome .moon-stage { width: min(64vw, 270px); }
+.field { display: block; margin-top: 12px; }
+.field span { display: block; font-size: 15px; margin-bottom: 6px; color: var(--ink-soft); }
+.field input { width: 100%; padding: 15px 18px; border-radius: 18px; border: 1px solid var(--line); background: var(--plum); font-size: 17px; min-height: 52px; }
+.err { color: #F0B4B4; font-size: 14px; min-height: 22px; margin-top: 6px; }
+
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+<canvas class="sky" id="sky" aria-hidden="true"></canvas>
+
+<section class="welcome" id="welcome" hidden>
+  <div class="moon-stage" id="wMoon" aria-hidden="true"></div>
+  <h1>رفيقة الأربعين</h1>
+  <p class="sub">كل يوم من أيام النفاس: أكلة دافية، شي صغير إلك، وكلمة حلوة… لحتى يصير قمرك بدر.</p>
+  <form id="setup" novalidate>
+    <label class="field"><span>اسمك (اختياري)</span><input id="mName" maxlength="18" autocomplete="given-name" placeholder="مثلًا: هيفاء"></label>
+    <label class="field"><span>يوم الولادة</span><input id="mBirth" type="date"></label>
+    <div class="err" id="err" role="alert"></div>
+    <button class="cta" type="submit">ابدئي أربعينك</button>
+  </form>
+</section>
+
+<div class="app" id="app" hidden>
+  <header class="top">
+    <span class="brand"><img src="logo.png" alt=""> صحتك أهم</span>
+    <button id="editBtn">تعديل</button>
+  </header>
+
+  <main class="view" id="view-today">
+    <div class="moon-stage" id="moon" role="img"></div>
+    <div class="day-title"><div class="n" id="dayN"></div><div class="of" id="dayOf"></div></div>
+
+    <section class="block">
+      <h2 id="moodQ">كيفك اليوم؟</h2>
+      <div class="moods" id="moods"></div>
+      <div class="care-note" id="careNote" hidden></div>
+    </section>
+
+    <section class="block">
+      <h2>إلك اليوم</h2>
+      <div class="deck" id="deck"></div>
+      <div class="dots" id="dots"></div>
+    </section>
+
+    <section class="block">
+      <h2>سطر لإلك</h2>
+      <textarea id="note" maxlength="280" placeholder="شو صار اليوم؟ أول ابتسامة، تعب، ولا لحظة حلوة…"></textarea>
+      <div class="saved" id="saved" aria-live="polite"></div>
+    </section>
+    <p class="fine">معلومات عامة للتوعية، مش بديل عن دكتورتك.</p>
+  </main>
+
+  <main class="view" id="view-nights" hidden>
+    <section class="block" style="margin-top:14px">
+      <h2>أربعين ليلة</h2>
+      <p class="lead">كل قمر يوم. النقطة لونها مزاجك بهداك اليوم.</p>
+      <div class="nights" id="nights"></div>
+      <button class="cta" id="letterBtn">رسالة أربعيني</button>
+    </section>
+  </main>
+
+  <main class="view" id="view-warn" hidden>
+    <section class="block" style="margin-top:14px">
+      <h2>متى تتصلي بالدكتورة فورًا</h2>
+      <p class="lead">هاي علامات ما بتستنى. إذا لاحظتي وحدة منها، اتصلي بدكتورتك أو روحي عالطوارئ.</p>
+      <ul class="list urgent" id="warnList"></ul>
+    </section>
+    <section class="block">
+      <h2>وهاي طبيعية بأول أسابيع</h2>
+      <ul class="list">
+        <li><strong>نزيف بيخف بالتدريج</strong><span>من أحمر لزهري لأصفر فاتح، على مدى أسابيع.</span></li>
+        <li><strong>دموع وتقلّب مزاج بأول أسبوعين</strong><span>بيخف لحاله غالبًا. إذا طوّل أكتر، احكي مع دكتورتك.</span></li>
+        <li><strong>انقباضات خفيفة وقت الرضاعة</strong><span>الرحم عم يرجع لحجمه.</span></li>
+        <li><strong>تعب وسهر</strong><span>طبيعي، بس اطلبي مساعدة وخدي قيلولات.</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <main class="view" id="view-share" hidden>
+    <section class="block" style="margin-top:14px">
+      <h2>شاركي قمرك</h2>
+      <p class="lead">بطاقة ستوري بيومك من الأربعين، ومنشنينا عليها.</p>
+      <img id="cardPreview" alt="بطاقة الأربعين" style="width:100%;border-radius:22px;display:block">
+      <button class="cta" id="shareBtn">شاركي البطاقة</button>
+      <button class="ghost" id="resetBtn">ابدئي من جديد</button>
+    </section>
+  </main>
+
+  <nav class="nav" aria-label="التنقل">
+    <button data-view="today" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>اليوم</button>
+    <button data-view="nights"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="6" r="2.5"/><circle cx="12" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="6" cy="13" r="2.5"/><circle cx="12" cy="13" r="2.5"/><circle cx="18" cy="13" r="2.5"/><path d="M4 20h16"/></svg>الليالي</button>
+    <button data-view="warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/><path d="M12 9v4M12 15.5v.5"/></svg>انتبهي</button>
+    <button data-view="share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>شاركي</button>
+  </nav>
+</div>
+<div id="modalHost"></div>
+
+<script src="days.js"></script>
+<script>
+{
+  const $ = s => document.querySelector(s);
+  const nf = new Intl.NumberFormat("ar-EG"), ar = n => nf.format(n);
+  const KEY = "arbaeen-v1";
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const MOODS = [["😣", "صعب", "#E07A7A"], ["😔", "تعبانة", "#C98FA6"], ["😐", "عادي", "#B8A9B5"], ["🙂", "منيحة", "#D9AE7C"], ["😊", "حلو", "#F2D9A9"]];
+  const KINDS = [["🍲", "أكلة اليوم", ""], ["🌿", "شي صغير إلك", ""], ["🌙", "كلمة اليوم", "word"]];
+  let S = { name: "", birth: null, days: {} };
+  const load = () => { try { const v = JSON.parse(localStorage.getItem(KEY)); if (v && v.birth) S = v; } catch (e) {} };
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} };
+  const rec = d => S.days[d] || (S.days[d] = { done: [], mood: null, note: "" });
+  function dayNum() {
+    const b = new Date(S.birth + "T00:00:00"), n = new Date(); n.setHours(0, 0, 0, 0);
+    return Math.floor((n - b) / 864e5) + 1;
+  }
+  const clampDay = d => Math.min(40, Math.max(1, d));
+  function toast(t) { const el = document.createElement("div"); el.className = "toast"; el.textContent = t; document.body.appendChild(el); setTimeout(() => el.remove(), 2200); }
+  function modal(html) {
+    const h = $("#modalHost");
+    h.innerHTML = `<div class="modal"><div class="veil"></div><div class="box" role="dialog" aria-modal="true">${html}</div></div>`;
+    const close = () => h.innerHTML = "";
+    h.querySelector(".veil").onclick = close;
+    h.querySelectorAll("[data-close]").forEach(b => b.onclick = close);
+    h.querySelector("button")?.focus();
+    return h;
+  }
+
+  // ---------- sky: slow twinkling stars ----------
+  (() => {
+    const c = $("#sky"), x = c.getContext("2d");
+    let st = [];
+    const size = () => { const d = devicePixelRatio || 1; c.width = innerWidth * d; c.height = innerHeight * d; x.setTransform(d, 0, 0, d, 0, 0);
+      st = Array.from({ length: Math.round(innerWidth * innerHeight / 9000) }, () => ({ x: Math.random() * innerWidth, y: Math.random() * innerHeight * .75, r: Math.random() * 1.1 + .2, p: Math.random() * 6 })); };
+    size(); addEventListener("resize", size);
+    let t = 0;
+    (function draw() {
+      x.clearRect(0, 0, innerWidth, innerHeight);
+      for (const s of st) { x.globalAlpha = .25 + .35 * (reduce ? .5 : (Math.sin(t / 50 + s.p) + 1) / 2); x.fillStyle = "#F7EADB"; x.beginPath(); x.arc(s.x, s.y, s.r, 0, 7); x.fill(); }
+      t++; if (!reduce) requestAnimationFrame(draw);
+    })();
+  })();
+
+  // ---------- the moon ----------
+  // lit fraction f in [0,1]; waxing, lit from the right
+  function litPath(f, cx, cy, r) {
+    if (f <= 0) return "";
+    if (f >= 1) return `M${cx} ${cy - r}A${r} ${r} 0 1 1 ${cx} ${cy + r}A${r} ${r} 0 1 1 ${cx} ${cy - r}Z`;
+    const rx = Math.abs(1 - 2 * f) * r;
+    const sweep = f < .5 ? 0 : 1;
+    return `M${cx} ${cy - r}A${r} ${r} 0 0 1 ${cx} ${cy + r}A${rx} ${r} 0 0 ${sweep} ${cx} ${cy - r}Z`;
+  }
+  function moonSVG(day, opts = {}) {
+    const f = Math.max(.06, day / 40), id = "m" + Math.random().toString(36).slice(2, 7);
+    const craters = [[42, 38, 5], [58, 55, 7], [47, 63, 3.5], [62, 40, 3], [37, 52, 2.5]]
+      .map(([x, y, r]) => `<circle cx="${x}" cy="${y}" r="${r}" fill="#E8D5C2" opacity=".55"/>`).join("");
+    let stars = "";
+    if (opts.stars) {
+      for (let i = 0; i < 40; i++) {
+        const a = -Math.PI / 2 - i / 40 * Math.PI * 2, R = 46.5;
+        const x = 50 + R * Math.cos(a), y = 50 + R * Math.sin(a);
+        const r = rec(i + 1), lit = i + 1 < day ? (r.done.length || r.mood !== null) : i + 1 === day && (r.done.length || r.mood !== null);
+        const s = i + 1 === day ? 1.5 : 1.05;
+        stars += `<path class="star${lit ? " lit" : ""}${i + 1 === day ? " today-ring" : ""}" fill="${i + 1 <= day ? "rgba(247,234,219,.45)" : "rgba(247,234,219,.14)"}"
+          d="M${x} ${y - s * 1.6}L${x + s * .45} ${y - s * .45}L${x + s * 1.6} ${y}L${x + s * .45} ${y + s * .45}L${x} ${y + s * 1.6}L${x - s * .45} ${y + s * .45}L${x - s * 1.6} ${y}L${x - s * .45} ${y - s * .45}Z"/>`;
+      }
+    }
+    return `<svg viewBox="0 0 100 100" aria-hidden="true">
+      <defs>
+        <radialGradient id="${id}g"><stop offset="0" stop-color="#F7EADB" stop-opacity=".35"/><stop offset=".55" stop-color="#D4A5A5" stop-opacity=".12"/><stop offset="1" stop-color="#D4A5A5" stop-opacity="0"/></radialGradient>
+        <radialGradient id="${id}l" cx=".62" cy=".38" r=".75"><stop offset="0" stop-color="#FFF8EE"/><stop offset=".7" stop-color="#F3E2CF"/><stop offset="1" stop-color="#E2C9B3"/></radialGradient>
+        <clipPath id="${id}c"><path d="${litPath(f, 50, 50, 30)}"/></clipPath>
+      </defs>
+      <circle class="glow" cx="50" cy="50" r="${30 + 14 * f}" fill="url(#${id}g)"/>
+      <circle cx="50" cy="50" r="30" fill="#3E2C3B"/>
+      <circle cx="50" cy="50" r="30" fill="none" stroke="rgba(247,234,219,.12)" stroke-width=".5"/>
+      <g clip-path="url(#${id}c)"><circle cx="50" cy="50" r="30" fill="url(#${id}l)"/>${craters}</g>
+      ${stars}
+    </svg>`;
+  }
+
+  // ---------- views ----------
+  let view = "today", viewDay = 1;
+  function render() {
+    const today = clampDay(dayNum()), d = viewDay;
+    const after = dayNum() > 40;
+    $("#moon").innerHTML = moonSVG(today, { stars: true });
+    $("#moon").setAttribute("aria-label", `القمر بيومك ${ar(today)} من ٤٠`);
+    $("#dayN").textContent = after ? "قمرك صار بدر" : d === today ? `اليوم ${ar(d)}` : `يوم ${ar(d)}`;
+    $("#dayOf").textContent = after ? `خلّصتي أربعينك${S.name ? " يا " + S.name : ""}، مبروك` : `من أربعين${S.name ? "، يا " + S.name : ""}`;
+    // mood
+    const r = rec(d);
+    $("#moodQ").textContent = d === today ? "كيفك اليوم؟" : `كيفك كنتِ بيوم ${ar(d)}؟`;
+    $("#moods").innerHTML = MOODS.map((m, i) => `<button data-m="${i}" aria-pressed="${r.mood === i}"><span class="emoji">${m[0]}</span>${m[1]}</button>`).join("");
+    $("#moods").querySelectorAll("button").forEach(b => b.onclick = () => { r.mood = +b.dataset.m; save(); render(); });
+    careNote();
+    // cards
+    const set = DAYS[d - 1];
+    $("#deck").innerHTML = KINDS.map((k, i) => `<article class="card ${k[2]}${r.done.includes(i) ? " is-done" : ""}">
+      <div class="kind"><span class="emoji">${k[0]}</span>${k[1]}</div><p></p>
+      ${i < 2 ? `<button class="done" data-i="${i}"><i>${r.done.includes(i) ? "✓" : ""}</i>${r.done.includes(i) ? "عملتها" : "عملتها؟"}</button>` : `<button class="done" data-i="2"><i>${r.done.includes(2) ? "♥" : ""}</i>${r.done.includes(2) ? "وصلتني" : "وصلتني"}</button>`}
+    </article>`).join("");
+    $("#deck").querySelectorAll(".card p").forEach((p, i) => p.textContent = set[i]);
+    $("#deck").querySelectorAll(".done").forEach(b => b.onclick = () => toggle(+b.dataset.i));
+    $("#dots").innerHTML = "<span class=on></span><span></span><span></span>";
+    $("#note").value = r.note || "";
+    $("#saved").textContent = "";
+    renderNights();
+  }
+  function careNote() {
+    const today = clampDay(dayNum());
+    const recent = [];
+    for (let i = today; i >= Math.max(1, today - 4); i--) { const m = S.days[i]?.mood; if (m !== null && m !== undefined) recent.push(m); }
+    const low = recent.filter(m => m <= 1).length;
+    const el = $("#careNote");
+    const cur = rec(viewDay).mood;
+    if (low >= 3 || (today > 14 && low >= 2)) {
+      el.hidden = false;
+      el.innerHTML = `<strong>إنتِ مش لحالك 🤍</strong>هالأيام تقيلة عليكِ. إذا الحزن أو القلق مكمّل أكتر من أسبوعين، أو حاسة إنك مش قادرة، احكي مع دكتورتك أو حدا بتثقي فيه. وإذا إجاكِ أي تفكير تأذي حالك أو طفلك، اطلبي مساعدة فورًا.`;
+    } else if (cur !== null && cur <= 1) {
+      el.hidden = false;
+      el.innerHTML = `<strong>عادي تكوني هيك 🤍</strong>أول أسبوعين بعد الولادة كتير أمهات بيحسّوا بدموع وتقلّب. ارتاحي، كلي، واحكي مع حدا قريب. بكرة رح نسألك مرة ثانية.`;
+    } else el.hidden = true;
+  }
+  function toggle(i) {
+    const r = rec(viewDay), had = r.done.includes(i);
+    r.done = had ? r.done.filter(x => x !== i) : [...r.done, i];
+    save();
+    const before = $("#deck").scrollLeft;
+    render();
+    $("#deck").scrollLeft = before;
+    if (!had) {
+      if (r.done.length === 3) { toast("يومك كامل ✨"); sparkle(); }
+      else toast(i === 2 ? "وصلتك 🤍" : "برافو عليكِ");
+    }
+  }
+  function sparkle() {
+    if (reduce) return;
+    const host = $("#moon"), svg = host.querySelector("svg");
+    const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    for (let i = 0; i < 16; i++) {
+      const a = Math.random() * Math.PI * 2, c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      c.setAttribute("cx", 50); c.setAttribute("cy", 50); c.setAttribute("r", .9); c.setAttribute("fill", i % 2 ? "#D9AE7C" : "#F7EADB");
+      g.appendChild(c);
+      c.animate([{ transform: "translate(0,0)", opacity: 1 }, { transform: `translate(${Math.cos(a) * 44}px,${Math.sin(a) * 44}px)`, opacity: 0 }], { duration: 1100 + Math.random() * 500, easing: "cubic-bezier(.2,.7,.3,1)" });
+    }
+    svg.appendChild(g); setTimeout(() => g.remove(), 1700);
+    svg.querySelector(".glow").animate([{ opacity: 1 }, { opacity: 1, transform: "scale(1.25)" }, { opacity: 1 }], { duration: 1200 });
+  }
+  $("#deck").addEventListener("scroll", () => {
+    const dk = $("#deck"), cards = dk.querySelectorAll(".card"); if (!cards.length) return;
+    const w = cards[0].offsetWidth + 12, i = Math.round(Math.abs(dk.scrollLeft) / w);
+    $("#dots").querySelectorAll("span").forEach((s, j) => s.classList.toggle("on", j === i));
+  }, { passive: true });
+  let noteT;
+  $("#note").addEventListener("input", e => {
+    rec(viewDay).note = e.target.value; clearTimeout(noteT);
+    noteT = setTimeout(() => { save(); $("#saved").textContent = "انحفظ"; }, 500);
+  });
+
+  function renderNights() {
+    const today = clampDay(dayNum());
+    let h = "";
+    for (let d = 1; d <= 40; d++) {
+      const r = S.days[d], m = r?.mood;
+      const locked = d > today;
+      h += `<button class="night${d === today ? " today" : ""}${locked ? " locked" : ""}" data-d="${d}" ${locked ? 'aria-disabled="true"' : ""}>
+        ${moonSVG(d)}<span>${ar(d)}</span><span class="m" style="background:${m !== null && m !== undefined ? MOODS[m][2] : "transparent"}"></span></button>`;
+    }
+    $("#nights").innerHTML = h;
+    $("#nights").querySelectorAll(".night").forEach(b => b.onclick = () => {
+      const d = +b.dataset.d;
+      if (d > today) return toast(`بيفتح بعد ${ar(d - today)} ${d - today === 1 ? "يوم" : d - today === 2 ? "يومين" : "أيام"}`);
+      viewDay = d; render(); show("today");
+      if (d !== today) toast(`عم تشوفي يوم ${ar(d)}`);
+    });
+  }
+  function show(v) {
+    view = v;
+    document.querySelectorAll(".view").forEach(el => el.hidden = el.id !== "view-" + v);
+    document.querySelectorAll(".nav button").forEach(b => b.dataset.view === v ? b.setAttribute("aria-current", "page") : b.removeAttribute("aria-current"));
+    if (v === "share") buildCard().then(c => $("#cardPreview").src = c.toDataURL("image/png"));
+    if (v === "today" && view !== "today") viewDay = clampDay(dayNum());
+    scrollTo({ top: 0 });
+  }
+
+  // ---------- letter of the forty days ----------
+  $("#letterBtn").onclick = () => {
+    const lines = Object.entries(S.days).filter(([, r]) => r.note && r.note.trim()).sort((a, b) => a[0] - b[0]);
+    modal(`<h3>رسالة أربعيني</h3><p>كل اللي كتبتيه، بمكان واحد.</p>
+      <div class="letter">${lines.length ? lines.map(([d, r]) => `<div><b>يوم ${ar(+d)}</b><span></span></div>`).join("") : "<div>لسا ما كتبتي ولا سطر. اكتبي سطر صغير اليوم من صفحة «اليوم».</div>"}</div>
+      <button class="ghost" data-close>سكّري</button>`);
+    $("#modalHost").querySelectorAll(".letter span").forEach((s, i) => s.textContent = lines[i][1].note);
+  };
+
+  // ---------- story card ----------
+  async function buildCard() {
+    try { await Promise.all([document.fonts.load("700 90px 'Aref Ruqaa'"), document.fonts.load("700 50px Tajawal"), document.fonts.load("400 40px Tajawal")]); } catch (e) {}
+    const today = clampDay(dayNum()), W = 1080, H = 1920, c = document.createElement("canvas"); c.width = W; c.height = H;
+    const x = c.getContext("2d"); x.direction = "rtl"; x.textAlign = "center";
+    const g = x.createRadialGradient(W / 2, 700, 50, W / 2, 900, 1300); g.addColorStop(0, "#4A3044"); g.addColorStop(1, "#2A1E29");
+    x.fillStyle = g; x.fillRect(0, 0, W, H);
+    for (let i = 0; i < 160; i++) { x.globalAlpha = Math.random() * .5 + .15; x.fillStyle = "#F7EADB"; x.beginPath(); x.arc(Math.random() * W, Math.random() * H * .8, Math.random() * 2.2 + .4, 0, 7); x.fill(); }
+    x.globalAlpha = 1;
+    const svg = moonSVG(today, { stars: true }).replace("<svg ", `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" `);
+    const img = await new Promise(res => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg); });
+    if (img) x.drawImage(img, 90, 380, 900, 900);
+    x.fillStyle = "#D9AE7C"; x.font = "700 44px Tajawal"; x.fillText("رفيقة الأربعين", W / 2, 230);
+    x.fillStyle = "#F7EADB"; x.font = "700 130px 'Aref Ruqaa'";
+    x.fillText(dayNum() > 40 ? "قمري صار بدر" : `يوم ${ar(today)} من ٤٠`, W / 2, 1420);
+    x.font = "400 50px 'Aref Ruqaa'"; x.fillStyle = "#E9D6C6";
+    const word = DAYS[today - 1][2];
+    wrap(x, word, W / 2, 1530, 860, 72);
+    const logo = await new Promise(res => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = "logo.png"; });
+    if (logo) { x.beginPath(); x.arc(W / 2, 1745, 46, 0, 7); x.fillStyle = "#F7EADB"; x.fill(); x.drawImage(logo, W / 2 - 34, 1745 - 32, 68, 64); }
+    x.fillStyle = "#D4A5A5"; x.font = "700 40px Tajawal"; x.fillText("@sehtek.ahamm", W / 2, 1850);
+    return c;
+  }
+  function wrap(x, text, cx, y, maxW, lh) {
+    const words = text.split(" "); let line = "";
+    for (const w of words) { const t = line ? line + " " + w : w; if (x.measureText(t).width > maxW && line) { x.fillText(line, cx, y); y += lh; line = w; } else line = t; }
+    if (line) x.fillText(line, cx, y);
+  }
+  $("#shareBtn").onclick = async () => {
+    const c = await buildCard();
+    c.toBlob(async blob => {
+      const file = new File([blob], "arbaeen.png", { type: "image/png" });
+      try {
+        if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], text: "أربعيني مع @sehtek.ahamm" }); return; }
+      } catch (e) { return; }
+      const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "arbaeen.png"; a.click();
+      toast("انحفظت البطاقة");
+    }, "image/png");
+  };
+
+  // ---------- warn list ----------
+  $("#warnList").innerHTML = WARN.map(() => "<li><strong></strong><span></span></li>").join("");
+  $("#warnList").querySelectorAll("li").forEach((li, i) => { li.querySelector("strong").textContent = WARN[i][0]; li.querySelector("span").textContent = WARN[i][1]; });
+
+  // ---------- setup ----------
+  function setupForm(edit) {
+    $("#welcome").hidden = false; $("#app").hidden = true;
+    $("#wMoon").innerHTML = moonSVG(14);
+    const today = new Date(); $("#mBirth").max = today.toISOString().slice(0, 10);
+    if (edit) { $("#mName").value = S.name; $("#mBirth").value = S.birth; $("#setup .cta").textContent = "حفظ"; }
+    if (!reduce) {
+      let f = 2; const t = setInterval(() => { if ($("#welcome").hidden) return clearInterval(t); $("#wMoon").innerHTML = moonSVG(f); f = f >= 40 ? 2 : f + 1; }, 140);
+    }
+  }
+  $("#setup").onsubmit = e => {
+    e.preventDefault();
+    const birth = $("#mBirth").value;
+    if (!birth) return $("#err").textContent = "اختاري يوم الولادة، ومنه منعدّ الأربعين.";
+    if (new Date(birth) > new Date()) return $("#err").textContent = "يوم الولادة لازم يكون اليوم أو قبل.";
+    S.name = $("#mName").value.trim(); S.birth = birth; save(); start();
+  };
+  function start() {
+    $("#welcome").hidden = true; $("#app").hidden = false;
+    viewDay = clampDay(dayNum()); render(); show("today");
+  }
+  document.querySelectorAll(".nav button").forEach(b => b.onclick = () => { if (b.dataset.view === "today") viewDay = clampDay(dayNum()); render(); show(b.dataset.view); });
+  $("#editBtn").onclick = () => setupForm(true);
+  $("#resetBtn").onclick = () => {
+    const h = modal(`<h3>نبدأ من جديد؟</h3><p>رح ينمسح كل شي: المزاج، الكروت، والسطور اللي كتبتيها.</p><button class="cta" data-yes>امسحي وابدئي</button><button class="ghost" data-close>لا، خليه</button>`);
+    h.querySelector("[data-yes]").onclick = () => { try { localStorage.removeItem(KEY); } catch (e) {} S = { name: "", birth: null, days: {} }; h.innerHTML = ""; setupForm(false); };
+  };
+  document.addEventListener("keydown", e => { if (e.key === "Escape") $("#modalHost").innerHTML = ""; });
+
+  load();
+  if (S.birth) start(); else setupForm(false);
+  if ("serviceWorker" in navigator && location.protocol === "https:" && !location.hostname.endsWith("claude.ai") && !location.hostname.includes("claudeusercontent")) navigator.serviceWorker.register("sw.js").catch(() => {});
+}
+</script>
+</body>
+</html>
