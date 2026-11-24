@@ -1,0 +1,46 @@
+{
+ "style": "Soft natural window light, overhead or 45-degree angle, light wood or cream marble surface, cream linen and dusty-pink props, shallow depth of field, calm, clean, minimal, warm editorial food photography. No faces, no people except hands, no text, no letters, no logos, no watermarks. Luxurious modern styling: white marble surface, cream linen, brushed gold cutlery and gold-rimmed ceramics, soft natural window light, shallow depth of field, premium editorial food photography. No faces; hands only when shown.",
+ "character": "",
+ "frames": [
+  {
+   "name": "01-hook",
+   "refs": [],
+   "prompt": "Close-up hero shot of small round Levantine date balls (tamriyeh), each rolled half in desiccated coconut and toasted golden sesame, stacked elegantly on a gold-rimmed cream plate, one ball cut in half showing the soft dark date inside with nuts and black nigella seeds, a small glass of warm milk beside it."
+  },
+  {
+   "name": "02-ingredients",
+   "refs": [],
+   "prompt": "Overhead flat-lay of ingredients in small ceramic and glass bowls: pitted dates, a block of butter, ground fennel, ground anise, ground caraway, cinnamon powder with a cinnamon stick, raw walnuts and almonds, black nigella seeds, desiccated coconut, toasted sesame seeds. Neatly arranged, no sugar."
+  },
+  {
+   "name": "03-pan",
+   "refs": [],
+   "prompt": "A cream enamel pan on low heat with pitted dates and melting butter, a wooden spoon mashing the dates into a soft glossy paste. 45-degree angle, gentle steam."
+  },
+  {
+   "name": "04-spices",
+   "refs": [],
+   "prompt": "Ground fennel, anise, caraway and cinnamon being sprinkled from small spoons over the warm date paste in the pan, fragrant, close-up."
+  },
+  {
+   "name": "05-nuts",
+   "refs": [],
+   "prompt": "Raw chopped walnuts, almonds and black nigella seeds being added to the date paste in the pan and folded in with a wooden spoon. Close-up."
+  },
+  {
+   "name": "06-roll",
+   "refs": [],
+   "prompt": "A woman's hands rolling the warm date mixture into small neat balls, several finished balls lined up on a marble board. Hands and wrists only."
+  },
+  {
+   "name": "07-coat",
+   "refs": [],
+   "prompt": "Hands rolling a date ball in a small bowl of desiccated coconut, next to a bowl of toasted sesame seeds; coated balls in the foreground. Hands only."
+  },
+  {
+   "name": "08-final",
+   "refs": [],
+   "prompt": "Elegant final presentation: small round Levantine date balls (tamriyeh), each rolled half in desiccated coconut and toasted golden sesame arranged in a circle on a gold-rimmed plate, a small brass tray, a cup of tea and a glass of milk, dates and cinnamon sticks scattered. Overhead 3/4 view, luxurious."
+  }
+ ]
+}
