@@ -1,0 +1,56 @@
+{
+ "style": "Soft natural window light, overhead or 45-degree angle, light wood or cream marble surface, cream linen and dusty-pink props, shallow depth of field, calm, clean, minimal, warm editorial food photography. No faces, no people except hands, no text, no letters, no logos, no watermarks.",
+ "character": "",
+ "frames": [
+  {
+   "name": "01-hook-slice",
+   "refs": [],
+   "prompt": "A square piece of Traditional Levantine helba cake (hilbeh): a semolina cake with fenugreek seeds, golden-orange top, decorated with whole blanched almonds in a grid, cut to show a thick dark brown date-paste layer through the middle of the cake, on a small cream plate, beside a glass cup of pale golden anise tea. Close-up, 45-degree angle, appetising."
+  },
+  {
+   "name": "02-tray",
+   "refs": [],
+   "prompt": "A whole round baking tray of freshly baked Traditional Levantine helba cake (hilbeh): a semolina cake with fenugreek seeds, golden-orange top, decorated with whole blanched almonds in a grid, cut into diamonds, steam rising, on a cream marble surface with linen. Overhead view."
+  },
+  {
+   "name": "03-ingredients",
+   "refs": [],
+   "prompt": "Ingredients laid out in small ceramic bowls on cream marble: coarse semolina, soaked fenugreek seeds, anise seeds, fennel seeds, soft pitted dates (ajwa date paste), a small jug of dark date syrup, a bowl of tahini, a glass of milk, blanched almonds. Overhead flat-lay, neat and elegant."
+  },
+  {
+   "name": "04-fenugreek",
+   "refs": [],
+   "prompt": "Close-up of a small saucepan with fenugreek seeds gently simmering in water, swollen golden seeds, light steam, a wooden spoon resting on the side."
+  },
+  {
+   "name": "05-mixing",
+   "refs": [],
+   "prompt": "A woman's hands mixing a thick golden semolina batter in a large cream bowl with a wooden spoon, fenugreek seeds and anise visible in the batter, a glass of milk being poured in. Hands and wrists only."
+  },
+  {
+   "name": "06-tahini-tray",
+   "refs": [],
+   "prompt": "A round metal baking tray being greased with tahini using a pastry brush, then half of the golden semolina batter spread smoothly in the bottom. Hands only."
+  },
+  {
+   "name": "07-date-layer",
+   "refs": [],
+   "prompt": "Hands pressing a flat even layer of soft dark ajwa date paste over the semolina batter in the round tray, making a smooth date layer. Hands only, close-up."
+  },
+  {
+   "name": "08-almonds",
+   "refs": [],
+   "prompt": "The tray now covered with the rest of the semolina batter, smoothed, and hands placing whole blanched almonds in a neat grid on top, before baking. Hands only."
+  },
+  {
+   "name": "09-syrup",
+   "refs": [],
+   "prompt": "The freshly baked Traditional Levantine helba cake (hilbeh): a semolina cake with fenugreek seeds, golden-orange top, decorated with whole blanched almonds in a grid just out of the oven, golden and glossy, and a small jug pouring warm dark date syrup over the top. Close-up."
+  },
+  {
+   "name": "10-final",
+   "refs": [],
+   "prompt": "A hand lifting one diamond piece of Traditional Levantine helba cake (hilbeh): a semolina cake with fenugreek seeds, golden-orange top, decorated with whole blanched almonds in a grid with a cake server, showing the moist golden crumb and the dark date layer inside, the tray and a glass of anise tea behind, cosy and warm. Hand only."
+  }
+ ]
+}

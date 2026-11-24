@@ -1,0 +1,56 @@
+{
+ "style": "Soft natural window light, overhead or 45-degree angle, light wood or cream marble surface, cream linen and dusty-pink props, shallow depth of field, calm, clean, minimal, warm editorial food photography. No faces, no people except hands, no text, no letters, no logos, no watermarks.",
+ "character": "",
+ "frames": [
+  {
+   "name": "01-hook-slice",
+   "refs": [],
+   "prompt": "A square piece of Levantine helba (fenugreek semolina cake), golden-brown top dotted with sesame and black nigella seeds, NO almonds, NO syrup, cut to show three clear layers: golden semolina bottom, a thick dark brown pitted date-paste (ajwa) layer in the middle, golden semolina top. On a small cream plate beside a glass cup of pale golden anise tea. Close-up, 45-degree angle, appetising."
+  },
+  {
+   "name": "02-soak",
+   "refs": [],
+   "prompt": "A small coffee cup measure of fenugreek seeds poured into a glass bowl of water to soak, golden seeds sinking, on cream marble. Close-up."
+  },
+  {
+   "name": "03-boil",
+   "refs": [],
+   "prompt": "A small cream saucepan on the stove gently boiling swollen fenugreek seeds together with green fennel seeds and anise seeds, golden water, light steam, wooden spoon. Close-up, 45-degree angle."
+  },
+  {
+   "name": "04-dry",
+   "refs": [],
+   "prompt": "Overhead flat-lay of a large cream mixing bowl with coarse semolina and white flour, surrounded by small bowls of milk powder, black nigella seeds, sesame seeds, baking powder, dry yeast, and a glass bottle of olive oil. No sugar, no almonds."
+  },
+  {
+   "name": "05-knead",
+   "refs": [],
+   "prompt": "A woman's hands kneading a soft golden semolina dough speckled with sesame and nigella seeds in a cream bowl, while warm golden fenugreek water is poured in from a small saucepan. Hands and wrists only."
+  },
+  {
+   "name": "06-first-layer",
+   "refs": [],
+   "prompt": "Hands pressing half of the golden semolina dough evenly into the bottom of a round silver aluminium baking tray, making a smooth flat first layer. Hands only, overhead."
+  },
+  {
+   "name": "07-date-layer",
+   "refs": [],
+   "prompt": "Inside a round silver aluminium baking tray: a smooth flat sheet of dark brown pitted ajwa date paste spread evenly over the golden semolina first layer, covering it completely, a thin golden rim of the first layer visible at the edge; hands smoothing the date layer. Clear dark date layer. Hands only, overhead."
+  },
+  {
+   "name": "08-second-layer",
+   "refs": [],
+   "prompt": "Inside a round silver aluminium baking tray: hands laying and pressing the second golden semolina dough layer over the dark date layer; half of the tray already covered with dough, the other half still showing the dark date paste underneath. Hands only, overhead."
+  },
+  {
+   "name": "09-oven",
+   "refs": [],
+   "prompt": "a round silver aluminium baking tray of Levantine helba (fenugreek semolina cake), golden-brown top dotted with sesame and black nigella seeds, NO almonds, NO syrup just taken out of the oven, deeply golden with browned edges, steam rising, resting on a cream folded oven cloth, oven mitt beside it. 45-degree angle."
+  },
+  {
+   "name": "10-final",
+   "refs": [],
+   "prompt": "The Levantine helba (fenugreek semolina cake), golden-brown top dotted with sesame and black nigella seeds, NO almonds, NO syrup in a round silver aluminium baking tray cut into diamonds, a cake server lifting one piece showing the golden crumb and the dark date layer inside, a glass of anise tea behind. Hand only."
+  }
+ ]
+}
