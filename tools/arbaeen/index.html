@@ -101,48 +101,109 @@ textarea { width: 100%; min-height: 88px; resize: vertical; padding: 14px 16px; 
 .cta { display: block; width: 100%; margin-top: 16px; padding: 16px; border-radius: 20px; background: var(--accent); color: #fff; font-weight: 700; font-size: 18px; min-height: 52px; box-shadow: 0 14px 24px -16px var(--accent); }
 .ghost { display: block; width: 100%; margin-top: 10px; padding: 14px; border-radius: 20px; border: 1px solid var(--line); font-size: 16px; color: var(--ink-soft); min-height: 48px; background: rgba(255,255,255,.5); }
 
-.search { width: 100%; padding: 14px 18px; border-radius: 18px; border: 1px solid var(--line); background: var(--card); font-size: 16px; }
-.chips { display: flex; gap: 8px; overflow-x: auto; margin: 0 -20px; padding: 0 20px 4px; scrollbar-width: none; }
+/* solutions library */
+.lib-hero { margin: 10px 20px 0; padding: 22px 20px 18px; border-radius: 30px; background: linear-gradient(150deg, var(--card), var(--tint)); box-shadow: 0 18px 40px -32px rgba(0,0,0,.6); }
+.lib-hero h1 { margin: 0; font-size: 32px; line-height: 1.15; }
+.lib-hero p { margin: 6px 0 14px; color: var(--ink-soft); font-size: 15px; }
+.searchbox { display: flex; align-items: center; gap: 10px; padding: 0 16px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); min-height: 52px; }
+.searchbox svg { width: 20px; height: 20px; flex: none; color: var(--ink-soft); }
+.searchbox input { flex: 1; border: 0; background: none; font-size: 16px; padding: 14px 0; outline: none; }
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+.sec-head h2 { margin: 0; font-size: 19px; }
+.sec-head span { font-size: 13px; color: var(--ink-soft); }
+.chips { display: flex; gap: 8px; overflow-x: auto; margin: 0 -20px 12px; padding: 0 20px 4px; scrollbar-width: none; }
 .chip { flex: none; padding: 8px 16px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); font-size: 15px; min-height: 40px; }
 .chip[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
-.danger { display: flex; align-items: center; gap: 12px; width: 100%; text-align: start; padding: 14px 16px; border-radius: 20px; background: var(--alert-bg); color: var(--alert); font-weight: 700; margin-top: 14px; min-height: 56px; }
-.danger .emoji { font-size: 24px; }
+.danger { display: flex; align-items: center; gap: 12px; width: 100%; text-align: start; padding: 14px 16px; border-radius: 20px; background: var(--alert-bg); color: var(--alert); font-weight: 700; min-height: 60px; }
+.danger .emoji { font-size: 26px; }
 .danger small { display: block; font-weight: 400; color: #8A4A4A; font-size: 13px; }
-.now { display: flex; gap: 10px; overflow-x: auto; margin: 0 -20px; padding: 2px 20px 10px; scrollbar-width: none; scroll-snap-type: x mandatory; }
-.now button { flex: 0 0 150px; scroll-snap-align: start; text-align: start; padding: 14px; border-radius: 22px; background: linear-gradient(160deg, var(--card), var(--tint)); box-shadow: 0 10px 22px -18px rgba(0,0,0,.5); min-height: 128px; display: flex; flex-direction: column; gap: 6px; }
-.now .emoji { font-size: 30px; }
+.danger::after { content: "‹"; margin-inline-start: auto; font-size: 24px; }
+.now { display: flex; gap: 10px; overflow-x: auto; margin: 0 -20px; padding: 2px 20px 12px; scrollbar-width: none; scroll-snap-type: x mandatory; }
+.now button { flex: 0 0 158px; scroll-snap-align: start; text-align: start; padding: 14px; border-radius: 24px; box-shadow: 0 12px 24px -20px rgba(0,0,0,.55); min-height: 138px; display: flex; flex-direction: column; gap: 6px; color: #2E2428; }
+.now .emoji { font-size: 32px; }
 .now strong { font-size: 16px; line-height: 1.3; }
-.now span { font-size: 13px; color: var(--ink-soft); }
-.lib { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
-.tile { position: relative; text-align: start; padding: 14px 14px 12px; border-radius: 22px; background: var(--card); box-shadow: 0 10px 22px -20px rgba(0,0,0,.55); min-height: 124px; display: flex; flex-direction: column; gap: 4px; overflow: hidden; }
-.tile .blob { width: 46px; height: 46px; border-radius: 16px; display: grid; place-items: center; font-size: 26px; margin-bottom: 4px; }
-.tile strong { font-size: 16px; line-height: 1.3; }
-.tile > span:last-child { font-size: 13px; color: var(--ink-soft); line-height: 1.4; }
-.tile .seen { position: absolute; top: 12px; left: 12px; font-size: 11px; color: var(--ink-soft); }
-.c-feed { background: #FCE7D9; } .c-body { background: #E9E4F7; } .c-digest { background: #E3F1E1; } .c-mind { background: #E2EEF9; }
-.empty { grid-column: 1 / -1; text-align: center; color: var(--ink-soft); padding: 20px; }
+.now span { font-size: 13px; opacity: .75; }
+.cats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.cat { text-align: start; padding: 16px; border-radius: 24px; min-height: 108px; display: flex; flex-direction: column; justify-content: space-between; color: #2E2428; box-shadow: 0 12px 24px -22px rgba(0,0,0,.6); }
+.cat .emoji { font-size: 28px; }
+.cat strong { font-size: 17px; }
+.cat span { font-size: 13px; opacity: .75; }
+.g-feed { background: linear-gradient(150deg, #FFE3CF, #FBC9A6); } .g-body { background: linear-gradient(150deg, #ECE6FB, #CFC2F2); }
+.g-digest { background: linear-gradient(150deg, #E4F4E1, #BFE2BC); } .g-mind { background: linear-gradient(150deg, #E3EFFB, #BCD6F1); }
+.rows { display: grid; gap: 10px; }
+.row { display: flex; align-items: center; gap: 14px; width: 100%; text-align: start; padding: 12px 14px; border-radius: 22px; background: var(--card); box-shadow: 0 10px 22px -20px rgba(0,0,0,.55); min-height: 76px; }
+.row .blob { flex: none; width: 52px; height: 52px; border-radius: 17px; display: grid; place-items: center; font-size: 28px; }
+.row .t { flex: 1; min-width: 0; }
+.row strong { display: block; font-size: 16px; }
+.row .t span { display: block; font-size: 13px; color: var(--ink-soft); }
+.row .meta { font-size: 12px; color: var(--ink-soft); display: flex; gap: 6px; align-items: center; margin-top: 2px; }
+.row .chev { flex: none; color: var(--ink-soft); font-size: 22px; }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: inline-block; }
+.empty { text-align: center; color: var(--ink-soft); padding: 20px; }
 
-.guide-hero { margin: 6px 20px 0; padding: 22px 20px 20px; border-radius: 30px; background: var(--card); box-shadow: 0 18px 40px -30px rgba(0,0,0,.55); position: relative; }
-.guide-hero .back { position: absolute; top: 14px; left: 14px; width: 44px; height: 44px; border-radius: 50%; background: var(--tint); display: grid; place-items: center; font-size: 20px; }
-.guide-hero .blob { width: 76px; height: 76px; border-radius: 24px; display: grid; place-items: center; font-size: 42px; }
-.guide-hero h2 { font-size: 30px; margin: 14px 0 2px; line-height: 1.2; }
-.guide-hero .hook { color: var(--ink-soft); margin: 0; }
-.why { margin: 16px 0 0; padding: 14px 16px; border-radius: 18px; background: var(--tint); font-size: 16px; }
-.why b { display: block; font-size: 13px; color: var(--accent); margin-bottom: 2px; }
+/* guide */
+.g-top { margin: 0 0 0; padding: calc(10px + var(--safe-t)) 20px 26px; border-radius: 0 0 34px 34px; color: #2E2428; position: relative; }
+.g-bar { display: flex; justify-content: space-between; align-items: center; }
+.g-bar button { width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,.7); display: grid; place-items: center; font-size: 19px; }
+.g-bar button[aria-pressed="true"] { background: #2E2428; color: #fff; }
+.g-emoji { width: 88px; height: 88px; border-radius: 28px; background: rgba(255,255,255,.65); display: grid; place-items: center; font-size: 50px; margin-top: 10px; box-shadow: 0 14px 28px -20px rgba(0,0,0,.5); }
+.g-top h1 { margin: 14px 0 2px; font-size: 32px; line-height: 1.2; }
+.g-top .hook { margin: 0; font-size: 17px; opacity: .8; }
+.g-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.g-meta span { padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.7); font-size: 13px; }
+.g-tabs { position: sticky; top: 0; z-index: 20; display: flex; gap: 8px; overflow-x: auto; padding: 12px 20px; background: color-mix(in srgb, var(--bg1) 92%, transparent); backdrop-filter: blur(10px); scrollbar-width: none; }
+.g-tabs a { flex: none; padding: 7px 14px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); font-size: 14px; color: var(--ink); text-decoration: none; }
+.g-sec { margin: 22px 20px 0; scroll-margin-top: 70px; }
+.g-sec > h2 { font-size: 20px; margin: 0 0 12px; }
+.brief { padding: 18px; border-radius: 24px; background: var(--card); font-size: 18px; line-height: 1.6; box-shadow: 0 12px 26px -24px rgba(0,0,0,.6); border-inline-start: 5px solid var(--accent); }
+.causes { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.causes li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 18px; background: var(--card); font-size: 16px; }
+.causes li::before { content: ""; flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); margin-top: 8px; }
+.normal { padding: 16px; border-radius: 22px; background: #EAF5E7; color: #2F5130; }
+.normal b { display: block; margin-bottom: 6px; }
+.normal ul { margin: 0; padding-inline-start: 18px; }
+.normal li { margin: 3px 0; }
+.ring { width: 54px; height: 54px; flex: none; }
+.ring text { font: 700 11px Tajawal, sans-serif; fill: var(--ink); }
 .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; counter-reset: s; }
 .steps li { counter-increment: s; }
-.steps button { width: 100%; display: flex; align-items: center; gap: 14px; text-align: start; padding: 14px 16px; border-radius: 20px; background: var(--card); box-shadow: 0 8px 18px -16px rgba(0,0,0,.5); font-size: 16px; min-height: 60px; }
+.steps button { width: 100%; display: flex; align-items: center; gap: 14px; text-align: start; padding: 14px 16px; border-radius: 20px; background: var(--card); box-shadow: 0 8px 18px -16px rgba(0,0,0,.5); font-size: 16px; min-height: 60px; transition: background .2s; }
 .steps button::before { content: counter(s, arabic-indic); flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--tint); color: var(--accent); font-weight: 700; }
+.steps button[aria-pressed="true"] { background: var(--tint); color: var(--ink-soft); }
 .steps button[aria-pressed="true"]::before { content: "✓"; background: var(--accent); color: #fff; }
-.steps button[aria-pressed="true"] { color: var(--ink-soft); }
-.kitchen { padding: 16px; border-radius: 22px; background: linear-gradient(150deg, #FFF6E6, #FDEBD2); font-size: 16px; }
-.kitchen .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-.kitchen .tags span { padding: 5px 12px; border-radius: 999px; background: rgba(255,255,255,.85); font-size: 14px; }
-.doc { display: flex; gap: 12px; padding: 16px; border-radius: 22px; background: var(--alert-bg); color: #7A3434; font-size: 16px; }
-.doc .emoji { font-size: 26px; }
-.doc b { display: block; color: var(--alert); }
-.related { display: flex; gap: 8px; flex-wrap: wrap; }
-.related button { padding: 8px 14px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); font-size: 15px; min-height: 40px; }
+.kitchen { padding: 16px; border-radius: 24px; background: linear-gradient(150deg, #FFF6E6, #FDEBD2); }
+.kitchen .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.kitchen .tags span { padding: 7px 14px; border-radius: 999px; background: rgba(255,255,255,.9); font-size: 15px; }
+.recipe-btn { display: flex; align-items: center; gap: 12px; width: 100%; margin-top: 12px; padding: 12px 14px; border-radius: 18px; background: #fff; text-align: start; min-height: 60px; box-shadow: 0 8px 18px -16px rgba(0,0,0,.5); }
+.recipe-btn .emoji { font-size: 30px; }
+.recipe-btn b { display: block; }
+.recipe-btn small { color: var(--ink-soft); }
+.recipe-btn::after { content: "‹"; margin-inline-start: auto; font-size: 22px; color: var(--ink-soft); }
+.avoid { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.avoid li { display: flex; gap: 10px; align-items: center; padding: 12px 14px; border-radius: 18px; background: var(--card); font-size: 16px; }
+.avoid li::before { content: "✕"; flex: none; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: #F8E1E1; color: var(--alert); font-size: 13px; font-weight: 700; }
+.myth { width: 100%; perspective: 900px; min-height: 150px; display: block; }
+.myth .in { position: relative; min-height: 150px; transition: transform .6s cubic-bezier(.2,.8,.2,1); transform-style: preserve-3d; }
+.myth.flip .in { transform: rotateY(180deg); }
+.myth .f, .myth .b { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; justify-content: center; gap: 8px; text-align: center; }
+.myth .f { background: var(--ink); color: #fff; font-size: 20px; font-weight: 700; }
+.myth .f small { font-weight: 400; font-size: 13px; opacity: .75; }
+.myth .b { background: var(--card); transform: rotateY(180deg); font-size: 16px; box-shadow: inset 0 0 0 2px var(--accent); }
+.myth .b b { font-size: 20px; color: var(--alert); }
+.doc { padding: 16px; border-radius: 24px; background: var(--alert-bg); color: #7A3434; }
+.doc b { display: flex; align-items: center; gap: 8px; color: var(--alert); font-size: 17px; margin-bottom: 8px; }
+.doc ul { margin: 0; padding-inline-start: 18px; }
+.doc li { margin: 4px 0; }
+.helpful { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; border-radius: 20px; background: var(--card); }
+.helpful div { display: flex; gap: 8px; }
+.helpful button { width: 48px; height: 44px; border-radius: 14px; background: var(--tint); font-size: 20px; }
+.helpful button[aria-pressed="true"] { background: var(--accent); }
+.related { display: flex; gap: 8px; overflow-x: auto; margin: 0 -20px; padding: 0 20px 4px; scrollbar-width: none; }
+.related button { flex: none; padding: 10px 14px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); font-size: 15px; min-height: 44px; }
+.sheet-r ul, .sheet-r ol { text-align: start; margin: 8px 0 0; padding-inline-start: 22px; }
+.sheet-r li { margin: 5px 0; }
+.sheet-r h4 { text-align: start; margin: 16px 0 0; color: var(--accent); }
+.sheet-r .note { margin-top: 14px; padding: 12px 14px; border-radius: 16px; background: var(--tint); text-align: start; font-size: 15px; }
 .list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .list li { padding: 14px 16px; border-radius: 18px; background: var(--card); border-inline-start: 4px solid var(--alert); }
 .list strong { display: block; }
@@ -243,48 +304,40 @@ textarea { width: 100%; min-height: 88px; resize: vertical; padding: 14px 16px; 
   </main>
 
   <main class="view" id="view-fix" hidden>
-    <section class="block" style="margin-top:14px">
-      <h2>حلول النفاس</h2>
-      <p class="lead">١٤ مشكلة شائعة: ليش بتصير، شو بيساعد، شو تاكلي، ومتى تروحي عالدكتورة.</p>
-      <input class="search" id="q" type="search" placeholder="شو بيزعجك؟ مثلًا: حليب، ظهر، نوم" aria-label="بحث">
-      <button class="danger" id="dangerBtn"><span class="emoji">🚨</span><span>علامات ما بتستنى<small>متى تتصلي بالدكتورة أو تروحي عالطوارئ فورًا</small></span></button>
+    <section class="lib-hero">
+      <h1>حلول النفاس</h1>
+      <p id="libSub"></p>
+      <label class="searchbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="شو بيزعجك؟ مثلًا: حليب، ظهر، نوم" aria-label="بحث"></label>
     </section>
-    <section class="block" id="nowFixBlock">
-      <h2 id="nowFixTitle">شائع بأسبوعك</h2>
-      <div class="now" id="nowFix"></div>
-    </section>
-    <section class="block">
-      <h2>كل المواضيع</h2>
-      <div class="chips" id="chips" role="toolbar" aria-label="تصنيف"></div>
-      <div class="lib" id="lib"></div>
-    </section>
+    <section class="block" style="margin-top:14px"><button class="danger" id="dangerBtn"><span class="emoji">🚨</span><span>علامات ما بتستنى<small>متى تتصلي بالدكتورة أو تروحي عالطوارئ فورًا</small></span></button></section>
+    <section class="block" id="nowFixBlock"><div class="sec-head"><h2 id="nowFixTitle"></h2><span>حسب يومك</span></div><div class="now" id="nowFix"></div></section>
+    <section class="block" id="catsBlock"><div class="sec-head"><h2>تصفّحي حسب الموضوع</h2></div><div class="cats" id="cats"></div></section>
+    <section class="block" id="listBlock"><div class="sec-head"><h2 id="listTitle">كل المواضيع</h2><span id="listCount"></span></div><div class="chips" id="chips" role="toolbar" aria-label="تصنيف"></div><div class="rows" id="lib"></div></section>
     <p class="fine">معلومات عامة للتوعية، مش بديل عن دكتورتك.</p>
   </main>
 
   <main class="view" id="view-guide" hidden>
-    <div class="guide-hero">
-      <button class="back" id="backBtn" aria-label="رجوع">→</button>
-      <span class="blob emoji" id="gEmoji"></span>
-      <h2 id="gTitle"></h2>
+    <header class="g-top" id="gTop">
+      <div class="g-bar"><button id="backBtn" aria-label="رجوع">→</button><button id="gSave" aria-label="حفظ" aria-pressed="false">🔖</button></div>
+      <div class="g-emoji emoji" id="gEmoji"></div>
+      <h1 id="gTitle"></h1>
       <p class="hook" id="gHook"></p>
-      <div class="why"><b>ليش بتصير؟</b><span id="gWhy"></span></div>
-    </div>
-    <section class="block">
-      <h2>جرّبي هالخطوات</h2>
-      <ol class="steps" id="gSteps"></ol>
-    </section>
-    <section class="block">
-      <h2>من مطبخك</h2>
-      <div class="kitchen"><span id="gFood"></span><div class="tags" id="gTags"></div></div>
-    </section>
-    <section class="block">
-      <div class="doc"><span class="emoji">🩺</span><div><b>روحي عالدكتورة إذا</b><span id="gDoc"></span></div></div>
-    </section>
-    <section class="block">
+      <div class="g-meta" id="gMeta"></div>
+    </header>
+    <nav class="g-tabs" aria-label="أقسام"><a href="#s-brief">باختصار</a><a href="#s-causes">الأسباب</a><a href="#s-plan">الخطة</a><a href="#s-kitchen">مطبخك</a><a href="#s-myth">خرافة؟</a><a href="#s-doctor">الدكتورة</a></nav>
+    <section class="g-sec" id="s-brief"><div class="brief" id="gBrief"></div></section>
+    <section class="g-sec" id="s-causes"><h2>ليش بيصير؟</h2><ul class="causes" id="gCauses"></ul></section>
+    <section class="g-sec" id="s-normal"><div class="normal"><b>✓ هاد طبيعي</b><ul id="gNormal"></ul></div></section>
+    <section class="g-sec" id="s-plan"><div class="sec-head"><h2>خطتك</h2><svg class="ring" viewBox="0 0 54 54" id="gRing"></svg></div><ol class="steps" id="gSteps"></ol></section>
+    <section class="g-sec" id="s-kitchen"><h2>من مطبخك</h2><div class="kitchen"><div class="tags" id="gTags"></div><div id="gRecipe"></div></div></section>
+    <section class="g-sec" id="s-avoid"><h2>تجنّبي</h2><ul class="avoid" id="gAvoid"></ul></section>
+    <section class="g-sec" id="s-myth"><h2>خرافة ولا حقيقة؟</h2><button class="myth" id="gMyth"><div class="in"><div class="f"><span id="gMythQ"></span><small>اضغطي لتعرفي</small></div><div class="b"><b id="gMythV"></b><span id="gMythA"></span></div></div></button></section>
+    <section class="g-sec" id="s-doctor"><div class="doc"><b>🩺 روحي عالدكتورة إذا</b><ul id="gDoc"></ul></div></section>
+    <section class="g-sec">
+      <div class="helpful"><span>ساعدك هالحل؟</span><div><button data-h="1" aria-pressed="false" aria-label="إيه">👍</button><button data-h="0" aria-pressed="false" aria-label="لأ">👎</button></div></div>
       <button class="cta" id="gShare">ابعتيها لصاحبة نفسا</button>
-      <h2 style="margin-top:24px">مواضيع قريبة</h2>
-      <div class="related" id="gRelated"></div>
     </section>
+    <section class="g-sec"><h2>مواضيع قريبة</h2><div class="related" id="gRelated"></div></section>
     <p class="fine">معلومات عامة للتوعية، مش بديل عن دكتورتك.</p>
   </main>
 
@@ -308,6 +361,7 @@ textarea { width: 100%; min-height: 88px; resize: vertical; padding: 14px 16px; 
 <div id="modalHost"></div>
 
 <script src="days.js"></script>
+<script src="fixes.js"></script>
 <script>
 {
   const $ = s => document.querySelector(s);
@@ -325,11 +379,11 @@ textarea { width: 100%; min-height: 88px; resize: vertical; padding: 14px 16px; 
   const KINDS = [["🍳", "فطور اليوم", ""], ["🌿", "شي صغير إلك", ""], ["🌙", "كلمة اليوم", "word"]];
   const CATS = [["all", "الكل"], ["feed", "الرضاعة"], ["body", "الجسم والتعافي"], ["digest", "الهضم"], ["mind", "النوم والمزاج"]];
   const WEEKS = ["الأول", "الثاني", "الثالث", "الرابع", "الخامس", "السادس"];
-  const P = FIX.map(([cat, hook, weeks, emoji, title, why, helps, food, doc], i) => ({ i, cat, hook, weeks, emoji, title, why, helps, food, doc }));
+  const P = FIXES.map((f, i) => Object.assign({ i }, f));
   const esc = t => String(t).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
 
-  let S = { name: "", birth: null, baby: "none", days: {}, steps: {}, seen: [] };
+  let S = { name: "", birth: null, baby: "none", days: {}, steps: {}, seen: [], saved: [], helpful: {} };
   const load = () => { try { const v = JSON.parse(localStorage.getItem(KEY)); if (v && v.birth) S = Object.assign(S, v); } catch (e) {} };
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} };
   const rec = d => S.days[d] || (S.days[d] = { done: [], mood: null, note: "" });
@@ -485,43 +539,87 @@ textarea { width: 100%; min-height: 88px; resize: vertical; padding: 14px 16px; 
   };
 
   // solutions
-  const nowList = () => { const w = week(); return P.filter(p => p.weeks.includes(w)).sort((a, b) => a.weeks.length - b.weeks.length).slice(0, 6); };
-  const nowCards = () => nowList().map(p => `<button data-p="${p.i}"><span class="emoji">${p.emoji}</span><strong>${esc(p.hook)}</strong><span>${esc(p.title)}</span></button>`).join("");
+  const CATINFO = { feed: ["🍼", "الرضاعة"], body: ["🌸", "الجسم والتعافي"], digest: ["🥣", "الهضم والأكل"], mind: ["🌙", "النوم والمزاج"] };
+  const AR_W = n => ar(n);
+  const weeksText = w => w.length >= 6 ? "شائع طول الأربعين" : w.length === 1 ? `شائع بالأسبوع ${WEEKS[w[0] - 1]}` : `شائع بالأسابيع ${AR_W(w[0])}–${AR_W(w[w.length - 1])}`;
+  const nowList = () => { const w = week(); return P.filter(p => p.weeks.includes(w)).sort((a, b) => a.weeks.length - b.weeks.length).slice(0, 8); };
+  const nowCards = () => nowList().map(p => `<button class="g-${p.cat}" data-p="${p.i}"><span class="emoji">${p.emoji}</span><strong>${esc(p.hook)}</strong><span>${esc(p.title)}</span></button>`).join("");
   const bindNow = el => el.querySelectorAll("button").forEach(b => b.onclick = () => openGuide(+b.dataset.p));
+  if (!S.saved) S.saved = []; if (!S.helpful) S.helpful = {};
   function renderFix() {
+    $("#libSub").textContent = `${ar(P.length)} مشكلة شائعة، كل وحدة بأسبابها وخطة واضحة، وشو تاكلي، ومتى تروحي عالدكتورة.`;
     $("#nowFixTitle").textContent = `شائع بالأسبوع ${WEEKS[week() - 1]}`;
     $("#nowFix").innerHTML = nowCards(); bindNow($("#nowFix"));
-    $("#chips").innerHTML = CATS.map(([k, n]) => `<button class="chip" data-k="${k}" aria-pressed="${filter === k}">${n}</button>`).join("");
+    $("#cats").innerHTML = Object.entries(CATINFO).map(([k, [e, n]]) => `<button class="cat g-${k}" data-k="${k}"><span class="emoji">${e}</span><span><strong>${n}</strong><br><span>${ar(P.filter(p => p.cat === k).length)} مواضيع</span></span></button>`).join("");
+    $("#cats").querySelectorAll(".cat").forEach(c => c.onclick = () => { filter = c.dataset.k; renderFix(); $("#listBlock").scrollIntoView({ behavior: reduce ? "auto" : "smooth" }); });
+    const chips = [["all", "الكل"], ...Object.entries(CATINFO).map(([k, v]) => [k, v[1]]), ["saved", "🔖 محفوظاتي"]];
+    $("#chips").innerHTML = chips.map(([k, n]) => `<button class="chip" data-k="${k}" aria-pressed="${filter === k}">${n}</button>`).join("");
     $("#chips").querySelectorAll(".chip").forEach(c => c.onclick = () => { filter = c.dataset.k; renderFix(); });
     const q = $("#q").value.trim();
-    const rows = P.filter(p => (filter === "all" || p.cat === filter) && (!q || [p.title, p.hook, p.why, p.food, ...p.helps].join(" ").includes(q)));
-    $("#nowFixBlock").hidden = !!q;
-    $("#lib").innerHTML = rows.length ? rows.map(p => `<button class="tile" data-p="${p.i}">${S.seen.includes(p.i) ? '<span class="seen">قرأتيها</span>' : ""}<span class="blob emoji c-${p.cat}">${p.emoji}</span><strong>${esc(p.title)}</strong><span>${esc(p.hook)}</span></button>`).join("")
-      : `<p class="empty">ما لقينا شي بهالكلمة. جرّبي «حليب» أو «نوم» أو «ظهر».</p>`;
-    $("#lib").querySelectorAll(".tile").forEach(b => b.onclick = () => openGuide(+b.dataset.p));
+    const rows = P.filter(p => (filter === "all" || p.cat === filter || (filter === "saved" && S.saved.includes(p.id))) &&
+      (!q || [p.title, p.hook, p.brief, ...p.causes, ...p.steps, ...p.kitchen].join(" ").includes(q)));
+    $("#nowFixBlock").hidden = $("#catsBlock").hidden = !!q;
+    $("#listTitle").textContent = q ? "نتائج البحث" : filter === "all" ? "كل المواضيع" : filter === "saved" ? "محفوظاتي" : CATINFO[filter][1];
+    $("#listCount").textContent = rows.length ? `${ar(rows.length)} موضوع` : "";
+    $("#lib").innerHTML = rows.length ? rows.map(p => `<button class="row" data-p="${p.i}"><span class="blob emoji g-${p.cat}">${p.emoji}</span><span class="t"><strong>${esc(p.title)}</strong><span>${esc(p.hook)}</span><span class="meta">${S.seen.includes(p.i) ? '<i class="dot"></i> قرأتيها ·' : ""} ⏱ ${esc(p.dur)}</span></span>${S.saved.includes(p.id) ? '<span>🔖</span>' : ""}<span class="chev">‹</span></button>`).join("")
+      : `<p class="empty">${filter === "saved" ? "لسا ما حفظتي شي. اضغطي 🔖 بأي موضوع ليوصل هون." : "ما لقينا شي بهالكلمة. جرّبي «حليب» أو «نوم» أو «ظهر»."}</p>`;
+    $("#lib").querySelectorAll(".row").forEach(b => b.onclick = () => openGuide(+b.dataset.p));
   }
   $("#q").oninput = renderFix;
+  function li(arr) { return arr.map(t => `<li>${esc(t)}</li>`).join(""); }
+  function ring() {
+    const p = current, done = (S.steps[p.i] || []).length, n = p.steps.length, f = n ? done / n : 0, r = 22, c = 2 * Math.PI * r;
+    $("#gRing").innerHTML = `<circle cx="27" cy="27" r="${r}" fill="none" stroke="var(--tint)" stroke-width="6"/><circle cx="27" cy="27" r="${r}" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${c * (1 - f)}" transform="rotate(-90 27 27)" style="transition:stroke-dashoffset .5s"/><text x="27" y="31" text-anchor="middle">${ar(done)}/${ar(n)}</text>`;
+  }
   function openGuide(i) {
     const p = P[i]; current = p;
     if (!S.seen.includes(i)) { S.seen.push(i); save(); }
-    $("#gEmoji").textContent = p.emoji; $("#gEmoji").className = "blob emoji c-" + p.cat;
-    $("#gTitle").textContent = p.title; $("#gHook").textContent = p.hook; $("#gWhy").textContent = p.why;
+    $("#gTop").className = "g-top g-" + p.cat;
+    $("#gEmoji").textContent = p.emoji; $("#gTitle").textContent = p.title; $("#gHook").textContent = p.hook;
+    $("#gMeta").innerHTML = `<span>⏱ ${esc(p.dur)}</span><span>📅 ${esc(weeksText(p.weeks))}</span><span>${CATINFO[p.cat][0]} ${CATINFO[p.cat][1]}</span>`;
+    $("#gSave").setAttribute("aria-pressed", S.saved.includes(p.id));
+    $("#gBrief").textContent = p.brief;
+    $("#gCauses").innerHTML = li(p.causes);
+    $("#s-normal").hidden = !p.normal.length; $("#gNormal").innerHTML = li(p.normal);
     const done = S.steps[i] || [];
-    $("#gSteps").innerHTML = p.helps.map((h, j) => `<li><button aria-pressed="${done.includes(j)}" data-j="${j}">${esc(h)}</button></li>`).join("");
+    $("#gSteps").innerHTML = p.steps.map((h, j) => `<li><button aria-pressed="${done.includes(j)}" data-j="${j}">${esc(h)}</button></li>`).join("");
     $("#gSteps").querySelectorAll("button").forEach(b => b.onclick = () => {
       const j = +b.dataset.j, arr = S.steps[i] || (S.steps[i] = []), k = arr.indexOf(j);
-      if (k > -1) arr.splice(k, 1); else { arr.push(j); toast("جرّبتيها 👏"); }
-      save(); b.setAttribute("aria-pressed", k === -1);
+      if (k > -1) arr.splice(k, 1); else arr.push(j);
+      save(); b.setAttribute("aria-pressed", k === -1); ring();
+      if (k === -1) toast(arr.length === p.steps.length ? "كمّلتي الخطة كاملة ✨" : "برافو عليكِ 👏");
     });
-    const parts = p.food.split(/[،,:]/).map(s => s.replace(/\.$/, "").trim()).filter(s => s && s.length < 34);
-    $("#gFood").textContent = parts.length > 2 ? "أكلات بتساعدك:" : p.food;
-    $("#gTags").innerHTML = parts.length > 2 ? parts.map(t => `<span>${esc(t)}</span>`).join("") : "";
-    $("#gDoc").textContent = p.doc;
+    ring();
+    $("#gTags").innerHTML = p.kitchen.map(t => `<span>${esc(t)}</span>`).join("");
+    const r = p.recipe && RECIPES[p.recipe];
+    $("#gRecipe").innerHTML = r ? `<button class="recipe-btn" id="gRecipeBtn"><span class="emoji">${r.emoji}</span><span><b>${esc(r.title)}</b><small>الوصفة كاملة بالكمّيات</small></span></button>` : "";
+    if (r) $("#gRecipeBtn").onclick = () => openRecipe(p.recipe);
+    $("#gAvoid").innerHTML = li(p.avoid);
+    $("#gMyth").classList.remove("flip");
+    $("#gMythQ").textContent = `«${p.myth[0]}»`; $("#gMythV").textContent = p.myth[1] ? "✓ صح" : "✕ خرافة"; $("#gMythA").textContent = p.myth[2];
+    $("#gDoc").innerHTML = li(p.doctor);
+    document.querySelectorAll(".helpful button").forEach(b => b.setAttribute("aria-pressed", String(S.helpful[p.id]) === b.dataset.h));
     $("#gRelated").innerHTML = P.filter(x => x.cat === p.cat && x.i !== i).map(x => `<button data-p="${x.i}"><span class="emoji">${x.emoji}</span> ${esc(x.title)}</button>`).join("");
     $("#gRelated").querySelectorAll("button").forEach(b => b.onclick = () => openGuide(+b.dataset.p));
     if (currentView !== "guide") prevView = currentView;
     show("guide");
   }
+  function openRecipe(id) {
+    const r = RECIPES[id];
+    modal(`<div class="sheet-r"><div class="emoji" style="font-size:48px">${r.emoji}</div><h3>${esc(r.title)}</h3><h4>المكونات</h4><ul>${li(r.ingredients)}</ul><h4>الطريقة</h4><ol>${li(r.steps)}</ol><div class="note">${esc(r.note)}</div></div><button class="ghost" data-close>سكّري</button>`);
+  }
+  $("#gMyth").onclick = () => $("#gMyth").classList.toggle("flip");
+  $("#gSave").onclick = () => {
+    const id = current.id, k = S.saved.indexOf(id);
+    if (k > -1) S.saved.splice(k, 1); else S.saved.push(id);
+    save(); $("#gSave").setAttribute("aria-pressed", k === -1); toast(k === -1 ? "انحفظ بمحفوظاتك 🔖" : "انشال من المحفوظات");
+  };
+  document.querySelectorAll(".helpful button").forEach(b => b.onclick = () => {
+    S.helpful[current.id] = +b.dataset.h; save();
+    document.querySelectorAll(".helpful button").forEach(x => x.setAttribute("aria-pressed", x === b));
+    toast(b.dataset.h === "1" ? "مبسوطين إنه ساعدك 🤍" : "شكرًا، رح نحسّنه 🤍");
+  });
+  document.querySelectorAll(".g-tabs a").forEach(a => a.onclick = e => { e.preventDefault(); $(a.getAttribute("href")).scrollIntoView({ behavior: reduce ? "auto" : "smooth" }); });
   $("#backBtn").onclick = () => show(prevView || "fix");
   $("#dangerBtn").onclick = () => modal(`<h3>علامات ما بتستنى 🚨</h3><p>إذا لاحظتي وحدة منها، اتصلي بدكتورتك أو روحي عالطوارئ.</p>
     <ul class="list" style="text-align:start;margin-top:14px">${WARN.map(w => `<li><strong>${esc(w[0])}</strong><span>${esc(w[1])}</span></li>`).join("")}</ul><button class="ghost" data-close>فهمت</button>`);
@@ -573,18 +671,17 @@ textarea { width: 100%; min-height: 88px; resize: vertical; padding: 14px 16px; 
     x.beginPath(); x.roundRect(80, top, W - 160, cardH, 56); x.fill(); x.restore();
     x.textAlign = "right"; x.fillStyle = css("--accent"); x.font = "700 44px Tajawal"; x.fillText("جرّبي:", W - 140, top + 90);
     let y = top + 180;
-    p.helps.forEach((h, i) => {
+    p.steps.slice(0, 3).forEach((h, i) => {
       x.fillStyle = css("--tint"); x.beginPath(); x.arc(W - 160, y - 15, 32, 0, 7); x.fill();
       x.fillStyle = css("--accent"); x.font = "700 38px Tajawal"; x.textAlign = "center"; x.fillText(ar(i + 1), W - 160, y);
-      x.textAlign = "right"; x.fillStyle = css("--ink"); x.font = "400 44px Tajawal"; y = wrap(x, h, W - 220, y, 700, 58) + 40;
+      x.textAlign = "right"; x.fillStyle = css("--ink"); x.font = "400 42px Tajawal"; y = wrap(x, h, W - 220, y, 700, 56) + 34;
     });
     x.textAlign = "right"; x.fillStyle = css("--accent"); x.font = "700 40px Tajawal"; x.fillText("من مطبخك:", W - 140, y + 10);
-    const food = p.food.length > 95 ? p.food.slice(0, p.food.lastIndexOf("،", 92)) + "…" : p.food;
-    x.fillStyle = css("--ink-soft"); x.font = "400 38px Tajawal"; wrap(x, food, W - 140, y + 70, 780, 52);
+    x.fillStyle = css("--ink-soft"); x.font = "400 38px Tajawal"; wrap(x, p.kitchen.slice(0, 5).join("، "), W - 140, y + 70, 780, 52);
     x.textAlign = "center";
     x.fillStyle = css("--alert-bg"); x.beginPath(); x.roundRect(80, 1380, W - 160, 250, 46); x.fill();
     x.fillStyle = css("--alert"); x.font = "700 42px Tajawal"; x.fillText("روحي عالدكتورة إذا", W / 2, 1450);
-    x.fillStyle = "#7A3434"; x.font = "400 38px Tajawal"; wrap(x, p.doc, W / 2, 1515, 820, 52);
+    x.fillStyle = "#7A3434"; x.font = "400 38px Tajawal"; wrap(x, p.doctor.slice(0, 2).join("، "), W / 2, 1515, 820, 52);
     await footer(x, W); return c;
   }
   function shareCanvas(c, name, text) {
