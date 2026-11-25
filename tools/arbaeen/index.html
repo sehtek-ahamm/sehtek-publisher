@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-baby="none">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>رفيقة الأربعين | صحتك أهم</title>
+<meta name="description" content="رفيقتك بأيام النفاس: فطور اليوم، شي صغير إلك، حلول لمشاكل النفاس الشائعة… لحتى يصير قمرك بدر.">
+<meta name="theme-color" content="#FFF5F3">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE: tender and hopeful, a soft dawn after long nights.
+   IDEA: a sleepy little moon that grows brighter for forty days, then opens its eyes as a full moon.
+   PICTURE: the moon character on a pastel dawn sky, ringed by forty beads that light up day by day.
+   COLOUR+TYPE: blush for a girl, sky blue for a boy, the brand's rose when not chosen; warm moon gold; Tajawal to read, Aref Ruqaa for the day and the word.
+   LAYOUT: one thumb-friendly column; moon on top, the day below; «حلول» is a library of problem cards opening into full guides. */
+@font-face { font-family: "Tajawal"; src: url("Tajawal-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Tajawal"; src: url("Tajawal-Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+:root {
+  color-scheme: light;
+  --bg1: #FAF6F0; --bg2: #F3E4DF; --card: #FFFFFF; --tint: #F7ECE8;
+  --accent: #A8777B; --gold: #F2C27B; --ink: #4A2F27; --ink-soft: #85665E;
+  --alert: #C25B5B; --alert-bg: #FBE9E7;
+  --line: rgba(74, 47, 39, .10);
+  --font: "Tajawal", system-ui, sans-serif;
+  --script: "Aref Ruqaa", "Tajawal", serif;
+  --emoji: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  --safe-b: env(safe-area-inset-bottom, 0px); --safe-t: env(safe-area-inset-top, 0px);
+}
+[data-baby="girl"] { --bg1: #FFF5F3; --bg2: #FBDDE1; --tint: #FDECEE; --accent: #D07A88; --ink: #5B2C38; --ink-soft: #94626E; --line: rgba(91,44,56,.10); }
+[data-baby="boy"]  { --bg1: #F4F9FE; --bg2: #D7E8F8; --tint: #E8F1FB; --accent: #5E8FC2; --ink: #1F3B5A; --ink-soft: #5C7896; --line: rgba(31,59,90,.10); }
+* { box-sizing: border-box; min-width: 0; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; color: var(--ink); font-family: var(--font); overflow-x: clip; }
+body { min-height: 100dvh; font-size: 17px; line-height: 1.6; background: linear-gradient(180deg, var(--bg2) 0%, var(--bg1) 46%) fixed; }
+button, input, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; border: 0; background: none; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 12px; }
+[hidden] { display: none !important; }
+.emoji { font-family: var(--emoji); line-height: 1; }
+.app { max-width: 480px; margin: 0 auto; min-height: 100dvh; padding: calc(8px + var(--safe-t)) 0 calc(98px + var(--safe-b)); }
+.sky { position: fixed; inset: 0; pointer-events: none; z-index: -1; }
+
+.top { display: flex; align-items: center; justify-content: space-between; padding: 8px 20px 0; font-size: 15px; color: var(--ink-soft); }
+.top .brand { display: flex; align-items: center; gap: 8px; font-weight: 700; color: var(--accent); }
+.top .brand img { width: 32px; height: 32px; border-radius: 50%; background: #fff; padding: 3px; box-shadow: 0 2px 8px -4px rgba(0,0,0,.25); }
+.top button { padding: 8px 4px; color: var(--ink-soft); font-size: 15px; min-height: 44px; }
+
+.moon-stage { position: relative; width: min(80vw, 340px); aspect-ratio: 1; margin: 0 auto; }
+.moon-stage svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.bob { animation: bob 5s ease-in-out infinite; transform-origin: 50% 50%; }
+@keyframes bob { 50% { transform: translateY(-1.6px) rotate(-1.5deg); } }
+.twinkle { animation: tw 3s ease-in-out infinite; }
+@keyframes tw { 50% { opacity: .35; } }
+.day-title { text-align: center; margin-top: -4px; }
+.day-title .n { font-family: var(--script); font-size: 48px; line-height: 1.55; color: var(--ink); padding-top: 4px; }
+.day-title .of { color: var(--ink-soft); font-size: 15px; margin-top: 4px; }
+.bar { width: min(70vw, 280px); height: 8px; margin: 10px auto 0; border-radius: 9px; background: rgba(255,255,255,.7); overflow: hidden; box-shadow: inset 0 0 0 1px var(--line); }
+.bar i { display: block; height: 100%; border-radius: 9px; background: linear-gradient(90deg, var(--gold), var(--accent)); transition: width .8s cubic-bezier(.2,.8,.2,1); }
+
+.block { margin: 26px 20px 0; }
+.block > h2 { font-size: 19px; margin: 0 0 12px; }
+.lead { color: var(--ink-soft); margin: -6px 0 14px; font-size: 15px; }
+.fine { font-size: 13px; color: var(--ink-soft); text-align: center; margin: 26px 26px 0; }
+
+.moods { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.moods button { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 10px 2px; border-radius: 18px; background: var(--card); font-size: 12px; color: var(--ink-soft); border: 2px solid transparent; min-height: 44px; box-shadow: 0 6px 14px -12px rgba(0,0,0,.4); }
+.moods .emoji { font-size: 28px; }
+.moods button[aria-pressed="true"] { border-color: var(--accent); color: var(--ink); background: var(--tint); }
+.reply { margin-top: 12px; padding: 14px 16px; border-radius: 18px; background: var(--card); border-inline-start: 4px solid var(--accent); font-size: 15px; }
+.reply strong { display: block; margin-bottom: 2px; }
+.reply.urgent { border-color: var(--alert); background: var(--alert-bg); }
+
+.deck { display: grid; gap: 12px; }
+.card { border-radius: 26px; padding: 18px 20px 16px; background: var(--card); box-shadow: 0 14px 30px -24px rgba(0,0,0,.45); display: flex; flex-direction: column; }
+.card .kind { display: flex; align-items: center; gap: 8px; color: var(--ink-soft); font-size: 14px; }
+.card .kind .emoji { font-size: 22px; width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: var(--tint); }
+.card p { margin: 10px 0 0; font-size: 20px; line-height: 1.5; text-wrap: pretty; }
+.card.word { background: var(--accent); color: #fff; }
+.card.word .kind { color: rgba(255,255,255,.85); }
+.card.word .kind .emoji { background: rgba(255,255,255,.18); }
+.card.word p { font-family: var(--script); font-size: 26px; line-height: 1.9; }
+.done { align-self: flex-start; margin-top: 14px; display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; background: var(--tint); font-size: 15px; min-height: 44px; }
+.done i { width: 22px; height: 22px; border-radius: 50%; border: 2px solid currentColor; display: grid; place-items: center; font-style: normal; font-size: 13px; opacity: .7; }
+.card.word .done { background: rgba(255,255,255,.16); }
+.card.is-done .done { background: var(--gold); color: var(--ink); font-weight: 700; }
+.card.is-done .done i { opacity: 1; background: var(--ink); color: var(--gold); border-color: var(--ink); }
+
+textarea { width: 100%; min-height: 88px; resize: vertical; padding: 14px 16px; border-radius: 18px; border: 1px solid var(--line); background: var(--card); font-size: 16px; line-height: 1.6; }
+.saved { font-size: 13px; color: var(--ink-soft); min-height: 20px; margin-top: 4px; }
+
+.nights { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px 8px; }
+.night { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 13px; color: var(--ink-soft); padding: 8px 0 6px; border-radius: 16px; min-height: 44px; }
+.night svg { width: 46px; height: 46px; }
+.night.today { background: var(--card); color: var(--ink); box-shadow: 0 8px 18px -14px rgba(0,0,0,.5); }
+.night.locked { opacity: .4; }
+.night .m { width: 7px; height: 7px; border-radius: 50%; }
+.cta { display: block; width: 100%; margin-top: 16px; padding: 16px; border-radius: 20px; background: var(--accent); color: #fff; font-weight: 700; font-size: 18px; min-height: 52px; box-shadow: 0 14px 24px -16px var(--accent); }
+.ghost { display: block; width: 100%; margin-top: 10px; padding: 14px; border-radius: 20px; border: 1px solid var(--line); font-size: 16px; color: var(--ink-soft); min-height: 48px; background: rgba(255,255,255,.5); }
+
+/* solutions library */
+.lib-hero { margin: 10px 20px 0; padding: 22px 20px 18px; border-radius: 30px; background: linear-gradient(150deg, var(--card), var(--tint)); box-shadow: 0 18px 40px -32px rgba(0,0,0,.6); }
+.lib-hero h1 { margin: 0; font-size: 32px; line-height: 1.35; }
+.lib-hero p { margin: 6px 0 14px; color: var(--ink-soft); font-size: 15px; }
+.searchbox { display: flex; align-items: center; gap: 10px; padding: 0 16px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); min-height: 52px; }
+.searchbox svg { width: 20px; height: 20px; flex: none; color: var(--ink-soft); }
+.searchbox input { flex: 1; border: 0; background: none; font-size: 16px; padding: 14px 0; outline: none; }
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+.sec-head h2 { margin: 0; font-size: 19px; }
+.sec-head span { font-size: 13px; color: var(--ink-soft); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
+.chip { flex: none; padding: 8px 16px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); font-size: 15px; min-height: 40px; }
+.chip[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+.danger { display: flex; align-items: center; gap: 12px; width: 100%; text-align: start; padding: 14px 16px; border-radius: 20px; background: var(--alert-bg); color: var(--alert); font-weight: 700; min-height: 60px; }
+.danger .emoji { font-size: 26px; }
+.danger small { display: block; font-weight: 400; color: #8A4A4A; font-size: 13px; }
+.danger::after { content: "‹"; margin-inline-start: auto; font-size: 24px; }
+.now { display: flex; gap: 10px; overflow-x: auto; margin: 0 -20px; padding: 2px 20px 12px; scrollbar-width: none; scroll-snap-type: x mandatory; }
+.now button { flex: 0 0 158px; scroll-snap-align: start; text-align: start; padding: 14px; border-radius: 24px; box-shadow: 0 12px 24px -20px rgba(0,0,0,.55); min-height: 138px; display: flex; flex-direction: column; gap: 6px; color: #2E2428; }
+.now .emoji { font-size: 32px; }
+.now strong { font-size: 16px; line-height: 1.4; }
+.now span { font-size: 13px; opacity: .75; }
+.cats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.cat { text-align: start; padding: 16px; border-radius: 24px; min-height: 108px; display: flex; flex-direction: column; justify-content: space-between; color: #2E2428; box-shadow: 0 12px 24px -22px rgba(0,0,0,.6); }
+.cat .emoji { font-size: 28px; }
+.cat strong { font-size: 17px; }
+.cat span { font-size: 13px; opacity: .75; }
+.g-feed { background: linear-gradient(150deg, #FFE3CF, #FBC9A6); } .g-body { background: linear-gradient(150deg, #ECE6FB, #CFC2F2); }
+.g-digest { background: linear-gradient(150deg, #E4F4E1, #BFE2BC); } .g-mind { background: linear-gradient(150deg, #E3EFFB, #BCD6F1); }
+.rows { display: grid; gap: 10px; }
+.row { display: flex; align-items: center; gap: 14px; width: 100%; text-align: start; padding: 12px 14px; border-radius: 22px; background: var(--card); box-shadow: 0 10px 22px -20px rgba(0,0,0,.55); min-height: 76px; }
+.row .blob { flex: none; width: 52px; height: 52px; border-radius: 17px; display: grid; place-items: center; font-size: 28px; }
+.row .t { flex: 1; min-width: 0; }
+.row strong { display: block; font-size: 16px; line-height: 1.45; }
+.row .t span { display: block; font-size: 13px; color: var(--ink-soft); }
+.row .meta { font-size: 12px; color: var(--ink-soft); display: flex; gap: 6px; align-items: center; margin-top: 2px; }
+.row .chev { flex: none; color: var(--ink-soft); font-size: 22px; }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: inline-block; }
+.empty { text-align: center; color: var(--ink-soft); padding: 20px; }
+
+/* guide */
+.g-top { margin: 0 0 0; padding: calc(10px + var(--safe-t)) 20px 26px; border-radius: 0 0 34px 34px; color: #2E2428; position: relative; }
+.g-bar { display: flex; justify-content: space-between; align-items: center; }
+.g-bar button { width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,.7); display: grid; place-items: center; font-size: 19px; }
+.g-bar button[aria-pressed="true"] { background: #2E2428; color: #fff; }
+.g-emoji { width: 88px; height: 88px; border-radius: 28px; background: rgba(255,255,255,.65); display: grid; place-items: center; font-size: 50px; margin-top: 10px; box-shadow: 0 14px 28px -20px rgba(0,0,0,.5); }
+.g-top h1 { margin: 14px 0 4px; font-size: 32px; line-height: 1.35; }
+.g-top .hook { margin: 0; font-size: 17px; opacity: .8; }
+.g-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.g-meta span { padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.7); font-size: 13px; }
+.g-tabs { position: sticky; top: 0; z-index: 20; display: flex; gap: 8px; overflow-x: auto; padding: 12px 20px; background: color-mix(in srgb, var(--bg1) 92%, transparent); backdrop-filter: blur(10px); scrollbar-width: none; }
+.g-tabs a { flex: none; padding: 7px 14px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); font-size: 14px; color: var(--ink); text-decoration: none; }
+.g-sec { margin: 22px 20px 0; scroll-margin-top: 70px; }
+.g-sec > h2 { font-size: 20px; margin: 0 0 12px; }
+.brief { padding: 18px; border-radius: 24px; background: var(--card); font-size: 18px; line-height: 1.6; box-shadow: 0 12px 26px -24px rgba(0,0,0,.6); border-inline-start: 5px solid var(--accent); }
+.causes { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.causes li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 18px; background: var(--card); font-size: 16px; }
+.causes li::before { content: ""; flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); margin-top: 8px; }
+.normal { padding: 16px; border-radius: 22px; background: #EAF5E7; color: #2F5130; }
+.normal b { display: block; margin-bottom: 6px; }
+.normal ul { margin: 0; padding-inline-start: 18px; }
+.normal li { margin: 3px 0; }
+.ring { width: 54px; height: 54px; flex: none; }
+.ring text { font: 700 11px Tajawal, sans-serif; fill: var(--ink); }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; counter-reset: s; }
+.steps li { counter-increment: s; }
+.steps button { width: 100%; display: flex; align-items: center; gap: 14px; text-align: start; padding: 14px 16px; border-radius: 20px; background: var(--card); box-shadow: 0 8px 18px -16px rgba(0,0,0,.5); font-size: 16px; min-height: 60px; transition: background .2s; }
+.steps button::before { content: counter(s, arabic-indic); flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--tint); color: var(--accent); font-weight: 700; }
+.steps button[aria-pressed="true"] { background: var(--tint); color: var(--ink-soft); }
+.steps button[aria-pressed="true"]::before { content: "✓"; background: var(--accent); color: #fff; }
+.kitchen { padding: 16px; border-radius: 24px; background: linear-gradient(150deg, #FFF6E6, #FDEBD2); }
+.kitchen .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.kitchen .tags span { padding: 7px 14px; border-radius: 999px; background: rgba(255,255,255,.9); font-size: 15px; }
+.recipe-btn { display: flex; align-items: center; gap: 12px; width: 100%; margin-top: 12px; padding: 12px 14px; border-radius: 18px; background: #fff; text-align: start; min-height: 60px; box-shadow: 0 8px 18px -16px rgba(0,0,0,.5); }
+.recipe-btn .emoji { font-size: 30px; flex: none; width: 40px; text-align: center; }
+.recipe-btn b { display: block; }
+.recipe-btn small { color: var(--ink-soft); }
+.recipe-btn::after { content: "‹"; margin-inline-start: auto; font-size: 22px; color: var(--ink-soft); }
+.avoid { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.avoid li { display: flex; gap: 10px; align-items: center; padding: 12px 14px; border-radius: 18px; background: var(--card); font-size: 16px; }
+.avoid li::before { content: "✕"; flex: none; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: #F8E1E1; color: var(--alert); font-size: 13px; font-weight: 700; }
+.myth { width: 100%; perspective: 900px; min-height: 150px; display: block; }
+.myth .in { position: relative; display: grid; min-height: 150px; transition: transform .6s cubic-bezier(.2,.8,.2,1); transform-style: preserve-3d; }
+.myth.flip .in { transform: rotateY(180deg); }
+.myth .f, .myth .b { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; justify-content: center; gap: 8px; text-align: center; }
+.myth .f { background: var(--ink); color: #fff; font-size: 20px; font-weight: 700; }
+.myth .f small { font-weight: 400; font-size: 13px; opacity: .75; }
+.myth .b { background: var(--card); transform: rotateY(180deg); font-size: 16px; box-shadow: inset 0 0 0 2px var(--accent); }
+.myth .b b { font-size: 20px; color: var(--alert); }
+.doc { padding: 16px; border-radius: 24px; background: var(--alert-bg); color: #7A3434; }
+.doc b { display: flex; align-items: center; gap: 8px; color: var(--alert); font-size: 17px; margin-bottom: 8px; }
+.doc ul { margin: 0; padding-inline-start: 18px; }
+.doc li { margin: 4px 0; }
+.helpful { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; border-radius: 20px; background: var(--card); }
+.helpful div { display: flex; gap: 8px; }
+.helpful button { width: 48px; height: 44px; border-radius: 14px; background: var(--tint); font-size: 20px; }
+.helpful button[aria-pressed="true"] { background: var(--accent); }
+.related { display: flex; gap: 8px; overflow-x: auto; margin: 0 -20px; padding: 0 20px 4px; scrollbar-width: none; }
+.related button { flex: none; padding: 10px 14px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); font-size: 15px; min-height: 44px; }
+.sheet-r ul, .sheet-r ol { text-align: start; margin: 8px 0 0; padding-inline-start: 22px; }
+.sheet-r li { margin: 5px 0; }
+.sheet-r h4 { text-align: start; margin: 16px 0 0; color: var(--accent); }
+.sheet-r .note { margin-top: 14px; padding: 12px 14px; border-radius: 16px; background: var(--tint); text-align: start; font-size: 15px; }
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.list li { padding: 14px 16px; border-radius: 18px; background: var(--card); border-inline-start: 4px solid var(--alert); }
+.list strong { display: block; }
+.list span { font-size: 15px; color: var(--ink-soft); }
+
+.nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: min(480px, 100%); z-index: 30;
+  display: grid; grid-template-columns: repeat(4, 1fr); padding: 8px 10px calc(10px + var(--safe-b));
+  background: rgba(255,255,255,.9); backdrop-filter: blur(16px); border-top: 1px solid var(--line); }
+.nav button { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 6px 0; font-size: 13px; color: var(--ink-soft); min-height: 48px; }
+.nav svg { width: 26px; height: 26px; }
+.nav button[aria-current="page"] { color: var(--accent); font-weight: 700; }
+
+.modal { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 22px; }
+.modal .veil { position: absolute; inset: 0; background: rgba(30,20,25,.45); }
+.modal .box { position: relative; width: min(420px, 100%); max-height: 90dvh; overflow-y: auto; border-radius: 30px; padding: 24px 20px; background: var(--bg1); text-align: center; animation: rise .45s cubic-bezier(.2,1.2,.4,1); }
+@keyframes rise { from { transform: translateY(18px) scale(.96); opacity: 0; } }
+.modal h3 { margin: 4px 0 6px; font-size: 24px; }
+.modal p { margin: 0; color: var(--ink-soft); }
+.modal img { width: 100%; border-radius: 18px; margin-top: 12px; box-shadow: 0 16px 30px -20px rgba(0,0,0,.5); }
+.letter { text-align: start; margin-top: 14px; display: grid; gap: 10px; }
+.letter div { padding: 10px 14px; border-radius: 14px; background: var(--card); font-size: 15px; }
+.letter b { color: var(--accent); margin-inline-end: 6px; }
+.toast { position: fixed; z-index: 60; left: 50%; bottom: calc(104px + var(--safe-b)); transform: translateX(-50%); padding: 12px 20px; border-radius: 999px; background: var(--ink); color: #fff; font-size: 15px; font-weight: 700; white-space: nowrap; animation: rise .3s ease-out; }
+
+.welcome { max-width: 480px; margin: 0 auto; min-height: 100dvh; padding: calc(20px + var(--safe-t)) 24px calc(28px + var(--safe-b)); display: flex; flex-direction: column; }
+.welcome h1 { font-family: var(--script); font-weight: 700; font-size: 48px; line-height: 1.6; text-align: center; margin: 0 0 6px; }
+.welcome .sub { text-align: center; color: var(--ink-soft); margin: 0 0 16px; }
+.welcome .moon-stage { width: min(62vw, 250px); }
+.field { display: block; margin-top: 12px; }
+.field > span { display: block; font-size: 15px; margin-bottom: 6px; color: var(--ink-soft); }
+.field input { width: 100%; padding: 15px 18px; border-radius: 18px; border: 1px solid var(--line); background: var(--card); font-size: 17px; min-height: 52px; }
+.seg { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 5px; border-radius: 18px; background: rgba(255,255,255,.7); border: 1px solid var(--line); }
+.seg button { padding: 10px 4px; border-radius: 14px; font-size: 15px; min-height: 44px; }
+.seg button[aria-pressed="true"] { background: var(--accent); color: #fff; font-weight: 700; }
+.err { color: var(--alert); font-size: 14px; min-height: 22px; margin-top: 6px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+<canvas class="sky" id="sky" aria-hidden="true"></canvas>
+
+<section class="welcome" id="welcome" hidden>
+  <div class="moon-stage" id="wMoon" aria-hidden="true"></div>
+  <h1>رفيقة الأربعين</h1>
+  <p class="sub">كل يوم من أيام النفاس: فطور دافي، شي صغير إلك، كلمة حلوة، وحلول للي بيزعجك… لحتى يصير قمرك بدر.</p>
+  <form id="setup" novalidate>
+    <div class="field"><span>المولود</span>
+      <div class="seg" id="babySeg" role="group" aria-label="المولود">
+        <button type="button" data-b="girl">بنت 🎀</button><button type="button" data-b="boy">ولد 💙</button><button type="button" data-b="none" aria-pressed="true">بلاش</button>
+      </div>
+    </div>
+    <label class="field"><span>اسمك (اختياري)</span><input id="mName" maxlength="18" autocomplete="given-name" placeholder="مثلًا: هيفاء"></label>
+    <label class="field"><span>يوم الولادة</span><input id="mBirth" type="date"></label>
+    <div class="err" id="err" role="alert"></div>
+    <button class="cta" type="submit">ابدئي أربعينك</button>
+  </form>
+</section>
+
+<div class="app" id="app" hidden>
+  <header class="top">
+    <span class="brand"><img src="logo.png" alt=""> صحتك أهم</span>
+    <button id="editBtn">تعديل</button>
+  </header>
+
+  <main class="view" id="view-today">
+    <div class="moon-stage" id="moon" role="img"></div>
+    <div class="day-title"><div class="n" id="dayN"></div><div class="of" id="dayOf"></div></div>
+    <div class="bar" aria-hidden="true"><i id="bar"></i></div>
+    <section class="block">
+      <h2 id="moodQ">كيفك اليوم؟</h2>
+      <div class="moods" id="moods"></div>
+      <div class="reply" id="reply" hidden></div>
+    </section>
+    <section class="block">
+      <h2>شائع بأسبوعك</h2>
+      <div class="now" id="nowToday"></div>
+    </section>
+    <section class="block">
+      <h2>إلك اليوم</h2>
+      <div class="deck" id="deck"></div>
+    </section>
+    <section class="block">
+      <h2>يومياتي</h2>
+      <p class="lead">سطر صغير كل يوم عنك أو عن طفلك: أول ابتسامة، ليلة صعبة، لحظة حلوة. ما حدا بيشوفه غيرك، وبآخر الأربعين بتلاقي كل سطورك مجمّعة بـ«رسالة أربعيني» بصفحة الليالي.</p>
+      <textarea id="note" maxlength="280" placeholder="مثلًا: اليوم مسك إصبعي ونام…"></textarea>
+      <div class="saved" id="saved" aria-live="polite"></div>
+    </section>
+    <p class="fine">معلومات عامة للتوعية، مش بديل عن دكتورتك.</p>
+  </main>
+
+  <main class="view" id="view-nights" hidden>
+    <section class="block" style="margin-top:14px">
+      <h2>أربعين ليلة</h2>
+      <p class="lead">كل قمر يوم. النقطة تحته لونها مزاجك بهداك اليوم.</p>
+      <div class="nights" id="nights"></div>
+      <button class="cta" id="letterBtn">رسالة أربعيني</button>
+    </section>
+  </main>
+
+  <main class="view" id="view-fix" hidden>
+    <section class="lib-hero">
+      <h1>حلول النفاس</h1>
+      <p id="libSub"></p>
+      <label class="searchbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="شو بيزعجك؟ مثلًا: حليب، ظهر، نوم" aria-label="بحث"></label>
+    </section>
+    <section class="block" style="margin-top:14px"><button class="danger" id="dangerBtn"><span class="emoji">🚨</span><span>علامات ما بتستنى<small>متى تتصلي بالدكتورة أو تروحي عالطوارئ فورًا</small></span></button></section>
+    <section class="block" id="nowFixBlock"><div class="sec-head"><h2 id="nowFixTitle"></h2><span>حسب يومك</span></div><div class="now" id="nowFix"></div></section>
+    <section class="block" id="catsBlock"><div class="sec-head"><h2>تصفّحي حسب الموضوع</h2></div><div class="cats" id="cats"></div></section>
+    <section class="block" id="listBlock"><div class="sec-head"><h2 id="listTitle">كل المواضيع</h2><span id="listCount"></span></div><div class="chips" id="chips" role="toolbar" aria-label="تصنيف"></div><div class="rows" id="lib"></div></section>
+    <p class="fine">معلومات عامة للتوعية، مش بديل عن دكتورتك.</p>
+  </main>
+
+  <main class="view" id="view-guide" hidden>
+    <header class="g-top" id="gTop">
+      <div class="g-bar"><button id="backBtn" aria-label="رجوع">→</button><button id="gSave" aria-label="حفظ" aria-pressed="false">🔖</button></div>
+      <div class="g-emoji emoji" id="gEmoji"></div>
+      <h1 id="gTitle"></h1>
+      <p class="hook" id="gHook"></p>
+      <div class="g-meta" id="gMeta"></div>
+    </header>
+    <nav class="g-tabs" aria-label="أقسام"><a href="#s-brief">باختصار</a><a href="#s-causes">الأسباب</a><a href="#s-plan">الخطة</a><a href="#s-kitchen">مطبخك</a><a href="#s-myth">خرافة؟</a><a href="#s-doctor">الدكتورة</a></nav>
+    <section class="g-sec" id="s-brief"><div class="brief" id="gBrief"></div></section>
+    <section class="g-sec" id="s-causes"><h2>ليش بيصير؟</h2><ul class="causes" id="gCauses"></ul></section>
+    <section class="g-sec" id="s-normal"><div class="normal"><b>✓ هاد طبيعي</b><ul id="gNormal"></ul></div></section>
+    <section class="g-sec" id="s-plan"><div class="sec-head"><h2>خطتك</h2><svg class="ring" viewBox="0 0 54 54" id="gRing"></svg></div><ol class="steps" id="gSteps"></ol></section>
+    <section class="g-sec" id="s-kitchen"><h2>من مطبخك</h2><div class="kitchen"><div class="tags" id="gTags"></div><div id="gRecipe"></div></div></section>
+    <section class="g-sec" id="s-avoid"><h2>تجنّبي</h2><ul class="avoid" id="gAvoid"></ul></section>
+    <section class="g-sec" id="s-myth"><h2>خرافة ولا حقيقة؟</h2><button class="myth" id="gMyth"><div class="in"><div class="f"><span id="gMythQ"></span><small>اضغطي لتعرفي</small></div><div class="b"><b id="gMythV"></b><span id="gMythA"></span></div></div></button></section>
+    <section class="g-sec" id="s-doctor"><div class="doc"><b>🩺 روحي عالدكتورة إذا</b><ul id="gDoc"></ul></div></section>
+    <section class="g-sec">
+      <div class="helpful"><span>ساعدك هالحل؟</span><div><button data-h="1" aria-pressed="false" aria-label="إيه">👍</button><button data-h="0" aria-pressed="false" aria-label="لأ">👎</button></div></div>
+      <button class="cta" id="gShare">ابعتيها لصاحبة نفسا</button>
+    </section>
+    <section class="g-sec"><h2>مواضيع قريبة</h2><div class="related" id="gRelated"></div></section>
+    <p class="fine">معلومات عامة للتوعية، مش بديل عن دكتورتك.</p>
+  </main>
+
+  <main class="view" id="view-share" hidden>
+    <section class="block" style="margin-top:14px">
+      <h2>شاركي قمرك</h2>
+      <p class="lead">بطاقة ستوري بيومك من الأربعين، ومنشنينا عليها.</p>
+      <img id="cardPreview" alt="بطاقة الأربعين" style="width:100%;border-radius:22px;display:block;box-shadow:0 20px 40px -30px rgba(0,0,0,.6)">
+      <button class="cta" id="shareBtn">شاركي البطاقة</button>
+      <button class="ghost" id="resetBtn">ابدئي من جديد</button>
+    </section>
+  </main>
+
+  <nav class="nav" aria-label="التنقل">
+    <button data-view="today" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>اليوم</button>
+    <button data-view="fix"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/><path d="M9.5 12h5M12 9.5v5"/></svg>حلول</button>
+    <button data-view="nights"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="6" r="2.5"/><circle cx="12" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="6" cy="13" r="2.5"/><circle cx="12" cy="13" r="2.5"/><circle cx="18" cy="13" r="2.5"/><path d="M4 20h16"/></svg>الليالي</button>
+    <button data-view="share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>شاركي</button>
+  </nav>
+</div>
+<div id="modalHost"></div>
+
+<script src="days.js"></script>
+<script src="fixes.js"></script>
+<script>
+{
+  const $ = s => document.querySelector(s);
+  const nf = new Intl.NumberFormat("ar-EG"), ar = n => nf.format(n);
+  const KEY = "arbaeen-v1";
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const MOODS = [["😣", "صعب", "#E07A7A"], ["😔", "تعبانة", "#C98FA6"], ["😐", "عادي", "#B7AFB8"], ["🙂", "منيحة", "#E9B872"], ["😊", "حلو", "#8CC18A"]];
+  const MOOD_REPLY = [
+    "<strong>عادي تكوني هيك 🤍</strong>أول أسبوعين بعد الولادة كتير أمهات بيحسّوا بدموع وتقلّب. ارتاحي، كلي، واحكي مع حدا قريب. وبكرة منسألك مرة ثانية.",
+    "<strong>التعب مفهوم كتير 🤍</strong>اختاري شغلة وحدة بس من كروت اليوم، والباقي بيستنى. وإذا في حدا بيقدر يحمل البيبي ساعة، نامي.",
+    "<strong>يوم عادي يوم منيح</strong>كاسة مي، فطور دافي، وقيلولة صغيرة إذا بتقدري.",
+    "<strong>يا ريت كل يوم هيك 🤍</strong>استغلي الطاقة بمشوار قصير أو دوش دافي، بس لا تتعبي حالك.",
+    "<strong>مبسوطين معك!</strong>اكتبي بيومياتك شو اللي فرّحك اليوم، عشان تتذكريه بعد الأربعين."
+  ];
+  const KINDS = [["🍳", "فطور اليوم", ""], ["🌿", "شي صغير إلك", ""], ["🌙", "كلمة اليوم", "word"]];
+  const CATS = [["all", "الكل"], ["feed", "الرضاعة"], ["body", "الجسم والتعافي"], ["digest", "الهضم"], ["mind", "النوم والمزاج"]];
+  const WEEKS = ["الأول", "الثاني", "الثالث", "الرابع", "الخامس", "السادس"];
+  const P = FIXES.map((f, i) => Object.assign({ i }, f));
+  const esc = t => String(t).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+
+  let S = { name: "", birth: null, baby: "none", days: {}, steps: {}, seen: [], saved: [], helpful: {} };
+  const load = () => { try { const v = JSON.parse(localStorage.getItem(KEY)); if (v && v.birth) S = Object.assign(S, v); } catch (e) {} };
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} };
+  const rec = d => S.days[d] || (S.days[d] = { done: [], mood: null, note: "" });
+  const dayNum = () => { const b = new Date(S.birth + "T00:00:00"), n = new Date(); n.setHours(0, 0, 0, 0); return Math.floor((n - b) / 864e5) + 1; };
+  const clampDay = d => Math.min(40, Math.max(1, d));
+  const week = () => Math.min(6, Math.ceil(clampDay(dayNum()) / 7));
+  const setTheme = b => { document.documentElement.dataset.baby = b; const m = document.querySelector('meta[name="theme-color"]'); if (m) m.content = css("--bg2"); };
+  function toast(t) { const el = document.createElement("div"); el.className = "toast"; el.textContent = t; document.body.appendChild(el); setTimeout(() => el.remove(), 2200); }
+  function modal(html) {
+    const h = $("#modalHost");
+    h.innerHTML = `<div class="modal"><div class="veil"></div><div class="box" role="dialog" aria-modal="true">${html}</div></div>`;
+    const close = () => h.innerHTML = "";
+    h.querySelector(".veil").onclick = close;
+    h.querySelectorAll("[data-close]").forEach(b => b.onclick = close);
+    h.querySelector("button")?.focus();
+    return h;
+  }
+
+  // sky: soft sparkles
+  {
+    const c = $("#sky"), x = c.getContext("2d"); let st = [], t = 0;
+    const size = () => { const d = devicePixelRatio || 1; c.width = innerWidth * d; c.height = innerHeight * d; x.setTransform(d, 0, 0, d, 0, 0);
+      st = Array.from({ length: Math.round(innerWidth * innerHeight / 14000) }, () => ({ x: Math.random() * innerWidth, y: Math.random() * innerHeight * .55, r: Math.random() * 1.6 + .6, p: Math.random() * 6 })); };
+    size(); addEventListener("resize", size);
+    const draw = () => {
+      x.clearRect(0, 0, innerWidth, innerHeight);
+      const col = css("--accent") || "#D07A88";
+      for (const s of st) {
+        const a = .18 + .3 * (reduce ? .5 : (Math.sin(t / 60 + s.p) + 1) / 2);
+        x.globalAlpha = a; x.fillStyle = "#fff"; x.beginPath(); x.arc(s.x, s.y, s.r * 1.8, 0, 7); x.fill();
+        x.globalAlpha = a * .8; x.fillStyle = col; x.beginPath(); x.arc(s.x, s.y, s.r * .6, 0, 7); x.fill();
+      }
+      t++; if (!reduce) requestAnimationFrame(draw);
+    };
+    draw();
+  }
+
+  // the moon character
+  function litPath(f, cx, cy, r) {
+    if (f >= 1) return `M${cx} ${cy - r}A${r} ${r} 0 1 1 ${cx} ${cy + r}A${r} ${r} 0 1 1 ${cx} ${cy - r}Z`;
+    const rx = Math.abs(1 - 2 * f) * r, sweep = f < .5 ? 0 : 1;
+    return `M${cx} ${cy - r}A${r} ${r} 0 0 1 ${cx} ${cy + r}A${rx} ${r} 0 0 ${sweep} ${cx} ${cy - r}Z`;
+  }
+  function moonSVG(day, opts = {}) {
+    const full = day >= 40, f = Math.max(.12, Math.min(1, day / 40)), id = "m" + Math.random().toString(36).slice(2, 7);
+    const ink = css("--ink") || "#5B2C38", acc = css("--accent") || "#D07A88";
+    const noFace = opts.face === false;
+    const face = noFace ? "" : full
+      ? `<path d="M38 47q4-5 8 0M54 47q4-5 8 0" stroke="${ink}" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+         <path d="M44 55q6 7 12 0z" stroke="${ink}" stroke-width="1.4" fill="${acc}" fill-opacity=".45" stroke-linejoin="round"/>`
+      : `<path d="M38 47q4 4 8 0M54 47q4 4 8 0" stroke="${ink}" stroke-width="1.5" fill="none" stroke-linecap="round" opacity=".8"/>
+         <path d="M46.5 56q3.5 2.6 7 0" stroke="${ink}" stroke-width="1.4" fill="none" stroke-linecap="round" opacity=".8"/>`;
+    const cheeks = noFace ? "" : `<ellipse cx="37" cy="53" rx="4" ry="2.4" fill="${acc}" opacity=".35"/><ellipse cx="63" cy="53" rx="4" ry="2.4" fill="${acc}" opacity=".35"/>`;
+    let beads = "";
+    if (opts.beads) {
+      for (let i = 0; i < 40; i++) {
+        const a = -Math.PI / 2 - i / 40 * Math.PI * 2, R = 46, x = (50 + R * Math.cos(a)).toFixed(2), y = (50 + R * Math.sin(a)).toFixed(2), d = i + 1, r = S.days[d];
+        const lit = d <= day && r && (r.done.length || (r.mood !== null && r.mood !== undefined));
+        beads += d === day
+          ? `<circle cx="${x}" cy="${y}" r="2.6" fill="#fff" stroke="${acc}" stroke-width="1"/><circle cx="${x}" cy="${y}" r="1.2" fill="${lit ? "#F2C27B" : acc}"/>`
+          : `<circle cx="${x}" cy="${y}" r="${lit ? 1.7 : 1.15}" fill="${lit ? "#F2C27B" : d < day ? acc : "#fff"}" opacity="${lit ? 1 : d < day ? .45 : .85}"/>`;
+      }
+    }
+    const zzz = !full && !noFace ? `<g class="twinkle" fill="${ink}" opacity=".45" font-family="Tajawal" font-weight="700"><text x="76" y="24" font-size="6">z</text><text x="81" y="17" font-size="4.5">z</text></g>` : "";
+    const sparks = full && !noFace ? `<g class="twinkle" fill="#F2C27B"><path d="M20 24l1 3 3 1-3 1-1 3-1-3-3-1 3-1z"/><path d="M80 70l.8 2.4 2.4.8-2.4.8-.8 2.4-.8-2.4-2.4-.8 2.4-.8z"/></g>` : "";
+    return `<svg viewBox="0 0 100 100" aria-hidden="true">
+      <defs>
+        <radialGradient id="${id}g"><stop offset="0" stop-color="#FFE7B0" stop-opacity=".9"/><stop offset=".6" stop-color="#FFE7B0" stop-opacity=".18"/><stop offset="1" stop-color="#FFE7B0" stop-opacity="0"/></radialGradient>
+        <radialGradient id="${id}l" cx=".62" cy=".35" r=".8"><stop offset="0" stop-color="#FFFBEF"/><stop offset=".6" stop-color="#FFE9B8"/><stop offset="1" stop-color="#F6CE84"/></radialGradient>
+        <clipPath id="${id}c"><path d="${litPath(f, 50, 50, 30)}"/></clipPath>
+      </defs>
+      ${beads}
+      <g class="${opts.still ? "" : "bob"}">
+        <circle cx="50" cy="50" r="${32 + 12 * f}" fill="url(#${id}g)"/>
+        <circle cx="50" cy="50" r="30" fill="#FFFFFF" fill-opacity=".72" stroke="${acc}" stroke-opacity=".4" stroke-width=".6" stroke-dasharray="1.2 1.6"/>
+        <g clip-path="url(#${id}c)"><circle cx="50" cy="50" r="30" fill="url(#${id}l)"/>
+          <circle cx="62" cy="36" r="3.2" fill="#F6D48F" opacity=".6"/><circle cx="66" cy="62" r="2.2" fill="#F6D48F" opacity=".55"/></g>
+        ${cheeks}${face}
+      </g>${zzz}${sparks}
+    </svg>`;
+  }
+
+  // today
+  let viewDay = 1, filter = "all", current = null, currentView = "today", prevView = "fix";
+  function render() {
+    const today = clampDay(dayNum()), d = viewDay, after = dayNum() > 40;
+    $("#moon").innerHTML = moonSVG(after ? 40 : today, { beads: true });
+    $("#moon").setAttribute("aria-label", `القمر بيومك ${ar(today)} من ٤٠`);
+    $("#dayN").textContent = after ? "قمرك صار بدر" : d === today ? `اليوم ${ar(d)}` : `يوم ${ar(d)}`;
+    $("#dayOf").textContent = after ? `خلّصتي أربعينك${S.name ? " يا " + S.name : ""}، مبروك 🤍` : `من أربعين${S.name ? "، يا " + S.name : ""}`;
+    $("#bar").style.width = (Math.min(40, dayNum()) / 40 * 100) + "%";
+    const r = rec(d);
+    $("#moodQ").textContent = d === today ? "كيفك اليوم؟" : `كيفك كنتِ بيوم ${ar(d)}؟`;
+    $("#moods").innerHTML = MOODS.map((m, i) => `<button data-m="${i}" aria-pressed="${r.mood === i}"><span class="emoji">${m[0]}</span>${m[1]}</button>`).join("");
+    $("#moods").querySelectorAll("button").forEach(b => b.onclick = () => { r.mood = +b.dataset.m; save(); render(); });
+    reply();
+    const set = DAYS[d - 1];
+    $("#deck").innerHTML = KINDS.map((k, i) => `<article class="card ${k[2]}${r.done.includes(i) ? " is-done" : ""}">
+      <div class="kind"><span class="emoji">${k[0]}</span>${k[1]}</div><p>${esc(set[i])}</p>
+      <button class="done" data-i="${i}"><i>${r.done.includes(i) ? (i === 2 ? "♥" : "✓") : ""}</i>${i === 2 ? "وصلتني" : r.done.includes(i) ? "عملتها" : "عملتها؟"}</button></article>`).join("");
+    $("#deck").querySelectorAll(".done").forEach(b => b.onclick = () => toggle(+b.dataset.i));
+    $("#note").value = r.note || ""; $("#saved").textContent = "";
+    $("#nowToday").innerHTML = nowCards(); bindNow($("#nowToday"));
+    renderNights();
+  }
+  function reply() {
+    const today = clampDay(dayNum()), recent = [];
+    for (let i = today; i >= Math.max(1, today - 4); i--) { const m = S.days[i]?.mood; if (m !== null && m !== undefined) recent.push(m); }
+    const low = recent.filter(m => m <= 1).length, el = $("#reply"), cur = rec(viewDay).mood;
+    el.classList.remove("urgent");
+    if (low >= 3 || (today > 14 && low >= 2)) {
+      el.hidden = false; el.classList.add("urgent");
+      el.innerHTML = "<strong>إنتِ مش لحالك 🤍</strong>هالأيام تقيلة عليكِ. إذا الحزن أو القلق مكمّل أكتر من أسبوعين، أو حاسة إنك مش قادرة، احكي مع دكتورتك أو حدا بتثقي فيه. وإذا إجاكِ أي تفكير تأذي حالك أو طفلك، اطلبي مساعدة فورًا.";
+    } else if (cur !== null && cur !== undefined) { el.hidden = false; el.innerHTML = MOOD_REPLY[cur]; }
+    else el.hidden = true;
+  }
+  function toggle(i) {
+    const r = rec(viewDay), had = r.done.includes(i);
+    r.done = had ? r.done.filter(x => x !== i) : [...r.done, i]; save(); render();
+    if (!had) { if (r.done.length === 3) { toast("يومك كامل ✨"); sparkle(); } else toast(i === 2 ? "وصلتك 🤍" : "برافو عليكِ"); }
+  }
+  function sparkle() {
+    if (reduce) return;
+    const svg = $("#moon svg"), g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    for (let i = 0; i < 18; i++) {
+      const a = Math.random() * Math.PI * 2, c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      c.setAttribute("cx", 50); c.setAttribute("cy", 50); c.setAttribute("r", 1); c.setAttribute("fill", i % 2 ? "#F2C27B" : css("--accent"));
+      g.appendChild(c);
+      c.animate([{ transform: "translate(0,0)", opacity: 1 }, { transform: `translate(${Math.cos(a) * 46}px,${Math.sin(a) * 46}px)`, opacity: 0 }], { duration: 1100 + Math.random() * 500, easing: "cubic-bezier(.2,.7,.3,1)" });
+    }
+    svg.appendChild(g); setTimeout(() => g.remove(), 1700);
+  }
+  let noteT;
+  $("#note").addEventListener("input", e => { rec(viewDay).note = e.target.value; clearTimeout(noteT); noteT = setTimeout(() => { save(); $("#saved").textContent = `انحفظ بيوم ${ar(viewDay)} 🤍`; }, 500); });
+
+  // nights
+  function renderNights() {
+    const today = clampDay(dayNum()); let h = "";
+    for (let d = 1; d <= 40; d++) {
+      const m = S.days[d]?.mood, locked = d > today;
+      h += `<button class="night${d === today ? " today" : ""}${locked ? " locked" : ""}" data-d="${d}">${moonSVG(d, { face: false, still: true })}<span>${ar(d)}</span><span class="m" style="background:${m !== null && m !== undefined ? MOODS[m][2] : "transparent"}"></span></button>`;
+    }
+    $("#nights").innerHTML = h;
+    $("#nights").querySelectorAll(".night").forEach(b => b.onclick = () => {
+      const d = +b.dataset.d, left = d - today;
+      if (left > 0) return toast(`بيفتح بعد ${left === 1 ? "يوم" : left === 2 ? "يومين" : ar(left) + " أيام"}`);
+      viewDay = d; render(); show("today"); if (d !== today) toast(`عم تشوفي يوم ${ar(d)}`);
+    });
+  }
+  $("#letterBtn").onclick = () => {
+    const lines = Object.entries(S.days).filter(([, r]) => r.note && r.note.trim()).sort((a, b) => a[0] - b[0]);
+    modal(`<h3>رسالة أربعيني</h3><p>كل اللي كتبتيه، بمكان واحد.</p><div class="letter">${lines.length ? lines.map(([d, r]) => `<div><b>يوم ${ar(+d)}</b>${esc(r.note)}</div>`).join("") : "<div>لسا ما كتبتي ولا سطر. اكتبي سطر صغير اليوم من «يومياتي».</div>"}</div><button class="ghost" data-close>سكّري</button>`);
+  };
+
+  // solutions
+  const CATINFO = { feed: ["🍼", "الرضاعة"], body: ["🌸", "الجسم والتعافي"], digest: ["🥣", "الهضم والأكل"], mind: ["🌙", "النوم والمزاج"] };
+  const AR_W = n => ar(n);
+  const weeksText = w => w.length >= 6 ? "شائع طول الأربعين" : w.length === 1 ? `شائع بالأسبوع ${WEEKS[w[0] - 1]}` : `شائع بالأسابيع ${AR_W(w[0])}–${AR_W(w[w.length - 1])}`;
+  const nowList = () => { const w = week(); return P.filter(p => p.weeks.includes(w)).sort((a, b) => a.weeks.length - b.weeks.length).slice(0, 8); };
+  const nowCards = () => nowList().map(p => `<button class="g-${p.cat}" data-p="${p.i}"><span class="emoji">${p.emoji}</span><strong>${esc(p.hook)}</strong><span>${esc(p.title)}</span></button>`).join("");
+  const bindNow = el => el.querySelectorAll("button").forEach(b => b.onclick = () => openGuide(+b.dataset.p));
+  if (!S.saved) S.saved = []; if (!S.helpful) S.helpful = {};
+  function renderFix() {
+    $("#libSub").textContent = `${ar(P.length)} مشكلة شائعة، كل وحدة بأسبابها وخطة واضحة، وشو تاكلي، ومتى تروحي عالدكتورة.`;
+    $("#nowFixTitle").textContent = `شائع بالأسبوع ${WEEKS[week() - 1]}`;
+    $("#nowFix").innerHTML = nowCards(); bindNow($("#nowFix"));
+    $("#cats").innerHTML = Object.entries(CATINFO).map(([k, [e, n]]) => `<button class="cat g-${k}" data-k="${k}"><span class="emoji">${e}</span><span><strong>${n}</strong><br><span>${ar(P.filter(p => p.cat === k).length)} مواضيع</span></span></button>`).join("");
+    $("#cats").querySelectorAll(".cat").forEach(c => c.onclick = () => { filter = c.dataset.k; renderFix(); $("#listBlock").scrollIntoView({ behavior: reduce ? "auto" : "smooth" }); });
+    const chips = [["all", "الكل"], ...Object.entries(CATINFO).map(([k, v]) => [k, v[1]]), ["saved", "🔖 محفوظاتي"]];
+    $("#chips").innerHTML = chips.map(([k, n]) => `<button class="chip" data-k="${k}" aria-pressed="${filter === k}">${n}</button>`).join("");
+    $("#chips").querySelectorAll(".chip").forEach(c => c.onclick = () => { filter = c.dataset.k; renderFix(); });
+    const q = $("#q").value.trim();
+    const rows = P.filter(p => (filter === "all" || p.cat === filter || (filter === "saved" && S.saved.includes(p.id))) &&
+      (!q || [p.title, p.hook, p.brief, ...p.causes, ...p.steps, ...p.kitchen].join(" ").includes(q)));
+    $("#nowFixBlock").hidden = $("#catsBlock").hidden = !!q;
+    $("#listTitle").textContent = q ? "نتائج البحث" : filter === "all" ? "كل المواضيع" : filter === "saved" ? "محفوظاتي" : CATINFO[filter][1];
+    $("#listCount").textContent = rows.length ? `${ar(rows.length)} موضوع` : "";
+    $("#lib").innerHTML = rows.length ? rows.map(p => `<button class="row" data-p="${p.i}"><span class="blob emoji g-${p.cat}">${p.emoji}</span><span class="t"><strong>${esc(p.title)}</strong><span>${esc(p.hook)}</span><span class="meta">${S.seen.includes(p.i) ? '<i class="dot"></i> قرأتيها ·' : ""} ⏱ ${esc(p.dur)}</span></span>${S.saved.includes(p.id) ? '<span>🔖</span>' : ""}<span class="chev">‹</span></button>`).join("")
+      : `<p class="empty">${filter === "saved" ? "لسا ما حفظتي شي. اضغطي 🔖 بأي موضوع ليوصل هون." : "ما لقينا شي بهالكلمة. جرّبي «حليب» أو «نوم» أو «ظهر»."}</p>`;
+    $("#lib").querySelectorAll(".row").forEach(b => b.onclick = () => openGuide(+b.dataset.p));
+  }
+  $("#q").oninput = renderFix;
+  function li(arr) { return arr.map(t => `<li>${esc(t)}</li>`).join(""); }
+  function ring() {
+    const p = current, done = (S.steps[p.i] || []).length, n = p.steps.length, f = n ? done / n : 0, r = 22, c = 2 * Math.PI * r;
+    $("#gRing").innerHTML = `<circle cx="27" cy="27" r="${r}" fill="none" stroke="var(--tint)" stroke-width="6"/><circle cx="27" cy="27" r="${r}" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${c * (1 - f)}" transform="rotate(-90 27 27)" style="transition:stroke-dashoffset .5s"/><text x="27" y="31" text-anchor="middle">${ar(done)}/${ar(n)}</text>`;
+  }
+  function openGuide(i) {
+    const p = P[i]; current = p;
+    if (!S.seen.includes(i)) { S.seen.push(i); save(); }
+    $("#gTop").className = "g-top g-" + p.cat;
+    $("#gEmoji").textContent = p.emoji; $("#gTitle").textContent = p.title; $("#gHook").textContent = p.hook;
+    $("#gMeta").innerHTML = `<span>⏱ ${esc(p.dur)}</span><span>📅 ${esc(weeksText(p.weeks))}</span><span>${CATINFO[p.cat][0]} ${CATINFO[p.cat][1]}</span>`;
+    $("#gSave").setAttribute("aria-pressed", S.saved.includes(p.id));
+    $("#gBrief").textContent = p.brief;
+    $("#gCauses").innerHTML = li(p.causes);
+    $("#s-normal").hidden = !p.normal.length; $("#gNormal").innerHTML = li(p.normal);
+    const done = S.steps[i] || [];
+    $("#gSteps").innerHTML = p.steps.map((h, j) => `<li><button aria-pressed="${done.includes(j)}" data-j="${j}">${esc(h)}</button></li>`).join("");
+    $("#gSteps").querySelectorAll("button").forEach(b => b.onclick = () => {
+      const j = +b.dataset.j, arr = S.steps[i] || (S.steps[i] = []), k = arr.indexOf(j);
+      if (k > -1) arr.splice(k, 1); else arr.push(j);
+      save(); b.setAttribute("aria-pressed", k === -1); ring();
+      if (k === -1) toast(arr.length === p.steps.length ? "كمّلتي الخطة كاملة ✨" : "برافو عليكِ 👏");
+    });
+    ring();
+    $("#gTags").innerHTML = p.kitchen.map(t => `<span>${esc(t)}</span>`).join("");
+    const r = p.recipe && RECIPES[p.recipe];
+    $("#gRecipe").innerHTML = r ? `<button class="recipe-btn" id="gRecipeBtn"><span class="emoji">${r.emoji}</span><span><b>${esc(r.title)}</b><small>الوصفة كاملة بالكمّيات</small></span></button>` : "";
+    if (r) $("#gRecipeBtn").onclick = () => openRecipe(p.recipe);
+    $("#gAvoid").innerHTML = li(p.avoid);
+    $("#gMyth").classList.remove("flip");
+    $("#gMythQ").textContent = `«${p.myth[0]}»`; $("#gMythV").textContent = p.myth[1] ? "✓ صح" : "✕ خرافة"; $("#gMythA").textContent = p.myth[2];
+    $("#gDoc").innerHTML = li(p.doctor);
+    document.querySelectorAll(".helpful button").forEach(b => b.setAttribute("aria-pressed", String(S.helpful[p.id]) === b.dataset.h));
+    $("#gRelated").innerHTML = P.filter(x => x.cat === p.cat && x.i !== i).map(x => `<button data-p="${x.i}"><span class="emoji">${x.emoji}</span> ${esc(x.title)}</button>`).join("");
+    $("#gRelated").querySelectorAll("button").forEach(b => b.onclick = () => openGuide(+b.dataset.p));
+    if (currentView !== "guide") prevView = currentView;
+    show("guide");
+  }
+  function openRecipe(id) {
+    const r = RECIPES[id];
+    modal(`<div class="sheet-r"><div class="emoji" style="font-size:48px">${r.emoji}</div><h3>${esc(r.title)}</h3><h4>المكونات</h4><ul>${li(r.ingredients)}</ul><h4>الطريقة</h4><ol>${li(r.steps)}</ol><div class="note">${esc(r.note)}</div></div><button class="ghost" data-close>سكّري</button>`);
+  }
+  $("#gMyth").onclick = () => $("#gMyth").classList.toggle("flip");
+  $("#gSave").onclick = () => {
+    const id = current.id, k = S.saved.indexOf(id);
+    if (k > -1) S.saved.splice(k, 1); else S.saved.push(id);
+    save(); $("#gSave").setAttribute("aria-pressed", k === -1); toast(k === -1 ? "انحفظ بمحفوظاتك 🔖" : "انشال من المحفوظات");
+  };
+  document.querySelectorAll(".helpful button").forEach(b => b.onclick = () => {
+    S.helpful[current.id] = +b.dataset.h; save();
+    document.querySelectorAll(".helpful button").forEach(x => x.setAttribute("aria-pressed", x === b));
+    toast(b.dataset.h === "1" ? "مبسوطين إنه ساعدك 🤍" : "شكرًا، رح نحسّنه 🤍");
+  });
+  document.querySelectorAll(".g-tabs a").forEach(a => a.onclick = e => { e.preventDefault(); $(a.getAttribute("href")).scrollIntoView({ behavior: reduce ? "auto" : "smooth" }); });
+  $("#backBtn").onclick = () => show(prevView || "fix");
+  $("#dangerBtn").onclick = () => modal(`<h3>علامات ما بتستنى 🚨</h3><p>إذا لاحظتي وحدة منها، اتصلي بدكتورتك أو روحي عالطوارئ.</p>
+    <ul class="list" style="text-align:start;margin-top:14px">${WARN.map(w => `<li><strong>${esc(w[0])}</strong><span>${esc(w[1])}</span></li>`).join("")}</ul><button class="ghost" data-close>فهمت</button>`);
+  $("#gShare").onclick = async () => {
+    const c = await solutionCard(current), url = c.toDataURL("image/png");
+    const h = modal(`<h3>${esc(current.title)}</h3><p>ابعتيها لصاحبة نفسا، أو نزّليها ستوري.</p><img src="${url}" alt=""><button class="cta" data-go>شاركي</button><button class="ghost" data-close>سكّري</button>`);
+    h.querySelector("[data-go]").onclick = () => shareCanvas(c, "hal.png", current.title + " | حلول النفاس مع @sehtek.ahamm");
+  };
+
+  // story cards
+  async function fontsReady() { try { await Promise.all([document.fonts.load("700 90px 'Aref Ruqaa'"), document.fonts.load("700 50px Tajawal"), document.fonts.load("400 40px Tajawal")]); } catch (e) {} }
+  const loadImg = src => new Promise(res => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = src; });
+  function base(x, W, H) {
+    const g = x.createLinearGradient(0, 0, 0, H); g.addColorStop(0, css("--bg2")); g.addColorStop(.55, css("--bg1")); g.addColorStop(1, css("--bg1"));
+    x.fillStyle = g; x.fillRect(0, 0, W, H);
+    for (let i = 0; i < 70; i++) { x.globalAlpha = Math.random() * .5 + .2; x.fillStyle = "#fff"; x.beginPath(); x.arc(Math.random() * W, Math.random() * H * .6, Math.random() * 4 + 1.5, 0, 7); x.fill(); }
+    x.globalAlpha = 1;
+  }
+  async function footer(x, W) {
+    const logo = await loadImg("logo.png");
+    if (logo) { x.beginPath(); x.arc(W / 2, 1745, 48, 0, 7); x.fillStyle = "#fff"; x.fill(); x.drawImage(logo, W / 2 - 35, 1745 - 33, 70, 66); }
+    x.fillStyle = css("--accent"); x.font = "700 42px Tajawal"; x.fillText("@sehtek.ahamm", W / 2, 1852);
+  }
+  function wrap(x, text, cx, y, maxW, lh) {
+    let line = ""; for (const w of text.split(" ")) { const t = line ? line + " " + w : w; if (x.measureText(t).width > maxW && line) { x.fillText(line, cx, y); y += lh; line = w; } else line = t; }
+    if (line) x.fillText(line, cx, y); return y + lh;
+  }
+  async function buildCard() {
+    await fontsReady();
+    const today = clampDay(dayNum()), W = 1080, H = 1920, c = document.createElement("canvas"); c.width = W; c.height = H;
+    const x = c.getContext("2d"); x.direction = "rtl"; x.textAlign = "center"; base(x, W, H);
+    const img = await loadImg("data:image/svg+xml;charset=utf-8," + encodeURIComponent(moonSVG(dayNum() > 40 ? 40 : today, { beads: true, still: true }).replace("<svg ", '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" ')));
+    if (img) x.drawImage(img, 90, 330, 900, 900);
+    x.fillStyle = css("--accent"); x.font = "700 46px Tajawal"; x.fillText("رفيقة الأربعين", W / 2, 230);
+    x.fillStyle = css("--ink"); x.font = "700 132px 'Aref Ruqaa'"; x.fillText(dayNum() > 40 ? "قمري صار بدر" : `يوم ${ar(today)} من ٤٠`, W / 2, 1390);
+    x.font = "400 54px 'Aref Ruqaa'"; x.fillStyle = css("--ink-soft"); wrap(x, DAYS[today - 1][2], W / 2, 1500, 860, 78);
+    await footer(x, W); return c;
+  }
+  async function solutionCard(p) {
+    await fontsReady();
+    const W = 1080, H = 1920, c = document.createElement("canvas"); c.width = W; c.height = H;
+    const x = c.getContext("2d"); x.direction = "rtl"; x.textAlign = "center"; base(x, W, H);
+    x.fillStyle = css("--accent"); x.font = "700 44px Tajawal"; x.fillText("حلول النفاس", W / 2, 190);
+    x.font = `150px "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji"`; x.fillText(p.emoji, W / 2, 400);
+    x.fillStyle = css("--ink"); x.font = "700 96px Tajawal"; x.fillText(p.title, W / 2, 540);
+    x.fillStyle = css("--ink-soft"); x.font = "400 50px Tajawal"; x.fillText(p.hook, W / 2, 620);
+    const top = 690, cardH = 640;
+    x.save(); x.shadowColor = "rgba(0,0,0,.12)"; x.shadowBlur = 40; x.shadowOffsetY = 18; x.fillStyle = "#fff";
+    x.beginPath(); x.roundRect(80, top, W - 160, cardH, 56); x.fill(); x.restore();
+    x.textAlign = "right"; x.fillStyle = css("--accent"); x.font = "700 44px Tajawal"; x.fillText("جرّبي:", W - 140, top + 90);
+    let y = top + 180;
+    p.steps.slice(0, 3).forEach((h, i) => {
+      x.fillStyle = css("--tint"); x.beginPath(); x.arc(W - 160, y - 15, 32, 0, 7); x.fill();
+      x.fillStyle = css("--accent"); x.font = "700 38px Tajawal"; x.textAlign = "center"; x.fillText(ar(i + 1), W - 160, y);
+      x.textAlign = "right"; x.fillStyle = css("--ink"); x.font = "400 42px Tajawal"; y = wrap(x, h, W - 220, y, 700, 56) + 34;
+    });
+    x.textAlign = "right"; x.fillStyle = css("--accent"); x.font = "700 40px Tajawal"; x.fillText("من مطبخك:", W - 140, y + 10);
+    x.fillStyle = css("--ink-soft"); x.font = "400 38px Tajawal"; wrap(x, p.kitchen.slice(0, 5).join("، "), W - 140, y + 70, 780, 52);
+    x.textAlign = "center";
+    x.fillStyle = css("--alert-bg"); x.beginPath(); x.roundRect(80, 1380, W - 160, 250, 46); x.fill();
+    x.fillStyle = css("--alert"); x.font = "700 42px Tajawal"; x.fillText("روحي عالدكتورة إذا", W / 2, 1450);
+    x.fillStyle = "#7A3434"; x.font = "400 38px Tajawal"; wrap(x, p.doctor.slice(0, 2).join("، "), W / 2, 1515, 820, 52);
+    await footer(x, W); return c;
+  }
+  function shareCanvas(c, name, text) {
+    c.toBlob(async blob => {
+      const file = new File([blob], name, { type: "image/png" });
+      try { if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], text }); return; } } catch (e) { return; }
+      const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name; a.click(); toast("انحفظت البطاقة");
+    }, "image/png");
+  }
+  $("#shareBtn").onclick = async () => shareCanvas(await buildCard(), "arbaeen.png", "أربعيني مع @sehtek.ahamm");
+
+  // navigation
+  function show(v) {
+    currentView = v;
+    document.querySelectorAll(".view").forEach(el => el.hidden = el.id !== "view-" + v);
+    const tab = v === "guide" ? "fix" : v;
+    document.querySelectorAll(".nav button").forEach(b => b.dataset.view === tab ? b.setAttribute("aria-current", "page") : b.removeAttribute("aria-current"));
+    if (v === "fix") renderFix();
+    if (v === "share") buildCard().then(c => $("#cardPreview").src = c.toDataURL("image/png"));
+    scrollTo({ top: 0 });
+  }
+  document.querySelectorAll(".nav button").forEach(b => b.onclick = () => { if (b.dataset.view === "today") { viewDay = clampDay(dayNum()); render(); } show(b.dataset.view); });
+
+  // setup
+  let pickBaby = "none", wTimer;
+  const segState = () => $("#babySeg").querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.b === pickBaby));
+  function setupForm(edit) {
+    $("#welcome").hidden = false; $("#app").hidden = true;
+    pickBaby = edit ? S.baby : "none"; setTheme(pickBaby); segState();
+    $("#mBirth").max = new Date().toISOString().slice(0, 10);
+    if (edit) { $("#mName").value = S.name; $("#mBirth").value = S.birth; $("#setup .cta").textContent = "حفظ"; }
+    let f = 4; $("#wMoon").innerHTML = moonSVG(f, { still: true });
+    clearInterval(wTimer);
+    if (!reduce) wTimer = setInterval(() => { if ($("#welcome").hidden) return clearInterval(wTimer); f = f >= 40 ? 4 : f + 1; $("#wMoon").innerHTML = moonSVG(f, { still: true }); }, 130);
+  }
+  $("#babySeg").querySelectorAll("button").forEach(b => b.onclick = () => { pickBaby = b.dataset.b; segState(); setTheme(pickBaby); });
+  $("#setup").onsubmit = e => {
+    e.preventDefault();
+    const birth = $("#mBirth").value;
+    if (!birth) return $("#err").textContent = "اختاري يوم الولادة، ومنه منعدّ الأربعين.";
+    if (new Date(birth) > new Date()) return $("#err").textContent = "يوم الولادة لازم يكون اليوم أو قبل.";
+    S.name = $("#mName").value.trim(); S.birth = birth; S.baby = pickBaby; save(); start();
+  };
+  function start() { clearInterval(wTimer); setTheme(S.baby || "none"); $("#welcome").hidden = true; $("#app").hidden = false; viewDay = clampDay(dayNum()); render(); show("today"); }
+  $("#editBtn").onclick = () => setupForm(true);
+  $("#resetBtn").onclick = () => {
+    const h = modal(`<h3>نبدأ من جديد؟</h3><p>رح ينمسح كل شي: المزاج، الكروت، والسطور اللي كتبتيها.</p><button class="cta" data-yes>امسحي وابدئي</button><button class="ghost" data-close>لا، خليه</button>`);
+    h.querySelector("[data-yes]").onclick = () => { try { localStorage.removeItem(KEY); } catch (e) {} S = { name: "", birth: null, baby: "none", days: {}, steps: {}, seen: [] }; h.innerHTML = ""; setupForm(false); };
+  };
+  document.addEventListener("keydown", e => { if (e.key === "Escape") $("#modalHost").innerHTML = ""; });
+
+  load();
+  if (S.birth) start(); else setupForm(false);
+  if ("serviceWorker" in navigator && location.hostname.endsWith("github.io")) navigator.serviceWorker.register("sw.js").catch(() => {});
+}
+</script>
+</body>
+</html>
