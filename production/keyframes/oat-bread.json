@@ -1,0 +1,56 @@
+{
+ "style": "Photorealistic high-end editorial food and lifestyle photography for a premium Instagram page, vertical 2:3 frame. Modern luxury home kitchen for an upper-middle-class family: large honed Calacatta marble island with soft grey veining, warm white-oak cabinetry, brushed brass tap and handles, tall windows with sheer linen curtains, soft diffused morning daylight, calm neutral palette (cream, warm white, oak, brass) with subtle dusty-pink accents (#D4A5A5) in linen and ceramics. Styled props: handmade ceramic bowls, ribbed glass, linen napkins, a small vase of fresh flowers. Shallow depth of field, clean composition, rich but natural colour grading, crisp detail, luxury lifestyle magazine look. No text, no logos, no watermarks, no brand labels. No faces; people only as elegant hands and wrists. Clear empty space in the upper third of the frame for on-screen text.",
+ "character": "",
+ "frames": [
+  {
+   "name": "01-hero",
+   "refs": [],
+   "prompt": "A warm stack of six Levantine flatbread rounds made from oats and seeds (no wheat flour): soft, slightly puffed, golden with toasted brown spots, visibly speckled with flax, sunflower seeds, sesame and black nigella seeds, the top one folded in half showing a soft tender inside, on a linen napkin over a wooden board; beside it a small ceramic bowl of labneh drizzled with olive oil and za'atar, a few olives. 45-degree angle, appetising, steam."
+  },
+  {
+   "name": "02-ingredients",
+   "refs": [],
+   "prompt": "Overhead flat-lay on Calacatta marble: a ceramic bowl of rolled oats in the centre, surrounded by small ceramic bowls of ground flaxseed, chia seeds, sunflower seeds, sesame seeds, black nigella seeds, a bowl of thick white yogurt, a small glass bottle of olive oil, a pinch bowl of salt and a little bowl of baking powder. No wheat flour. Neat, symmetrical."
+  },
+  {
+   "name": "03-grind",
+   "refs": [],
+   "prompt": "A glass blender jar on the marble island filled with finely ground oats, soft pale oat flour texture visible through the glass, a bowl of whole rolled oats beside it. Close-up, 45-degree angle."
+  },
+  {
+   "name": "04-mix",
+   "refs": [],
+   "prompt": "A large cream ceramic bowl of fine ground oats with the seeds being poured in from a small bowl by an elegant hand: ground flaxseed, chia, sunflower seeds, sesame and nigella scattered on top before mixing. Overhead."
+  },
+  {
+   "name": "05-knead",
+   "refs": [],
+   "prompt": "Elegant hands kneading a soft oat dough speckled with seeds in a cream ceramic bowl, a spoonful of thick white yogurt and a drizzle of olive oil being added. Hands and wrists only. Close-up."
+  },
+  {
+   "name": "06-rest",
+   "refs": [],
+   "prompt": "Six smooth round balls of seeded oat dough resting on the marble island under a half-pulled dusty-pink linen cloth. Soft daylight. 45-degree angle."
+  },
+  {
+   "name": "07-roll",
+   "refs": [],
+   "prompt": "Elegant hands rolling one ball of seeded oat dough between two sheets of baking parchment with a wooden rolling pin into a thin round disc about half a centimetre thick. Overhead."
+  },
+  {
+   "name": "08-pan",
+   "refs": [],
+   "prompt": "One of the Levantine flatbread rounds made from oats and seeds (no wheat flour): soft, slightly puffed, golden with toasted brown spots, visibly speckled with flax, sunflower seeds, sesame and black nigella seeds cooking on a dry black cast-iron pan on the stove, puffing up in the middle, golden-brown toasted spots on the surface, a thin wooden spatula lifting its edge. Close-up, light steam."
+  },
+  {
+   "name": "09-wrap",
+   "refs": [],
+   "prompt": "Freshly cooked Levantine flatbread rounds made from oats and seeds (no wheat flour): soft, slightly puffed, golden with toasted brown spots, visibly speckled with flax, sunflower seeds, sesame and black nigella seeds wrapped in a clean cream linen cloth in a woven basket, the cloth folded back to show the soft breads. Cosy, warm."
+  },
+  {
+   "name": "10-serve",
+   "refs": [],
+   "prompt": "Breakfast on the marble island: one of the Levantine flatbread rounds made from oats and seeds (no wheat flour): soft, slightly puffed, golden with toasted brown spots, visibly speckled with flax, sunflower seeds, sesame and black nigella seeds torn open, filled with labneh, sliced cucumber, tomato and mint; a glass of mint tea; soft morning light. 45-degree angle."
+  }
+ ]
+}
