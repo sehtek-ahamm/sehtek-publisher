@@ -1,0 +1,26 @@
+{
+ "style": "Photorealistic high-end editorial food and lifestyle photography for a premium Instagram page, vertical 2:3 frame. Modern luxury home kitchen for an upper-middle-class family: large honed Calacatta marble island with soft grey veining, warm white-oak cabinetry, brushed brass tap and handles, tall windows with sheer linen curtains, soft diffused morning daylight, calm neutral palette (cream, warm white, oak, brass) with subtle dusty-pink accents (#D4A5A5) in linen and ceramics. Styled props: handmade ceramic bowls, ribbed glass, linen napkins, a small vase of fresh flowers. Shallow depth of field, clean composition, rich but natural colour grading, crisp detail, luxury lifestyle magazine look. No text, no logos, no watermarks, no brand labels. Camera at a low 30-45 degree side angle with shallow depth of field, professional food photography; the whole manakish round stays visible in frame. No faces; people only as elegant hands and wrists. Same white Calacatta marble surface and the same round black non-stick frying pan in every shot. Leave clear empty space at the top of the frame for on-screen text.",
+ "character": "",
+ "frames": [
+  {
+   "name": "02-blender-side",
+   "refs": [],
+   "prompt": "Side view at counter level: a glass blender on the marble island, its jar holding rolled oats, thick white yogurt and a whole cracked egg mid-blend, the mixture swirling pale and creamy; small bowls of oats and yogurt blurred in front."
+  },
+  {
+   "name": "05-zaatar-side",
+   "refs": [],
+   "prompt": "45-degree side close-up: an elegant hand spooning glossy dark green za'atar and olive oil over a pale oat batter round in the black non-stick pan on the stove, half the surface already covered, oil glistening, sesame seeds falling."
+  },
+  {
+   "name": "06-cover-side",
+   "refs": [],
+   "prompt": "Side view at stove level: the black non-stick pan on a low blue gas flame, covered with a clear glass lid with soft condensation and steam, the green za'atar round visible through the lid, warm kitchen light."
+  },
+  {
+   "name": "07-done-side",
+   "refs": [],
+   "prompt": "Low 30-degree side close-up: a round Levantine za'atar manakish made from an oat and yogurt batter (no dough): a smooth golden flatbread round about 22 cm, its whole top covered with dark green za'atar mixed with glossy olive oil and sprinkled with toasted sesame, golden-brown crisp edges, in the black pan just off the heat, an elegant hand lifting one cut wedge so the soft fluffy oat crumb and its thickness show, steam rising, olive oil glistening."
+  }
+ ]
+}
