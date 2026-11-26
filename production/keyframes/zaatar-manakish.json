@@ -1,0 +1,51 @@
+{
+ "style": "Photorealistic high-end editorial food and lifestyle photography for a premium Instagram page, vertical 2:3 frame. Modern luxury home kitchen for an upper-middle-class family: large honed Calacatta marble island with soft grey veining, warm white-oak cabinetry, brushed brass tap and handles, tall windows with sheer linen curtains, soft diffused morning daylight, calm neutral palette (cream, warm white, oak, brass) with subtle dusty-pink accents (#D4A5A5) in linen and ceramics. Styled props: handmade ceramic bowls, ribbed glass, linen napkins, a small vase of fresh flowers. Shallow depth of field, clean composition, rich but natural colour grading, crisp detail, luxury lifestyle magazine look. No text, no logos, no watermarks, no brand labels. Shot strictly top-down overhead (flat lay, 90 degrees) so the whole dish and the full round of the manakish are visible inside the frame with a margin. No faces; people only as elegant hands and wrists. Same white Calacatta marble surface and the same round black non-stick frying pan in every shot. Leave clear empty space at the top of the frame for on-screen text.",
+ "character": "",
+ "frames": [
+  {
+   "name": "00-hook",
+   "refs": [],
+   "prompt": "Overhead: a round Levantine za'atar manakish made from an oat and yogurt batter (no dough): a smooth golden flatbread round about 22 cm, its whole top covered with dark green za'atar mixed with glossy olive oil and sprinkled with toasted sesame, golden-brown crisp edges, fresh and steaming in the black pan, one wedge being lifted away by an elegant hand with a stretch of soft crumb, olive oil glistening. Small bowls of za'atar and olive oil beside the pan. Mouth-watering, glossy."
+  },
+  {
+   "name": "01-ingredients",
+   "refs": [],
+   "prompt": "Overhead flat-lay: a small cup of rolled oats, a small bowl of thick white yogurt, one brown egg, a pinch bowl of baking powder, a pinch bowl of salt, a small bowl of dark green za'atar, a glass cruet of olive oil and a pinch bowl of sesame seeds, neatly arranged around an empty glass blender jar. No flour."
+  },
+  {
+   "name": "02-blender",
+   "refs": [],
+   "prompt": "Overhead looking straight down into an open glass blender jar containing rolled oats, a dollop of thick white yogurt and a cracked egg with its yolk, a sprinkle of baking powder and salt on top. Marble around."
+  },
+  {
+   "name": "03-batter",
+   "refs": [],
+   "prompt": "Overhead looking into the glass blender jar after blending: a smooth thick pale oat batter like thick crepe batter, a spoon resting on the rim."
+  },
+  {
+   "name": "04-pour",
+   "refs": [],
+   "prompt": "Overhead: the black non-stick pan lightly oiled, the smooth pale oat batter just poured in the middle, an elegant hand spreading it into a neat even round with the back of a spoon in circular motion."
+  },
+  {
+   "name": "05-zaatar",
+   "refs": [],
+   "prompt": "Overhead: the raw batter round in the black pan, an elegant hand spooning a dark green za'atar and olive oil mixture over it, half of the surface already covered, a small bowl of the mixture beside the pan, a few sesame seeds falling."
+  },
+  {
+   "name": "06-cover",
+   "refs": [],
+   "prompt": "Overhead: the black pan covered with a clear glass lid with light condensation, the za'atar manakish visible through the lid, a low blue gas flame ring visible around the pan edge."
+  },
+  {
+   "name": "07-done",
+   "refs": [],
+   "prompt": "Overhead: a round Levantine za'atar manakish made from an oat and yogurt batter (no dough): a smooth golden flatbread round about 22 cm, its whole top covered with dark green za'atar mixed with glossy olive oil and sprinkled with toasted sesame, golden-brown crisp edges, fully cooked and set, sitting in the black pan with the glass lid just removed beside it, wisps of steam."
+  },
+  {
+   "name": "08-serve",
+   "refs": [],
+   "prompt": "Overhead breakfast spread on the marble: a round Levantine za'atar manakish made from an oat and yogurt batter (no dough): a smooth golden flatbread round about 22 cm, its whole top covered with dark green za'atar mixed with glossy olive oil and sprinkled with toasted sesame, golden-brown crisp edges cut into six wedges on a round wooden board, with a small plate of sliced cucumber and cherry tomatoes, fresh mint sprigs, a small bowl of labneh drizzled with olive oil, and a glass of mint tea. Elegant and inviting."
+  }
+ ]
+}
