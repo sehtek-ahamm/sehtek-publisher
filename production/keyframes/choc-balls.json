@@ -1,0 +1,46 @@
+{
+ "style": "Photorealistic high-end editorial food and lifestyle photography for a premium Instagram page, vertical 2:3 frame. Modern luxury home kitchen for an upper-middle-class family: large honed Calacatta marble island with soft grey veining, warm white-oak cabinetry, brushed brass tap and handles, tall windows with sheer linen curtains, soft diffused morning daylight, calm neutral palette (cream, warm white, oak, brass) with subtle dusty-pink accents (#D4A5A5) in linen and ceramics. Styled props: handmade ceramic bowls, ribbed glass, linen napkins, a small vase of fresh flowers. Shallow depth of field, clean composition, rich but natural colour grading, crisp detail, luxury lifestyle magazine look. No text, no logos, no watermarks, no brand labels. No faces; people only as elegant hands and wrists. Same white marble island, dusty-pink linen and a glass blender in every shot. Leave clear empty space at the top of the frame for on-screen text.",
+ "character": "",
+ "frames": [
+  {
+   "name": "00-hook",
+   "refs": [],
+   "prompt": "Low 30-degree side macro close-up: elegant fingers splitting one of the small round chocolate energy balls made of dates, walnuts, cocoa and tahini, rolled in fine cocoa powder, matte and velvety in half, revealing a dark, soft, fudgy glossy inside with tiny walnut pieces, a light puff of cocoa dust, more balls blurred behind on a small ceramic plate. Irresistible."
+  },
+  {
+   "name": "01-ingredients",
+   "refs": [],
+   "prompt": "Strictly top-down overhead flat-lay on the marble: a bowl of pitted medjool dates, a bowl of walnuts, a small bowl of dark cocoa powder, a small bowl of tahini with a spoon, and an empty glass blender jar. Neat, minimal."
+  },
+  {
+   "name": "02-blender",
+   "refs": [],
+   "prompt": "Strictly top-down overhead looking into the open glass blender jar filled with pitted dates, walnuts, a spoonful of tahini and dark cocoa powder on top."
+  },
+  {
+   "name": "03-mixture",
+   "refs": [],
+   "prompt": "45-degree side close-up: the blended thick dark chocolate-date mixture in the open blender jar, an elegant hand pressing a spoonful between fingers to show it sticks together like fudge."
+  },
+  {
+   "name": "04-roll",
+   "refs": [],
+   "prompt": "45-degree side view: elegant hands rolling a small ball of the dark date mixture between the palms over the marble, a row of finished smooth balls on parchment beside them."
+  },
+  {
+   "name": "05-cocoa",
+   "refs": [],
+   "prompt": "Strictly top-down overhead: a shallow ceramic bowl of fine cocoa powder with several dark balls being rolled in it by an elegant hand, some already coated, cocoa dust on the marble."
+  },
+  {
+   "name": "06-freezer",
+   "refs": [],
+   "prompt": "Eye-level view into an open freezer drawer with frost: a small tray lined with parchment holding neat rows of the small round chocolate energy balls made of dates, walnuts, cocoa and tahini, rolled in fine cocoa powder, matte and velvety, cold light, frost on the edges. Clearly inside a freezer."
+  },
+  {
+   "name": "07-serve",
+   "refs": [],
+   "prompt": "45-degree side view on the marble in soft afternoon light: a small ceramic plate stacked with small round chocolate energy balls made of dates, walnuts, cocoa and tahini, rolled in fine cocoa powder, matte and velvety, one ball bitten showing the fudgy inside, a glass of milk and a dusty-pink linen napkin beside it."
+  }
+ ]
+}
