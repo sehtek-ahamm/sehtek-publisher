@@ -1,0 +1,46 @@
+{
+ "style": "Photorealistic high-end editorial food and lifestyle photography for a premium Instagram page, vertical 2:3 frame. Modern luxury home kitchen for an upper-middle-class family: large honed Calacatta marble island with soft grey veining, warm white-oak cabinetry, brushed brass tap and handles, tall windows with sheer linen curtains, soft diffused morning daylight, calm neutral palette (cream, warm white, oak, brass) with subtle dusty-pink accents (#D4A5A5) in linen and ceramics. Styled props: handmade ceramic bowls, ribbed glass, linen napkins, a small vase of fresh flowers. Shallow depth of field, clean composition, rich but natural colour grading, crisp detail, luxury lifestyle magazine look. No text, no logos, no watermarks, no brand labels. No faces; people only as elegant hands and wrists. Keep the same clear glass jar with a gold lid, the same white marble island and dusty-pink linen in every shot. Leave clear empty space at the top of the frame for on-screen text.",
+ "character": "",
+ "frames": [
+  {
+   "name": "00-hook",
+   "refs": [],
+   "prompt": "Low 30-degree side close-up: a gold spoon scooping a thick creamy spoonful out of creamy set chia seed pudding in the clear glass jar, thick and glossy with visible chia seeds, a layer of chopped dates, topped with fresh banana slices, chopped walnuts and a dusting of cinnamon, the pudding holding its shape on the spoon, soft morning window light, shallow depth of field. Mouth-watering."
+  },
+  {
+   "name": "01-night",
+   "refs": [],
+   "prompt": "Side view in a calm kitchen at night: the empty glass jar with gold lid on the marble island next to a small bowl of chia seeds and a glass bottle of milk, a warm under-cabinet lamp glowing, dark window behind, cosy late-night mood."
+  },
+  {
+   "name": "02-ingredients",
+   "refs": [],
+   "prompt": "Strictly top-down overhead flat-lay on the marble: a small bowl of black chia seeds, a glass of milk, a small bowl of chopped medjool dates, a pinch bowl of ground cinnamon, a measuring spoon, and the empty clear glass jar with its gold lid beside it. Neat and minimal."
+  },
+  {
+   "name": "03-jar",
+   "refs": [],
+   "prompt": "Strictly top-down overhead looking into the open clear glass jar: milk being poured in by an elegant hand over black chia seeds and chopped dates with a sprinkle of cinnamon, swirls visible."
+  },
+  {
+   "name": "04-shake",
+   "refs": [],
+   "prompt": "Side view: elegant hands holding the closed glass jar with gold lid and shaking it, the milk and chia mixture swirling inside, slight motion blur on the jar, marble island."
+  },
+  {
+   "name": "05-fridge",
+   "refs": [],
+   "prompt": "Side view inside a clean bright modern fridge: the closed glass jar with gold lid on a glass shelf next to milk and fruit, soft fridge light, label-free."
+  },
+  {
+   "name": "06-topping",
+   "refs": [],
+   "prompt": "Strictly top-down overhead: the open jar of set chia pudding on the marble, an elegant hand placing banana slices on top, a small bowl of chopped walnuts and a cinnamon stick beside it, warm morning sunlight with soft window shadows."
+  },
+  {
+   "name": "07-serve",
+   "refs": [],
+   "prompt": "45-degree side view breakfast on the marble island in bright morning light: creamy set chia seed pudding in the clear glass jar, thick and glossy with visible chia seeds, a layer of chopped dates, topped with fresh banana slices, chopped walnuts and a dusting of cinnamon, a gold spoon resting in it, a cup of coffee and a halved banana beside it, dusty-pink linen napkin."
+  }
+ ]
+}
