@@ -1,0 +1,514 @@
+{
+ "account": {
+  "id": "17841480788027737",
+  "followers_count": 1069,
+  "media_count": 24,
+  "username": "sehtek.ahamm"
+ },
+ "media": [
+  {
+   "id": "18477585439138341",
+   "caption": "وحام؟ في بديل صحي لكل رغبة 🍫🥒🍓\n\nشو أغرب وحام صار معك؟ اكتبيلنا 👇\nومنشني صاحبتك الحامل اللي لازم تشوف هالبوست 😄\n\nسلسلة «احفظيها» ٥ من ٥ ✅\n\n#صحتك_أهم #احفظيها #الوحم #الحمل #حامل #سناك_صحي",
+   "comments_count": 2,
+   "like_count": 3,
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "permalink": "https://www.instagram.com/p/DgPapd1DYCf/",
+   "timestamp": "2026-11-27T10:01:04+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18477585439138341/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A2jpOZ3i8Xsn-xgnqUgGsFS'}",
+    "reach": "GET 18477585439138341/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Aci9wpikalFTKqcGVEYoaRX'}",
+    "likes": "GET 18477585439138341/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AOIFxtoZNgzDRTfMPPHKqfD'}",
+    "comments": "GET 18477585439138341/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AFA-tWKgnulbGI1d0Xqcikw'}",
+    "shares": "GET 18477585439138341/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A5T83qlLoPKQBEtrw4cyiPW'}",
+    "saved": "GET 18477585439138341/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AKxuLxbtccDKBW5ck8W_yKJ'}",
+    "total_interactions": "GET 18477585439138341/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AU_7AorKGtin9pWgdxosoDI'}"
+   }
+  },
+  {
+   "id": "18090914366306965",
+   "caption": "بتشتهي منقوشة زعتر الصبح… وما إلك خلق تعجني وتتعبي من النفخة؟ 🤤\nهاي مناقيش بالشوفان، من غير عجين ولا نفخة، وجاهزة بعشر دقايق. احفظيها 📌\n\nالمكونات (منقوشتين):\n🌾 كاسة شوفان\n🥛 نص كاسة لبن\n🥚 بيضة\n🥄 نص معلقة باكينج باودر + رشة ملح\n🌿 للوجه: معلقتين زعتر + ٣ معالق زيت زيتون + رشة سمسم\n\nالطريقة:\n1️⃣ اخفقي الشوفان واللبن والبيضة والباكينج باودر والملح بالخلاط دقيقة\n2️⃣ صبّي الخليط بمقلاة مدهونة بنقطة زيت، وافرديه متل الرغيف\n3️⃣ وزّعي الزعتر بزيت الزيتون والسمسم فوقه\n4️⃣ غطّيها على نار هادية ٥ دقايق، لحتى يستوي الوجه كامل\n\nليش إلك؟\n💪 بروتين من البيضة واللبن\n🌾 ألياف من الشوفان\n🫒 دهون مفيدة من زيت الزيتون\n\n⚠️ للحامل: تأكدي إنها استوت منيح من جوا، لأنه فيها بيضة.\n\nقدّميها مع خيار وبندورة ونعنع… وابعتيها لصاحبتك الحامل 👇\n\n#صحتك_أهم #مناقيش #زعتر #بدون_عجين #فطور_صحي #الحمل #رضاعة_طبيعية #النفاس #وصفات_صحية #أمهات",
+   "comments_count": 7,
+   "like_count": 33,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DgNwvo2sTAc/",
+   "timestamp": "2026-11-26T18:36:09+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18090914366306965/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Ahe3GBGRUVcttexvOdiTZNc'}",
+    "reach": "GET 18090914366306965/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AQXD2AqB6N5G9ajpYwTovIo'}",
+    "likes": "GET 18090914366306965/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A0dXmr2psvvGqSCLbC0i3n_'}",
+    "comments": "GET 18090914366306965/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ALdKeZinlFL1uaJo3qaAbPu'}",
+    "shares": "GET 18090914366306965/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AftCuU5BpdYdUNxaJ-l9djY'}",
+    "saved": "GET 18090914366306965/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A2kTHFtEd9rA-TmnIL5kZfI'}",
+    "total_interactions": "GET 18090914366306965/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AxJv4aBoiZ9U9lc3ri6ds0n'}",
+    "ig_reels_avg_watch_time": "GET 18090914366306965/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AHQ-GTp5aCbFVvSCgQz8e_n'}",
+    "ig_reels_video_view_total_time": "GET 18090914366306965/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AEnVNCVFKhIfS0PGy2oMtq4'}"
+   }
+  },
+  {
+   "id": "17896470969617882",
+   "caption": "سلطة الكينوا والرمان والدجاج 🥗 للحامل والمرضع… خفيفة، بتشبّع، ومليانة غذا. احفظيها 📌\n\nليش إلك؟\n💪 بروتين من الدجاج والكينوا، بيلزم لنمو البيبي ولإدرار الحليب\n🌾 ألياف بتساعد على الإمساك بالحمل والنفاس\n🍅 فيتامين C من الرمان والبندورة، بيساعد جسمك يمتص الحديد\n✨ بتشبّعك بدون ما تتقّل على معدتك\n\n⚠️ للحامل: تأكدي إنه جبنة الفيتا مبسترة، وإنه الدجاج مستوي منيح من جوا.\n\nالمقادير والطريقة بالسلايدات 👉\nجربيها وابعتيها لصاحبتك الحامل أو المرضعة 👇\n\n#صحتك_أهم #الحمل #رضاعة_طبيعية #النفاس #سلطة_كينوا #وصفات_صحية #أكل_صحي #أمهات",
+   "comments_count": 4,
+   "like_count": 6,
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "permalink": "https://www.instagram.com/p/DgM12L4FwDh/",
+   "timestamp": "2026-11-26T10:00:46+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 17896470969617882/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AwXG4TU45WNAp9fSC2ZMkhb'}",
+    "reach": "GET 17896470969617882/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AcGmkbllFzzKTWwMvDR1cnW'}",
+    "likes": "GET 17896470969617882/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A-xAGXj-mKLhEfeObJJhSxb'}",
+    "comments": "GET 17896470969617882/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AbIVXLwOZe77ICBOUDIeFNx'}",
+    "shares": "GET 17896470969617882/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AWFbaKfGT2ajYIfjw99P9oZ'}",
+    "saved": "GET 17896470969617882/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A4cw_ATa1iCYYpzjGsIF-qi'}",
+    "total_interactions": "GET 17896470969617882/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AaB71BPiVdlz8Zz6nDiei1H'}"
+   }
+  },
+  {
+   "id": "18452097040127944",
+   "caption": "خبز بدون ولا حبة طحين… وشوفي قديش طري 🤍 للحامل والمرضع، احفظيها 📌\n\nالمكونات (٦ أقراص):\n🌾 ٢٠٠ غرام شوفان، مطحون بالخلاط\n🤎 ٣ معالق كتان مطحون + معلقة شيا\n🌻 بذر دوار الشمس، سمسم، حبة البركة\n🥄 معلقة باكينج باودر + رشة ملح\n🥛 ١٥٠ غرام لبن\n🫒 معلقتين زيت زيتون\n\nالطريقة:\n1️⃣ اخلطي الشوفان المطحون مع البذور والباكينج باودر والملح\n2️⃣ اعجنيهم مع اللبن وزيت الزيتون\n3️⃣ رتّحي العجينة ربع ساعة، الكتان والشيا هنّي اللي بيمسكوها بدل الطحين\n4️⃣ افرديها أقراص بين ورقتين زبدة\n5️⃣ عالمقلاة بدون زيت، دقيقتين من كل جهة لحتى تنفخ\n6️⃣ لفّيها بفوطة وهي سخنة حتى تضلها طرية\n\nليش هالخبز إلك؟\n✨ ألياف بتريّحك من الإمساك\n✨ بيشبّع أطول وما بيرفع السكر بسرعة\n✨ أوميغا 3 من الكتان والشيا\n✨ حديد ومغنيسيوم من البذور\n\nجربيه واحكيلي بالتعليقات، وابعتيه لصاحبتك الحامل 👇\n\n#صحتك_أهم #خبز_صحي #بدون_طحين #شوفان #الحمل #رضاعة_طبيعية #النفاس #وصفات_صحية #أمهات",
+   "comments_count": 26,
+   "like_count": 129,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DgLH-jkhBYf/",
+   "timestamp": "2026-11-25T18:01:23+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18452097040127944/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AHqvvd2eu1IsT0Pl_K8beeS'}",
+    "reach": "GET 18452097040127944/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AjJLe5Ss_1-5hY_HoL9RWwI'}",
+    "likes": "GET 18452097040127944/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AVvZzzu0i_MaPx8Lc94lHky'}",
+    "comments": "GET 18452097040127944/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A_HbEUQ5xs9GzFfdbBx4brV'}",
+    "shares": "GET 18452097040127944/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AKXBuB-7lMajSmJc9j_9hsz'}",
+    "saved": "GET 18452097040127944/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AWNc_fhpMPSma-9dxr_cArd'}",
+    "total_interactions": "GET 18452097040127944/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AeH8yH0CAt_LX5YTAOrt2n0'}",
+    "ig_reels_avg_watch_time": "GET 18452097040127944/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Aw5xAbAyULAsNXYkRmK3LFP'}",
+    "ig_reels_video_view_total_time": "GET 18452097040127944/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A2UvKWuCmL6vshYYKd4V77p'}"
+   }
+  },
+  {
+   "id": "17883667779547297",
+   "caption": "الأربعين صعبة؟ 🌙 هي «رفيقة الأربعين»، كل اللي بتحتاجيه بالنفاس بمكان واحد:\n\n🤍 ٢٢ مشكلة شائعة: ليش بتصير، شو الطبيعي، وشو تعملي من اليوم\n🍳 فطور كل يوم، وأكلات من مطبخك بتساعدك\n🚨 ومتى لازم تروحي عالدكتورة\n🌙 وقمر بيكبر معك يوم بيوم لحتى يصير بدر\n\nببلاش، وبدون تنزيل… بيفتح من موبايلك.\n\nاكتبي «أربعين» بالتعليقات، وببعتلك الرابط عالخاص 👇\nومنشني صاحبتك النفسا 🤍\n\n#صحتك_أهم #النفاس #الأربعين #بعد_الولادة #رضاعة_طبيعية #أمهات #أم_جديدة",
+   "comments_count": 22,
+   "like_count": 15,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DgK4jDMBygS/",
+   "timestamp": "2026-11-25T15:46:23+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 17883667779547297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ATLMZQaJpvoBAK8KwRktOKR'}",
+    "reach": "GET 17883667779547297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AnJssNMv4hUtaiAJ5GnvQwZ'}",
+    "likes": "GET 17883667779547297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AwCyeNFC-CjtqFLNwyAmUaT'}",
+    "comments": "GET 17883667779547297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AukQ4fdBE6nSDM-kejOKS4a'}",
+    "shares": "GET 17883667779547297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AnD60xe4a2ZE6XdNNUopvSk'}",
+    "saved": "GET 17883667779547297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'APKqFlOr51Ip8e1M_rJZnsm'}",
+    "total_interactions": "GET 17883667779547297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Ap_jszsl-9xBgaLDTpC56DC'}",
+    "ig_reels_avg_watch_time": "GET 17883667779547297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Abi4J_tVeMJ3hmrtJ9w8tUt'}",
+    "ig_reels_video_view_total_time": "GET 17883667779547297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A3fA_JnuXcm45V_-v14u9UO'}"
+   }
+  },
+  {
+   "id": "17877765189601218",
+   "caption": "تمرية النفاس 🤍 متل ما بتعملها ستّي… احفظيها 📌\nالمكونات:\n🌴 ½ كيلو تمر منزوع\n🧈 ٢ ملعقة زبدة\n🌿 ١ م.ص شومر + ١ م.ص يانسون + ١ م.ص كراوية (مطحونين)\n🤎 ½ م.ص قرفة\n🥜 ½ كاسة مكسرات نيّة\n🖤 ١ ملعقة قزحة\n✨ للتزيين: جوز هند + سمسم محمّص\nالطريقة:\nذوّبي الزبدة مع التمر على نار هادية لحتى يطرى ويصير عجينة، ضيفي البهارات، وبعدها المكسرات والقزحة. خليها تبرد شوي، وشكّليها كرات صغار، ودحرجيها بجوز الهند والسمسم.\nحبة أو حبتين مع كاسة حليب أو مغلي بيكفّوا 🤍\nمنشني صاحبتك النفسا 👇\n#صحتك_أهم #النفاس #الأربعين #تمرية #وصفات_النفاس رضاعة_طبيعية أمهات",
+   "comments_count": 8,
+   "like_count": 33,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DgI838jx_Wb/",
+   "timestamp": "2026-11-24T21:46:55+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 17877765189601218/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Acxhhz4DGdE_YRPnafpEvCT'}",
+    "reach": "GET 17877765189601218/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A3Q62B1vCeqvUFut8gfaDFX'}",
+    "likes": "GET 17877765189601218/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AudF-mlURwKvW1xFdUrSJJU'}",
+    "comments": "GET 17877765189601218/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'As4jAPPWwjv8fJPOUMSznWw'}",
+    "shares": "GET 17877765189601218/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AaWpSPPAl62mPzKdNf1LTh_'}",
+    "saved": "GET 17877765189601218/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AGEKq1eWrKmrooXOkfUopU0'}",
+    "total_interactions": "GET 17877765189601218/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Au8agjo45FNZ1inoJV4cfZi'}",
+    "ig_reels_avg_watch_time": "GET 17877765189601218/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A9NbBLzbfKOfzLy9Y-8LUJK'}",
+    "ig_reels_video_view_total_time": "GET 17877765189601218/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AqXxuVEx28A70hR_9tt80tr'}"
+   }
+  },
+  {
+   "id": "18054838340813372",
+   "caption": "إمساك الحمل؟ هدول ١٠ أكلات غنية بالألياف لازم يكونوا بمطبخك 🥦🍐\n\nوتذكّري: الألياف بدون مي ما بتنفع 💧\nإذا الإمساك طوّل أو صار معه ألم، احكي مع طبيبك.\n\nاحفظيها 📌 وشاركيها مع صاحبتك الحامل 👇\n\nسلسلة «احفظيها» ٣ من ٥\n\n#صحتك_أهم #احفظيها #الحمل #إمساك_الحمل #أكل_صحي #حامل",
+   "comments_count": 2,
+   "like_count": 8,
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "permalink": "https://www.instagram.com/p/DgImpqUiUXg/",
+   "timestamp": "2026-11-24T18:31:17+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18054838340813372/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AkVBq0bg4KWlhS7j6ZFVfti'}",
+    "reach": "GET 18054838340813372/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AbVePDaUIQhwrU_ksbvjhwq'}",
+    "likes": "GET 18054838340813372/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AyaO5BylGkLgrS87WjFnFBu'}",
+    "comments": "GET 18054838340813372/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AgO-HEGx6nnF7H7d0d_2lrD'}",
+    "shares": "GET 18054838340813372/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AoWHVpkZVNgubHkmB4gmS_g'}",
+    "saved": "GET 18054838340813372/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AoKm6g480IraR0otcb4Cqkf'}",
+    "total_interactions": "GET 18054838340813372/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AnhmnhKeX5oHA4WTkLCoDkm'}"
+   }
+  },
+  {
+   "id": "18123141131070225",
+   "caption": "⁨\tحلبة بدون سكر للمرضعة 🤍 محشية عجوة، والحلبة صديقة الرضاعة والنفاس من زمان… احفظيها 📌\n\nالمكونات:\n🌿 فنجان حلبة منقوع ٤ ساعات، ومغلي مع الشومر واليانسون\n🌾 ٣ كاسات سميد + كاسة طحين\n🫒 كاسة زيت زيتون + ٢ملعقةحليب ناشف\n🖤 حبة البركة وسمسم\n🥄 بيكنج باودر وخميرة\n🌴 عجوة بدون نوى للطبقة اللي بالنص\n\nالطريقة:\nبنعجن بمي الحلبة الدافية، بنفرد نص العجينة، فوقها طبقة العجوة، وبنغطيها بالباقي.\nعالفرن ١٨٠ لحتى تتحمّر الجوانب، وبعدين بنرفعها لفوق لحتى يحمرّ وجهها.\n\nليش الحلبة؟\n✨ كتير أمهات بيحكوا إنها بتساعد على إدرار الحليب\n✨ دراسات بتقول إنها بتساعد على ضبط سكر الدم وبتطوّل الشبع\n✨ أليافها مع التمر بتساعد على الإمساك، واليانسون والشومر بيخففوا النفخة\n\n⚠️ إذا عندك سكري وبتاخدي دوا اسألي دكتورك أول، والحلبة مش للحامل.\n\nجربيها واحكيلي بالتعليقات، ومنشني صاحبتك المرضعة اللي بتحب الحلبة 👇\n\n#صحتك_أهم #رضاعة_طبيعية #حلبة #إدرار_الحليب #النفاس #حلو_بدون_سكر #وصفات_صحية #أمهات⁩",
+   "comments_count": 12,
+   "like_count": 85,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DgH3qY6jVmi/",
+   "timestamp": "2026-11-24T11:41:08+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18123141131070225/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A9AsiWlYYbar7F5ZVDDcgrN'}",
+    "reach": "GET 18123141131070225/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AUxNQSTnRaIWE-dDVnq23ur'}",
+    "likes": "GET 18123141131070225/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A02wodWdBHrLIvFwzmd22PW'}",
+    "comments": "GET 18123141131070225/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AL7IaIyx6R7Ez-MJNPU1xpx'}",
+    "shares": "GET 18123141131070225/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AZ_LECP-ONzfnjAfd6xTFxB'}",
+    "saved": "GET 18123141131070225/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AQ94R6pinwp_ZMLP36Dt5_6'}",
+    "total_interactions": "GET 18123141131070225/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Ae80I6QaeTmVnkh3fy5zFAY'}",
+    "ig_reels_avg_watch_time": "GET 18123141131070225/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A4J1Uf2G702QprlM3AYRdUE'}",
+    "ig_reels_video_view_total_time": "GET 18123141131070225/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AuOjAp2XkOWw5Gg-89W_8Ud'}"
+   }
+  },
+  {
+   "id": "17933263971424376",
+   "caption": "بين السهر والرضعات… إنتِ كمان بتستاهلي لحظة دفا واهتمام 🌿🩷\n\nحضّرنالك مشروبات دافئة بوصفات بسيطة، ترافق استراحتك خلال النفاس ☕\nاختاري نكهتك المفضّلة، وخدي نفس… صحتك أهم 🤍\n\nاحفظي الوصفات لوقت تحتاجي فيه كوب دافي، وابعتيها لأم جديدة بتحبيها ✨\n\n#صحتك_أهم #النفاس #مشروبات_دافئة #صحة_الأم #أموم",
+   "comments_count": 8,
+   "like_count": 22,
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "permalink": "https://www.instagram.com/p/DgHlypZEXxD/",
+   "timestamp": "2026-11-24T09:04:13+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 17933263971424376/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A3BnWddcACNXgK1nROMGB93'}",
+    "reach": "GET 17933263971424376/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AbWMacJrw4I6LKCnC6VW8hL'}",
+    "likes": "GET 17933263971424376/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ACYoK7fXdXelASivY8yH_Y_'}",
+    "comments": "GET 17933263971424376/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A70cRc8t6WfixtSFHR9EmB8'}",
+    "shares": "GET 17933263971424376/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AjOpuNNsCnFMvoZzM9crg0n'}",
+    "saved": "GET 17933263971424376/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AJ4ZL25VpQGOOOHXaTl_935'}",
+    "total_interactions": "GET 17933263971424376/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AoI5AssXSry3Lri0ytfR8HJ'}"
+   }
+  },
+  {
+   "id": "18082967276558274",
+   "caption": "وصفة طبيعية لتساقط الشعر بعد الولادة 🤍 بتقوّي شعرك وبتساعد على تكثيفه… واحفظيها قبل ما تضيع منك 📌\n\nتساقط الشعر بعد الولادة طبيعي، وبيوصل لأعلى إشي حوالي الشهر الرابع، وأغلب الأمهات بيرجع شعرهم قبل ما يكمل البيبي سنة.\n\n🩸 فحوصات اطلبيها من دكتورتك:\n• الحديد والمخزون (فيريتين)\n• الغدة الدرقية\n• فيتامين د وفيتامين ب١٢\n\n🥄 خلطة الشعر:\n• بذور كتان وبذور شيا (مطحونين بس هدول)\n• بذور يقطين وجوز عين الجمل\n• قزحة وسمسم\n• زبيب أسود وتين مجفف\n• شوية زيت زيتون وعسل\n\nمعلقة الصبح ومعلقة المسا، واشربي مي كتير معها. وكمان بتساعد على الإمساك وبتريّح الجهاز الهضمي.\nوإذا ما رجع شعرك بعد سنة، أو صار في فراغات واضحة، راجعي دكتورة جلدية.\n\nمنشني صاحبتك اللي والدة جديد 👇\n\n#صحتك_أهم #تساقط_الشعر #بعد_الولادة #النفاس #رضاعة_طبيعية #وصفات_طبيعية #أمهات",
+   "comments_count": 1,
+   "like_count": 10,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DgGFzMCmYgv/",
+   "timestamp": "2026-11-23T19:06:10+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18082967276558274/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AeDWZIRUY4ojvBJbeyQt99s'}",
+    "reach": "GET 18082967276558274/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AmHYNXe91zyJUUKMjusdZBv'}",
+    "likes": "GET 18082967276558274/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AXHKyzW7iY3bJtb3KYR2Rlr'}",
+    "comments": "GET 18082967276558274/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AeW6LONroj6u1uU5s0Gxyws'}",
+    "shares": "GET 18082967276558274/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A6qJvpTZhExAxB5h0zfJqT6'}",
+    "saved": "GET 18082967276558274/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AvleuK89Z6WnoPrcpOnpKZz'}",
+    "total_interactions": "GET 18082967276558274/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ATpl8nB-IcjnjJk941dYEud'}",
+    "ig_reels_avg_watch_time": "GET 18082967276558274/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A3L9lqx1ZMBSJz5y0tG2koN'}",
+    "ig_reels_video_view_total_time": "GET 18082967276558274/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ACZjWd2tgRTz_IMFd7_fBnj'}"
+   }
+  },
+  {
+   "id": "18189717421420746",
+   "caption": "١٠ سناكات للمرضعة بتنأكل بإيد وحدة 🍌🥚\nلأن الإيد التانية دايماً مشغولة 😅\n\nاحفظيها 📌 ومنشني صاحبتك المرضعة 👇\nوإنتِ… شو بتاكلي وطفلك بحضنك؟\n\nسلسلة «احفظيها» ٢ من ٥\n\n#صحتك_أهم #احفظيها #رضاعة_طبيعية #سناك_صحي #أمهات #أم_جديدة",
+   "comments_count": 2,
+   "like_count": 10,
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "permalink": "https://www.instagram.com/p/DgGB2tumHqX/",
+   "timestamp": "2026-11-23T18:31:02+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18189717421420746/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AesxJ58PjQvao8zFk4c3B_g'}",
+    "reach": "GET 18189717421420746/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A9Y8b1nLQp2HpcYzWj_JGka'}",
+    "likes": "GET 18189717421420746/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A1-Xg1LY1aOLp7gk1acdA_S'}",
+    "comments": "GET 18189717421420746/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AWho-mWLjF6alSIHN2wLK7E'}",
+    "shares": "GET 18189717421420746/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'APrXi6OrAnoFkUIYIf_BiQW'}",
+    "saved": "GET 18189717421420746/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AapWXYfVzyT2aaLqmhLrIbT'}",
+    "total_interactions": "GET 18189717421420746/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A5_xNVgZoNO4ykXU-QdeGRc'}"
+   }
+  },
+  {
+   "id": "17958320421272612",
+   "caption": "بالبرد… وإنتِ حامل أو مرضعة… بدك إشي دافي وحلو؟ هاي الوصفة إلك 🍎🤍\n\nكرمبل التفاح الدافي:\n🍎 تفاحتين مقطّعين مكعبات + شوية مي وعصرة ليمون\n🤎 نص ملعقة قرفة (أو جوز الهند إذا بتحبي تغيّري)\n🍯 معلقة عسل طبيعي\n🥣 شوفان محمّص مع شوية زبدة\n🤍 زبادي يوناني مع رشة فانيلا\n\nسناك دافي بيشبعك وبيعطيكِ طاقة… وإنتِ بتستاهلي تدلّعي حالك.\nملاحظة: العسل للكبار بس، مش للطفل تحت عمر السنة.\n\nاحفظي الوصفة لليلة الجاية 📌 ومنشني صاحبتك اللي بتستاهل هالدلع 👇\n\n#صحتك_أهم #الحمل #رضاعة_طبيعية #سناك_صحي #وصفات_صحية #تفاح_بالقرفة #أمهات",
+   "comments_count": 3,
+   "like_count": 39,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DgFRRC7nPV3/",
+   "timestamp": "2026-11-23T11:27:07+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 17958320421272612/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AzxeTD850_foulU98CWSMCH'}",
+    "reach": "GET 17958320421272612/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AAwBYtWlzZnkUy8Ko1fWq9y'}",
+    "likes": "GET 17958320421272612/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AuFFACy53J1E2HgSYNk_gkd'}",
+    "comments": "GET 17958320421272612/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Ah2KBmkde_tq0NACrxA17F7'}",
+    "shares": "GET 17958320421272612/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AFe7a1WVgZVbZtjfUXsDZ9D'}",
+    "saved": "GET 17958320421272612/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A0IEFVNMOZ5jE2pdN0e_95q'}",
+    "total_interactions": "GET 17958320421272612/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Ai7mIBr17Juw3WbkKQwJYNJ'}",
+    "ig_reels_avg_watch_time": "GET 17958320421272612/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A4K5Yk9X4V6QhGuP1xznIsD'}",
+    "ig_reels_video_view_total_time": "GET 17958320421272612/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AiGy49rPSvrkFUGfg1QvMP7'}"
+   }
+  },
+  {
+   "id": "17989927992120125",
+   "caption": "حاسّة حالك تعبانة بالحمل؟ مش لحالك 🤍\n\nخلطة البذور بالطحينة والدبس: سناك مغذّي للفطور، بيعطيكِ طاقة تكمّلي فيها يومك 🌿\nملعقتين مع خبز أسمر بيشبعوكِ، وبيساعدوكِ تحافظي على طاقتك ووزنك بزيادة منطقية خلال الحمل، بدون سكر أبيض.\n\n🥄 بذور يقطين + سمسم محمّص + ملعقة صغيرة قزحة + طحينة + دبس تمر\n\nإنتِ كمان مرّيتي بهالمشاعر؟ احكيلنا بالتعليقات 👇\nومنشني صاحبتك الحامل 🤰\n\n#صحتك_أهم #الحمل #حامل #فطور_صحي #سناك_صحي #طحينة #دبس_التمر #هرمونات_الحمل",
+   "comments_count": 3,
+   "like_count": 22,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DgDuCJwCtgN/",
+   "timestamp": "2026-11-22T20:59:56+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 17989927992120125/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A-1nJHWIxpa73ylEYOW9z3u'}",
+    "reach": "GET 17989927992120125/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A6uWX3_Sa1mXrqqTBqlI9Us'}",
+    "likes": "GET 17989927992120125/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Af1YnRbkYy0xkF_XIxwvFWx'}",
+    "comments": "GET 17989927992120125/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AVcNndURmt_HXcu5UHhlXuM'}",
+    "shares": "GET 17989927992120125/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AbOke6n2yoDGXY0TAOXZKUU'}",
+    "saved": "GET 17989927992120125/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A5cQNaX0KutIfrDC6TPa33s'}",
+    "total_interactions": "GET 17989927992120125/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Axk-G5bo3dRqiTDx7GqTren'}",
+    "ig_reels_avg_watch_time": "GET 17989927992120125/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ABGgeZBw1xIuwVP1MLCWCEV'}",
+    "ig_reels_video_view_total_time": "GET 17989927992120125/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Adwi-67GJjQ-ynNjpX78Rvl'}"
+   }
+  },
+  {
+   "id": "18105624008548934",
+   "caption": "طفلك ممكن يكون ناقص حديد بدون ما تنتبهي 🥩🥦\n\nاحفظي المنشور 📌 وارجعيله وإنتِ عم تحضري أكل طفلك.\nطفلك بيحب أي رقم فيهم؟ اكتبيه بالتعليقات 👇\n\nسلسلة «احفظيها» ١ من ٥\n\n#صحتك_أهم #احفظيها #أكل_الأطفال #الحديد #تغذية_الرضع #أمهات",
+   "comments_count": 0,
+   "like_count": 5,
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "permalink": "https://www.instagram.com/p/DgDdDE8j7B5/",
+   "timestamp": "2026-11-22T18:31:11+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18105624008548934/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ASRA8lqv9B3-M4GSW9CexAy'}",
+    "reach": "GET 18105624008548934/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Aa-zj4gRvgOJ5hva1IVyi1z'}",
+    "likes": "GET 18105624008548934/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AklwKdbEhXtWNV3_dVQTgxt'}",
+    "comments": "GET 18105624008548934/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AB75GQzkhC5w42X0i-yJNxX'}",
+    "shares": "GET 18105624008548934/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AfobQ6OjpW2ky2a1JFpWq0y'}",
+    "saved": "GET 18105624008548934/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ASoy1WBCmq1dCaZYdmcRA9I'}",
+    "total_interactions": "GET 18105624008548934/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AyiX7eKLmSg7-QoC7Is6TaL'}"
+   }
+  },
+  {
+   "id": "18197719912403479",
+   "caption": "مرضعة ومشتهية إشي حلو؟ هاي علبة الشوفان بالتمر والموز 🍌🤎\nبتشبّعك لساعات، ومحلّاة بالتمر والموز بس… بدون ولا ملعقة سكر.\n\nاحفظي الفيديو 📌 وجرّبيها الليلة للصبح.\nمنشني صاحبتك المرضعة 👇\n\n#صحتك_أهم #رضاعة_طبيعية #سناك_صحي #شوفان #أمهات",
+   "comments_count": 17,
+   "like_count": 933,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DgCmID5DK_o/",
+   "timestamp": "2026-11-22T10:31:52+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18197719912403479/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Ahg79MKwV1nGX9b_rk4iuep'}",
+    "reach": "GET 18197719912403479/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AiDNIOenrkBKFaFk2Eo04hf'}",
+    "likes": "GET 18197719912403479/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AP4Eb77pO6EfECw6W6ldGjc'}",
+    "comments": "GET 18197719912403479/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Ae_6eJgDWa7l7Ng91J1R0eh'}",
+    "shares": "GET 18197719912403479/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A9paofQHAm7xFOdHAFpTBcN'}",
+    "saved": "GET 18197719912403479/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A3WjdB1GRLYgyOvf9fnboLC'}",
+    "total_interactions": "GET 18197719912403479/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Ajz8yJtmxvkEmogodpCpuFZ'}",
+    "ig_reels_avg_watch_time": "GET 18197719912403479/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AXwwM2cSDrorJC-6gah8rT8'}",
+    "ig_reels_video_view_total_time": "GET 18197719912403479/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AqleEPOYani671jZgtCY7wa'}"
+   }
+  },
+  {
+   "id": "18134532652685216",
+   "caption": "�🤱🏻 يا ماما… بين تعب الحمل، وسهر الرضاعة، ومليون شغلة براسك، مين عم يهتم بفطورك؟ 🥹💗\n\nبعرف إنك أحيانًا بتصحي جوعانة، وأحيانًا ما بتلحقي تشربي قهوتك وهي سخنة، ويمكن بتمر ساعات وإنتِ مشغولة بالبيبي وناسيِة حالك. 🥲\n\nبس يا حلوة… إنتِ كمان بدك اهتمام، مش بس كل اللي حواليك. 🌷\n\nجسمك خلال الحمل والرضاعة عم يبذل مجهود كبير، وبحتاج تغذية متنوعة تساعدك تلبّي احتياجاتك واحتياجات صغيرك. 💕\n\nوعشان ما تضلي كل صباح محتارة: «شو أفطر اليوم؟» 😅\n\nجهزنالك ٧ أفكار فطور سهلة، لذيذة ومغذية، فيها خيارات متنوعة من البروتين، والألياف، والدهون الصحية، لتختاري منها اللي بتحبيه وبناسبك. 🥑🍓🥚\n\nومش مطلوب منك تعملي فطور مرتب مثل الصور كل يوم… حتى أبسط وجبة بتجهزيها لنفسك وسط زحمة يومك بتستاهل. ❤️\n\n✨ وتذكّري يا ماما: اهتمامك بصحتك مش أنانية… إنتِ كمان مهمة.\n\n📌 احفظي البوست عشان ترجعي للأفكار وقت الحيرة.\n\n💌 وابعتيه لكل حامل أو مرضعة بتحبيها، يمكن تكون محتاجة حدا يذكّرها تهتم بحالها شوي.\n\n👇 خبرينا يا ماما: إنتِ بالحمل كنتِ تجوعي أكثر، ولا خلال الرضاعة صار الجوع قصة ثانية؟ 😂🤱🏻\n\nمن قلبنا لقلب كل أم…\nصحتك أهم 🌸\n\n#صحتك_أهم #تغذية_الحامل #تغذية_المرضع #صحة_الأم #الحمل",
+   "comments_count": 1,
+   "like_count": 15,
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "permalink": "https://www.instagram.com/p/DgB_arMDHU0/",
+   "timestamp": "2026-11-22T04:52:41+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18134532652685216/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A-TdWnzAIVeNOWV3_cUI7R0'}",
+    "reach": "GET 18134532652685216/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ANpyYzEakCvW-_jjeqleMb5'}",
+    "likes": "GET 18134532652685216/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ANu2F_A5CDToC9bZFWHrEUN'}",
+    "comments": "GET 18134532652685216/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ATFXLhbHPcNonTIbVWfR6Nd'}",
+    "shares": "GET 18134532652685216/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AsrrSoHZeNWU_POyaz3F6Sn'}",
+    "saved": "GET 18134532652685216/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A1P_B32Gb_NUwY23jsy1Y_7'}",
+    "total_interactions": "GET 18134532652685216/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AnMcwIEIS-0dyVsSgmro0B0'}"
+   }
+  },
+  {
+   "id": "18127830499710041",
+   "caption": "بترضعي وبتجوعي كل شوي؟ إنتِ مش لحالك 🤎\nكرات التمر والشوفان: طاقة وشبع بدون سكر مضاف.\n\nجرّبتيها قبل؟ اكتبيلنا بالتعليقات 👇\nومنشني صاحبتك المرضعة اللي دايماً جوعانة 😄\n\n#صحتك_أهم #رضاعة_طبيعية #سناك_صحي #كرات_التمر #أمهات",
+   "comments_count": 36,
+   "like_count": 1487,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/DgBIN5NnCvj/",
+   "timestamp": "2026-11-21T20:51:06+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18127830499710041/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AxURVaGd1RWvyl864KypPS8'}",
+    "reach": "GET 18127830499710041/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AXFcGUMQZ65gCx7Oi-9oeQ_'}",
+    "likes": "GET 18127830499710041/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AnMAXAScz6VlscDF8ZtX4d0'}",
+    "comments": "GET 18127830499710041/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AeEmhWSNNtZAyc6DO4PAMcT'}",
+    "shares": "GET 18127830499710041/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AASTYJ9jhnvUG-K-xFMcUrr'}",
+    "saved": "GET 18127830499710041/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ApX_bEwkinhhIS0p8kP07DI'}",
+    "total_interactions": "GET 18127830499710041/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AA9_wwl4KHHDl71Ger26e1J'}",
+    "ig_reels_avg_watch_time": "GET 18127830499710041/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AUQdh4YagNT4PB7UYcQ_u3C'}",
+    "ig_reels_video_view_total_time": "GET 18127830499710041/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AtF3czz-BZWmIYiE8fiVK37'}"
+   }
+  },
+  {
+   "id": "18041227820894832",
+   "caption": "‎🥑🍎 أول أسبوع من الأكل لطفلك… بداية رحلة لذيذة! 👶🏻💗\n‎من عمر 6 شهور، ومع جاهزية طفلك لبدء الطعام الصلب، بتبدأ مغامرة النكهات والاكتشافات!\n‎حضّرنا لكِ أفكار وجبات متنوعة لمدة أسبوع، تجمع بين الخضار والفواكه والحبوب، حتى تكون بداية التغذية ممتعة ومتوازنة. 🥕🥦\n‎✨ قبل ما تبدئي، تذكري:\n* قدّمي كل مكوّن جديد بشكل منفرد أولاً، وراقبي أي أعراض تحسس.\n* بعد التأكد من تقبّل المكونات، ابدئي بخلطها مع بعضها.\n* نوّعي بالأطعمة والقوام تدريجياً.\n* قدّمي كميات صغيرة حسب شهية طفلك.\n* استمري بالرضاعة الطبيعية أو الصناعية؛ فهي الأساس في هذه المرحلة.\n‎⚠️ الوجبات المقترحة أفكار وليست جدولاً إلزامياً، ولا تنسي تقديم الطعام بقوام آمن ومناسب لقدرة طفلك على البلع.\n‎💗 احفظي البوست ليكون مرجعك في أول أسبوع!\n‎صحتك أهم… وصحة طفلك أمانة.\n‎#صحتك_أهم #تغذية_الرضع #الطفل_الرضيع #اكل_الاطفال #الطعام_التكميلي الامومة طفلك_من_6_شهور",
+   "comments_count": 1,
+   "like_count": 13,
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "permalink": "https://www.instagram.com/p/Df_zMCYRR9B/",
+   "timestamp": "2026-11-21T08:28:59+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18041227820894832/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Ag4-DRHU-6beMekTzb540K8'}",
+    "reach": "GET 18041227820894832/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Au7mgVcOVIYStOltpgusnEV'}",
+    "likes": "GET 18041227820894832/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AchUjZ3qtGnCTOZHiW-dHL0'}",
+    "comments": "GET 18041227820894832/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A3aO0zQsFH1FGi3F65xYC8P'}",
+    "shares": "GET 18041227820894832/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Avc1iiJsSJeaMuwq_3WihoZ'}",
+    "saved": "GET 18041227820894832/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AmmbWGZSQaM85EP_-svsDCs'}",
+    "total_interactions": "GET 18041227820894832/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AfMdMQxHOK9PquTb6WDWEAM'}"
+   }
+  },
+  {
+   "id": "18114851228591998",
+   "caption": "الجوع بعد الرضاعة الليلية حقيقي 😅🌙\n\nمنشني صاحبتك اللي بتتذكر حالها آخر الليل 👇\n\n#صحتك_أهم #رضاعة_طبيعية #أمهات #يوميات_أم #أم_جديدة #الرضاعة_الليلية #امومة",
+   "comments_count": 3,
+   "like_count": 16,
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "permalink": "https://www.instagram.com/p/Df-sAA1ILJs/",
+   "timestamp": "2026-11-20T22:05:38+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18114851228591998/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A587606g1ACKTMoZ5avu66G'}",
+    "reach": "GET 18114851228591998/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AKB97eDlhOqfsaYI9MsxBL3'}",
+    "likes": "GET 18114851228591998/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AhQarG3MS45h-X6XgSBDA2f'}",
+    "comments": "GET 18114851228591998/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ATqXDU2XCcd0rNxd68tn5V5'}",
+    "shares": "GET 18114851228591998/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AGt4bDH9YmNVrNy3k7f5-sd'}",
+    "saved": "GET 18114851228591998/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AXo3g7w-FQ2A9zlRKaoJDOj'}",
+    "total_interactions": "GET 18114851228591998/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AzRWDTFMTjbtpEhONEBx80p'}"
+   }
+  },
+  {
+   "id": "18137000779667273",
+   "caption": "أهم منشور ممكن تحفظيه قبل ما يبلّش طفلك أكل 🚨\nالفرق بين الشرقة الطبيعية والاختناق، ومتى تتصلي بالإسعاف.\n\nالمصدر: NHS – How to stop a child from choking · AAP\nالمحتوى تثقيفي ولا يغني عن دورة إسعافات أولية معتمدة.\n#سلامة_الطفل #أكل_الرضيع #اسعافات_اولية #صحتك_أهم",
+   "comments_count": 3,
+   "like_count": 9,
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "permalink": "https://www.instagram.com/p/Df-C3RSGg4q/",
+   "timestamp": "2026-11-20T16:05:55+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18137000779667273/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ASdMKDGD3HE-lG6_QxcHcnn'}",
+    "reach": "GET 18137000779667273/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A2KZSOn179kUWnjM962vMvt'}",
+    "likes": "GET 18137000779667273/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Ax4EExb-7QCvcv5nd22E5LU'}",
+    "comments": "GET 18137000779667273/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A6FucJR13gM0GLfcobHIMbj'}",
+    "shares": "GET 18137000779667273/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A9ZIl0xQXJC3hNUA6fltKLb'}",
+    "saved": "GET 18137000779667273/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AX17BOq474EeCFj0lN4YHgv'}",
+    "total_interactions": "GET 18137000779667273/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AAxUQ66SvmkBdQrS0X6tn_W'}"
+   }
+  },
+  {
+   "id": "18202908184387357",
+   "caption": "نصيحة بتنقلها الجدات بحب… بس ممكن تؤذي الرضيع 🍯❌\nالعسل ممنوع قبل عمر السنة بأي شكل.\nابعتيها لأي أم جديدة 🤍\n\nالمصدر: CDC – Infant Botulism · NHS\nمحتوى تثقيفي لا يغني عن استشارة الطبيب.\n#صح_أم_خطأ #صحة_الطفل #الرضيع #صحتك_أهم",
+   "comments_count": 4,
+   "like_count": 18,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/Df-BGGeiiXw/",
+   "timestamp": "2026-11-20T15:50:52+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18202908184387357/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AkM8U91FWiB_mCweSS-PW76'}",
+    "reach": "GET 18202908184387357/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AdmABGEAVw51vEprvAF8r9H'}",
+    "likes": "GET 18202908184387357/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AZzxiQ9a5YV3wDVQiOycjGU'}",
+    "comments": "GET 18202908184387357/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Awo06uy_X0yYqcQiU65_vr2'}",
+    "shares": "GET 18202908184387357/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AK-vPMVmST33nvoXzzZcS8C'}",
+    "saved": "GET 18202908184387357/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Ap5gOjsgjOeroUdZs_Qyn50'}",
+    "total_interactions": "GET 18202908184387357/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AB7vLjUteIIHNa79XZtXPQv'}",
+    "ig_reels_avg_watch_time": "GET 18202908184387357/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Abk6r1et70W7xC_LxIhfNBy'}",
+    "ig_reels_video_view_total_time": "GET 18202908184387357/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A9RMoDrpuRunkv334F-xSoy'}"
+   }
+  },
+  {
+   "id": "18084640307734073",
+   "caption": "دليلك السريع لتخزين حليب الأم 🍼❄️\nاحفظيه لوقت الحاجة، خصوصاً إذا راجعة عالدوام.\n\nالمصدر: CDC – Proper Storage and Preparation of Breast Milk\nمحتوى تثقيفي لا يغني عن استشارة الطبيب.\n#الرضاعة_الطبيعية #حليب_الأم #المرضع #صحتك_أهم",
+   "comments_count": 5,
+   "like_count": 16,
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "permalink": "https://www.instagram.com/p/Df7vyLrF8Nx/",
+   "timestamp": "2026-11-19T18:40:59+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18084640307734073/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AV49cB5kGpXQdTr_rv5OmFA'}",
+    "reach": "GET 18084640307734073/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Atu2r5CEETmPJRg5Z_PFfr1'}",
+    "likes": "GET 18084640307734073/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Aqtnp2KvncVoUUC2HA9owlN'}",
+    "comments": "GET 18084640307734073/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ASphvKDrTw5soLGn7QIr_fo'}",
+    "shares": "GET 18084640307734073/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A2KfxdDBqfaj0gg5dVOdN87'}",
+    "saved": "GET 18084640307734073/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AERBPTfUnWZnIH6mVsBrlV2'}",
+    "total_interactions": "GET 18084640307734073/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AxrrP_SNelsVxFsJZycNAOR'}"
+   }
+  },
+  {
+   "id": "18027313073929297",
+   "caption": "قائمة مشتريات أسبوعية للحامل 🛒🤰\nخديها معك عالسوق، وخلي مطبخك جاهز لأكل متوازن طول الأسبوع.\n\nالمصدر: NHS – Have a healthy diet in pregnancy\nمحتوى تثقيفي لا يغني عن استشارة الطبيب.\n#الحمل #تغذية_الحامل #قائمة_مشتريات #صحتك_أهم",
+   "comments_count": 4,
+   "like_count": 22,
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "permalink": "https://www.instagram.com/p/Df7LI5OF6aC/",
+   "timestamp": "2026-11-19T13:20:30+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18027313073929297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AXGRh056OL7_N2UIcvTtyhX'}",
+    "reach": "GET 18027313073929297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AHe8c5v4lXaof_Oc2l5sL0w'}",
+    "likes": "GET 18027313073929297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ApRIdQc8HRp8hOErv5TN9U2'}",
+    "comments": "GET 18027313073929297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A-sLjybELO9F5PVeuZDvC1a'}",
+    "shares": "GET 18027313073929297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'APn0AlcuSXpWKopEHZNhX3Z'}",
+    "saved": "GET 18027313073929297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AaFroMWit3YS6uNWvB2EwiL'}",
+    "total_interactions": "GET 18027313073929297/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'ACB544MTbKrvvKb5R4gCXXT'}"
+   }
+  },
+  {
+   "id": "18113128850241775",
+   "caption": "أول وجبة بدون طبخ ولا تعب 🥑🍌\nمناسبة من عمر 6 شهور مع بداية الأكل الصلب.\nاحفظيها وابعتيها لأم جديدة 🤍\n\nمحتوى تثقيفي لا يغني عن استشارة الطبيب.\n#أكل_الرضيع #تغذية_الرضيع #وصفات_اطفال #صحتك_أهم",
+   "comments_count": 10,
+   "like_count": 62,
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "permalink": "https://www.instagram.com/reel/Df7JBLnjIvd/",
+   "timestamp": "2026-11-19T13:02:20+0000",
+   "insights": {},
+   "insight_errors": {
+    "views": "GET 18113128850241775/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AzypNak34ChY0n1MipQ2nuU'}",
+    "reach": "GET 18113128850241775/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AGZ68Te5DbeDEtYIWRXNJ_v'}",
+    "likes": "GET 18113128850241775/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'Avwzp92NBQxIVOpDpaQD-Uy'}",
+    "comments": "GET 18113128850241775/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AWfKMPXTaAmyCYfR2Y9e6Wn'}",
+    "shares": "GET 18113128850241775/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AmsWIjH1HASJLzJxvLfwsup'}",
+    "saved": "GET 18113128850241775/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AgYMdlCCM-tsRplksZJCkyz'}",
+    "total_interactions": "GET 18113128850241775/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AO0vRTDItVaCqQjjFmL50DS'}",
+    "ig_reels_avg_watch_time": "GET 18113128850241775/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'AoxcY-4W6HgrqZAEFk9ft4h'}",
+    "ig_reels_video_view_total_time": "GET 18113128850241775/insights failed (400): {'message': '(#10) Application does not have permission for this action', 'code': 10, 'type': 'OAuthException', 'fbtrace_id': 'A1LYZQUS7R_6GnrCi56dRyu'}"
+   }
+  }
+ ]
+}
